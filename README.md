@@ -1,6 +1,6 @@
 # Mining and Mapping the Protoweb
 
-This project is a collection of Python scripts for crawling, storing, and analyzing web data from the "protoweb," a term likely referring to a specific subset of the early web accessed through a proxy. For a full understanding of the project's background and goals, please refer to the research paper "Mining and Mapping the Protoweb.docx".
+This project mines and maps the Protoweb, an open-source collection of restored websites from the early 2000s. The goal is to understand the structure and behavior of the early internet by analyzing a dataset of approximately 3001 pages across 40 domains. For a full understanding of the project's background and goals, please refer to the research paper "Mining and Mapping the Protoweb.pdf".
 
 ## Features
 
