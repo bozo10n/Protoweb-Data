@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>DOSBox Deathmatch Club</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFF00" vlink="#238E23" alink="#FF0000">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" width="750" height="550">
+	<tr>
+		<td valign="top" colspan="2" height="51">
+		<p align="center">
+		<img border="0" src="images/logo.gif" align="center"></td>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" rowspan="2" width="206">
+		<p align="left">
+		<img border="0" src="images/arrow.gif" align="center"><a href="guides.php">Go Back!</a><br>
+		<br>
+		</p>
+		</td>
+		<td valign="top" height="34">
+		<p align="center">
+		<img src="images/simads/ad_dosboxlive.gif" alt />		</p>
+	</tr>
+	<tr>
+		<td valign="top" height="288" width="993">
+		<br>
+		<h3>IPXWrapper (DOSBox UDP Encapsulation)</h3>
+
+		<p>IPXWrapper is a wrapper library which emulates IPX support while tunneling the packets over UDP. This allows you to run legacy games and other software that require IPX without having to install the IPX driver which is unavailable as of Windows Vista/Server 2008.</p>
+		
+		<p>This updated build IPXWrapper allows for IPX emulation for certain windows games by connecting to an active DOSBox IPXnet server, allowing players to play together like a VPN.</p>
+		
+		<p>You can grab the latest version: <a href="https://github.com/solemnwarning/ipxwrapper/releases">Github.com</a></p>
+		
+		<p>1. Extract the contents of the ZIP's inner folder to the desired game's directory. If done correctly, there should be an ipxconfig.exe in the same directory as your game's executable.</p>
+		<p>2. Run directplay-win64.reg or directplay-win32.reg, depending on your OS architecture.</p>
+		<p>3. Open ipxconfig.exe and set the Encapsulation type to <b>DOSBox UDP Encapsulation</b></p>
+		<p>4. Set the address to <b>ipx.soulsphere.org</b> and the port to <b>10000</b> <i>(you can use other addresses/port numbers but we use those specific ones for events)</i></p>
+		<p>5. Run the game and host/join via IPX and enjoy!</b></p>
+
+		<p><b>NOTE</b> : For Windows 10/11 Users, you can find out if your system is 32-bit or 64-bit by going to Settings (from the Start Menu) and going to System > About.</p>
+
+		<img border="0" src="images/guides/ipxwrapper.gif">
+		
+		</td>
+	</tr>
+</table>
+
+
+</body>
+
+</html>

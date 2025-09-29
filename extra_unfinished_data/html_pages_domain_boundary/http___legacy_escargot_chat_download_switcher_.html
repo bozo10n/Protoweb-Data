@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Switcher | Escargot</title>
+    <link rel="stylesheet" href="/css/site.css?v=2">
+
+</head>
+<body marginwidth="50">
+
+<table class="w-100" width="100%">
+    <tr>
+        <td>
+            <h1 class="font">
+                <img alt="Escargot logo" class="escargot" src="/gif/favicon.gif">
+                <span>Escargot </span>
+                <font color="#808080" class="legacy">Legacy</font>
+            </h1>
+        </td>
+        <td class="text-right" align="right">
+            <p align="right" class="font"><a href="/">Home</a> | <a href="/connect/">Get Started</a> | <a href="/download/">Download</a></p>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<h1>Escargot Switcher</h1>
+<p>
+    Escargot Switcher is a DLL component we've developed for patching supported clients. Switcher dynamically controls any
+    appropriate internet requests passed and re-routes them to our servers. Currently our patch only supports Windows XP
+    and higher, but this could change in the future to support older Windows versions.
+</p>
+<p>
+    If you're patching a client by yourself, then we offer the base DLL and a configuration file you can modify for your
+    targeted client. Note that when copying the configuration, make sure its file name is <code>&lt;module name&gt;-escargot.ini</code>,
+    with <code>&lt;module name&gt;</code> representing the full name of the program you're patching, including extension (e.g.,
+    <code>msnmsgr.exe-escargot.ini</code>), and the <code>type</code> value is appropriately set so that the client's components
+    will be able to load the Switcher component when patched.
+</p>
+
+<h5>
+    <a href="//storage.levelleap.com/nina/clients/msnp/escargot-switcher.zip">Download DLL + base configuration file (.ZIP)</a>
+</h5>
+
+<br>
+
+
+    <h4>Importing the DLL into your target application</h4>
+
+    <p>
+        To import Switcher into the executable(s) of your target client, assuming you've copied them DLL and INI files as specified in
+        the patching guides, open the target executable(s) in a PE editor, one that we recommend being
+        <a href="http://www.cgsoftlabs.ro/studpe.html" target="_blank">Stud_PE</a>.
+    </p>
+    <p>
+        For the executables you plan to patch, find the option to import the DLL, locate where you copied the DLL, and after selecting
+        it import the function &quot;ImportMe&quot; from it and save changes. If you're using Stud_PE, for example, you'd open the executable
+        you want to modify in it
+        <em>
+            (Windows 7+ users, run the editor as admin first as otherwise it won't have sufficient permissions
+            to open files in restricted areas such as Program Files)
+        </em>, go to the &quot;Functions&quot; tab, right click on the left pane,
+        select &quot;Add New Import&quot;, select the DLL file in the directory you copied it in, and then select the <code>ImportMe</code>
+        function and apply changes.
+    </p>
+
+
+
+<hr>
+<div class="info-legacy">
+    <FONT color="#808080" SIZE="-1">
+        <b>Hey!</b> Just so you know, you're using the legacy version of our website, meant for old devices and what-not. This is a simple website meant for simple browsing
+        and it's very simplified. Browse our website on a modern device for a better experience - <a href="https://escargot.chat">escargot.chat</a>
+
+    </FONT>
+</div>
+
+</body>
+</html>

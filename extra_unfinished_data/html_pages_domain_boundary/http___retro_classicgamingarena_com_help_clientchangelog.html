@@ -1,0 +1,1672 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Classic Gaming Arena :: Help :: Client Change Log</title>
+<meta name="title" content="Classic Gaming Arena :: Help :: Client Change Log">
+<meta name="description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<meta name="keywords" content="CGA, Classic, Gaming, Arena, DOOM, Warcraft, Descent, IPX, DOSBox, DOS, games, network, CGA Client, multiplayer, dedicated, server">
+<meta name="author" content="Creative Design Interactive">
+<meta property="og:title" content="Classic Gaming Arena :: Help :: Client Change Log">
+<meta property="og:description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<link href="/css/default.css" rel="stylesheet" type="text/css">
+<link href="/cgafeed" rel="alternate" type="application/rss+xml" title="Classic Gaming Arena">
+<script type="text/javascript" src="/js/checkboxes.js"></script>
+<script type="text/javascript" src="/wde/ajax.js"></script>
+<script type="text/javascript" src="/wde/utils.js"></script>
+<script type="text/javascript" src="/wde/captcha.js"></script>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+        <td align="right" valign="top" class="bg1"> </td>
+        <td width="47" valign="top" style="background-image: url('/images/index32.gif');"><img src="/images/index03.jpg" alt="" width="47" height="350"></td>
+        <td width="670" rowspan="2" valign="top" style="background-color: #0A2732;">
+
+		    <table width="670"  border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="326" rowspan="3" style="background-image: url('/images/index05.jpg');" height="91" ><a href="/" class="logo">Classic Gaming Arena</a><br><span class="logo1">Home for all your DOS multiplayer gaming needs.</span></td>
+                <td colspan="4"  align="left" height="32"  width="344" style="background-image: url('/images/index06.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Client:</strong>&nbsp;<a href="/help/clientchangelog">4.1.32.0</a>&nbsp;&nbsp;<strong class="text2">Server:</strong>&nbsp; <a href="/help/serverchangelog">4.1.1.0</a></div></td>
+            </tr>
+            <tr>                
+                <td colspan="4" valign="top" align="left" height="29"  width="344" style="background-image: url('/images/top_right_middle.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Players:</strong>&nbsp; <a href="/players">15</a>&nbsp;/&nbsp;1,344</div><br>
+<div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Games:</strong>&nbsp;<a href="/games">184</a>&nbsp;&nbsp;<strong class="text2">Servers:</strong>&nbsp;19&nbsp;/&nbsp;<a href="/servers">92</a>&nbsp;&nbsp;<strong class="text2">Rooms:</strong>&nbsp;<a href="/gamerooms">3</a></div></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right" height="30" valign="top" style="background-image: url('/images/index11.jpg')">
+					<div style="margin-top: 5px;"><!--<a href="/search" class="topMenu">Search</a>&nbsp;&nbsp;-->
+						 <a href="/contact" class="topMenu">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;						 
+						 <a href="/cgafeed" target="_blank"><img src="/wde/images/feeds.png" border="0" style="vertical-align: middle;" title="Subscribe to our RSS feed"></a>
+					</div>
+				</td>
+            </tr>
+            </table>
+				
+            <table width="670"  border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                    <td width="334"> <script type="text/javascript" src="/wde/strings.js"></script>
+<script type="text/javascript" src="/wde/swapfade.js"></script>
+<script type="text/javascript">
+    var img=new Array();
+    var urls=new Array();
+	
+    img[0]="/images/rotators/1/heretic_000.png";
+urls[0]="";img[1]="/images/rotators/1/orion2_000.png";
+urls[1]="";img[2]="/images/rotators/1/ultimate_doom.png";
+urls[2]="";img[3]="/images/rotators/1/doom2_000.png";
+urls[3]="";img[4]="/images/rotators/1/descentr_000.png";
+urls[4]="";img[5]="/images/rotators/1/duke3d_000.png";
+urls[5]="";img[6]="/images/rotators/1/war2_000.png";
+urls[6]="";img[7]="/images/rotators/1/war_000.png";
+urls[7]="";img[8]="/images/rotators/1/rott_000.png";
+urls[8]="";img[9]="/images/rotators/1/hexen_000.png";
+urls[9]="";
+
+    var ns6=document.getElementById&&!document.all
+    var current = 1 - 1;
+    var realCurrent = 1;
+    var doRotate = true;
+    var isPaused = false;
+    var rotateDelay = 10000;
+
+    var maxImages = 10;
+    var timer = null;
+    var justLoaded = true;
+
+    function changeItem(doSwap) {
+       if (isPaused) return;
+
+       if (!justLoaded)
+          swapfade(document.getElementById("featureimage"), img[current], '2', '');
+       justLoaded = false;
+
+       if (current==(maxImages-1)) { 
+          realCurrent = current+1;
+          current=0;      
+       }
+       else {
+          current++
+          realCurrent = current;
+       }
+       
+	//   AJAXGetNoResponse("/?setLastImageShown&irid=1&idx=" + realCurrent);
+	   
+	//   changeImgURL(realCurrent);
+	   
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+    }
+
+	function stopRotation() {
+	   clearTimeout(timer);
+	}
+	
+    window.onload=changeItem;
+    window.onunload=stopRotation;
+	
+    function setRotation(r) {
+       doRotate = r;
+       isPaused = !doRotate;
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+       else
+          clearTimeout(timer);
+    }
+
+    function changeImgURL(imgNum) {
+      if (ns6) {
+         document.getElementById("featureURL").href = urls[realCurrent-1];
+      }
+      else {
+         if (document.all) {
+            featureURL.href = urls[realCurrent-1];
+         }
+      }
+   }
+</script>
+
+<style>
+.imgRotate {
+   filter: alpha(opacity=100);   
+}
+
+.imgRotate.idupe {
+   position: absolute;
+   z-index: 30000;
+   visibility: hidden;
+}
+</style>
+
+<div style="border:0px solid #000000;">
+	<DIV id="featurebox" STYLE="text-align:center; height:181px;"><div style="position:relative;top:0px; left:0px; background-image: url('/images/ss_frame.png');width:334px;height:181px;z-index:100;"></div><div style="position:relative;top:-181px; left:0px;width:334px;height:181px;z-index:0;"><a id="featureURL" href="" target="_blank"><img class="imgRotate" id="featureimage" src="/images/rotators/1/heretic_000.png" BORDER="0" width="334" height="181"></a></div></div>
+</div>  </td> 
+                    <td width="140"><table width="140" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="140" height="26"><img src="/images/index13.jpg" alt="" width="140" height="26"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index14.jpg');" width="140" height="22"><a href="/news" class="menu">Latest News</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index15.jpg');" width="140" height="22"><a href="/forums" class="menu">Forums</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index16.jpg');" width="140" height="22"><a href="/downloads" class="menu">Downloads</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index17.jpg');" width="140" height="22"><a href="/games" class="menu">Games</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index18.jpg');" width="140" height="22"><a href="/help" class="menu">Help</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index19.jpg');" width="140" height="22"><a href="/servers" class="menu">Servers</a></td>
+                        </tr>
+                        <tr>
+                            <td width="140" height="23"><img src="/images/index20.jpg" alt="" width="140" height="23"></td>
+                        </tr>
+                    </table></td>
+                    <td width="196">
+   					   <table width="196"  border="0" cellpadding="0" cellspacing="0" background="/images/login_background.jpg">
+                       <tr>
+                          <td style="height: 181px; padding-left: 10px;" valign="top">
+                             <div style="width: 144px; padding-top: 20px;">
+      <form name="formLogin" method="post" action="/index.p?action=core@Login" onsubmit="return checkForGuest(this);">
+	  <div style="display: table;">	    
+		 <div id="unLabel" style="display: table-row;">
+            <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Username</strong></div>
+		 </div>		 
+		 <div id="unField" style="display: table-row;"> 
+		    <div style="display: table-cell; height: 18px;"><input name="un" type="text" class="input1"></div>
+		 </div>
+	     <div id="pwLabel" style="display: table-row;">		 		 
+  		    <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Password</strong></div>
+		 </div>
+         <div id="pwField" style="display: table-row;">		 
+		    <div style="display: table-cell; height: 18px; padding 0; margin: 0;"><input name="pw" type="password" class="input1" value=""></div>
+		 </div>
+   	     <div style="display: table-row;">
+		    <div style="display: table-cell; vertical-align: middle; height: 26px;">
+			   <input name="imageField" type="image" src="/images/but_login.jpg">
+            </div>
+		 </div>
+         <div id="kmli" style="display: table-row;">
+		    <div style="display: table-cell;">   
+               <div style="height: 2px;"></div>									   
+   	           <div class="checkbox" onClick="cbChange(this, document.formLogin.ali)"></div> <input name="ali" type="checkbox" class="styled"> Remember Me
+			</div>	  
+	     </div>		 
+	  </div>
+      </form>
+	  
+   </div>	
+   
+   <div style="height: 2px;"></div>
+   <div class="text4"><a href="/?action=core@LoginHelp">Login Help</a>  |  <a href="/register">Create an Account</a></div>
+						  </td>
+                       </tr>
+                       </table>	
+				    </td>
+                </tr>
+                <tr>
+                    <td width="670" colspan="3"><img src="/images/index37.jpg" alt="" width="670" height="18"></td>
+                </tr>
+            </table>			
+			
+            <table width="670" border="0" cellspacing="0" cellpadding="0">
+   			    <tr>
+                    <td align="left">
+                        <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+        <td><img src="/images/inside01.jpg" alt="" width="20" height="33"></td>
+        <td background="/images/inside02.jpg" width="432" height="33"><span class="header1">Help :: Client Change Log</span></td>
+
+        <td><img src="/images/inside03.jpg" alt="" width="41" height="33"></td>
+        <td background="/images/inside04.jpg" width="155" height="33"><span class="header1">Topics</span></td>
+        <td><img src="/images/inside05.jpg" alt="" width="22" height="33"></td>
+    </tr>
+    <tr valign="top">
+        <td background="/images/inside09.jpg"><img src="/images/inside06.jpg" alt="" width="20" height="100"></td>
+        <td background="/images/index47.gif">  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+
+                <td><img src="/images/spacer.gif" alt="" width="1" height="13"></td>
+            </tr>
+            <tr>
+                <td class="align-justify"><p class="plaintext">
+<strong class="plaintext2">4.1.32.0</strong> - 2024/09/22<ul class="plaintext">
+<li>Shortened caption of option on general tab of configuration screen to default new game rooms to max players for game that don't have an in-game lobby (ie: games that require waiting for all players before starting) as it was wrapping under certain XP themes.</li>
+<li>Added a caption with "Secured with" and a Let's Encrypt logo to the about screen.  For legacy clients (Windows XP and below) there is an additional caption after the LE logo which reads "and OpenSSL".</li>
+<li>Added a link to the DOSBox Deathmatch Club website to the Help main menu.</li>
+<li>Updated the DOSBox link to go to the non-secure HTTP website under the legacy clients (Windows XP and below).</li>
+<li>Added links to the DOSBox and DOSBox Deathmatch Club websites to the Help menu of the Win9x/ME/NT4 clients.  The DOSBox link will only display on the Win9x/ME DOSBox Editions and NT4.</li>
+<li>Removed the DOSBox SVN website link from the legacy clients Help menu since it's just a SourceForge link and is HTTPS only.</li>
+<li>Updated the Hammer of the Gods configuration to now use IPX and NetBIOS instead of serial null modem.  It now supports up to 4 players.  When I added it back in 2012 there was an issue with it failing to detect NetBIOS, but I recently found this workaround on Vogons: https://www.vogons.org/viewtopic.php?p=1290313#p1290313 and a patch EXE was released by the DOSBox team that addresses the issue with the game failing to detect the network before it tries to detect NetBIOS and the error about not detecting NetBIOS is misleading.  So NETCHECK.COM is now included with the installer and will be used for HotG.</li>
+<li>The Win9x/ME native client will no longer copy and use netbios.exe for games flagged as needing NetBIOS since it's not needed under Win9x/ME.  This also includes the NETCHECK.COM file for Hammer of the Gods.</li>
+<li>Fixed a bug wherein the games Worms United, Worms: Reinforcements and Hammer of the Gods would not run on the Win9x/ME native client due to their launch process requiring the actual game path in some of the batch commands and the config had hard coded paths of just C:\ which was ok under DOSBox.</li>
+<li>Removed the command to start the Hammer of the Gods intro from its start up commands as it would sometimes crash and never start the game EXE.</li>
+<li>Updated the CD image mounting and unmounting process under the native Win9x/ME client to execute the DAEMON Tools EXE directly from the client instead of from the generated batch file to ensure they run properly and to ensure the CD is available before the DOS process starts and is always unmounted regardless of what happens with the batch process.</li>
+<li>Fixed backend bug that was preventing logging in from a client that had been auto logged out when the user logged in from another location with the same edition of the client.  </li>
+<li>The game room info panel will now be closed when the game room list is refreshed.</li>
+<li>Removed the location field from the main game room lobby list.</li>
+<li>Updated the description caption panel to now display the name of a selected game add-on and if it has an author with "by <author>" appended instead of "Description" or "Description :: <author>".</li>
+<li>Changed all references to "Game Customizations" to "Game Add-Ons".</li>
+<li>Turned off the "Custom" tab on the user game add-ons screen.</li>
+<li>Shortened the "Customization Name" field of the game add-ons list screen to just "Name".</li>
+<li>Changed "[Available Chat Rooms]" to just "[Chat Rooms]' on the main screen chat room selection drop down.</li>
+<li>Removed the type column from all game add-on lists and the filter drop down  selection list.</li>
+<li>Removed redundant game room information from the right panel and updated the game room info button hint to read "View extended game room & server information".</li>
+<li>Combined the multiplayer and singleplayer columns into one column named "Game Modes" on all the game add-on lists and the values for "Any" will now be "Any MP" and "None" will be "No MP" and if the add-on supports single-player "/ Singleplayer" will be added to the MP value, for example: "Deathmatch / Singleplayer".</li>
+<li>Added the "Mode" column to the game add-ons screen under the Win9x/ME/NT4 clients.</li>
+<li>Combined the "Playing" and "Players" columns of the main game room lobby list into 1 column and the value will now have 3 fields: "<playing count> / <entered room count> / <max player count>".</li>
+<li>Renamed the "Custom" column of the main game room lobby list to "Add-Ons".</li>
+<li>Custom control colors will now be applied to the find players screen.</li>
+<li>The internal CGA server will drop timed-out client connections.</li>
+<li>The internal CGA server will now check after a client authenticates for any existing client connections within a game room and drop them.  This will handle scenarios where a client crashes or disconnects ungracefully for any reason and the server isn't informed of the disconnection.</li>
+<li>The internal CGA server will now send game room connection count (ie: playing count) when it sends its connection count when clients connect and disconnect.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.31.0</strong> - 2024/08/31<ul class="plaintext">
+<li>Beta builds will now use a beta update site when checking for updates instead of the production update site</li>
+<li>When saving the main form's size and position the horizontal splitter position will now be saved and restored.</li>
+<li>Inviting a user that's AFK will now result in an automatic response that states they are AFK and may not respond right away.</li>
+<li>Added option to disable accepting invites while AFK and an auto response will be sent stating the user does not accept invites while AFK.  The new option is located on the General tab of the configuration screen.</li>
+<li>Added support for VDMSound in the Win9x/ME Native client.  You can configure the path to your VDMSound installation on the configuration screen under the VDMSound tab.  You now have the option to enable it at the game profile level and the user game level.  If enabling it at the game profile level all newly added games will have it enabled by default.  Existing games will need to have it enabled manually.</li>
+<li>Fixed bug introduced in 4.1.30.4 where the user game add/screen would not let you save when editing a game because you cannot selected a game.
+<li>Fixed bug in the Win9x/ME native client wherein an insufficient buffer size was preventing games such as Quake and Abuse from working correctly when connecting to each other or to a DOSBox client that setup the in-game multiplayer game.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.5</strong> - 2024/08/29<ul class="plaintext">
+<li>Fixed bug in Win9x/ME native client wherein setting a custom path for game customization files would result in an invalid path and not copy custom files to the associated game path and write a bad filename to the game customization's cache file.  NOTE:  You will want to run the rebuild cache process from the game customizations screen.</li>
+<li>Added option to allow disabling the reminder to run a game's setup program before joining a game room when choosing "No" when asked to run a game's setup program after adding a new game for the first time.  This new option is located on the Games tab of the configuration screen.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.4</strong> - 2024/08/27<ul class="plaintext">
+<li>Fixed a bug in the Win9x/ME native client wherein the configuration screen could cause an access violation when getting a list of network adapaters in certain scenerios.</li>
+<li>The user game add/edit screen will now prevent you from saving if you have not selected a game or a valid path to the game has not been selected.</li>
+<li>Fixed issue where a user changing their display name was causing the online user count in everyone else's client to be incorrect.  This was due to the client renaming the original user's display name to the new one when the name change notice was received, but then the client couldn't find the user when they disconnected from IRC.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.3</strong> - 2024/08/24<ul class="plaintext">
+<li>Fixed type-o of the alert message informing the user a theme preset has been loaded successfully.</li>
+<li>Added Adam Duzy's theme preset files to the installation.</li>
+<li>Added Mode column header to selected mods list of the user game custom screen in the Win2k+ clients and to the available and selected mods lists of the user game custom screen in the Win9x/ME/NT4 clients.</li>
+<li>Updated the prompt asking to run a game's setup program after adding it to a profile to be more clear it SHOULD be run.  If the user chooses "No" it will display a message reminding them to run it before they join a game room.<br><br><strong>NOTE</strong>:  When adding GOG or Steam packaged games it's extremely recommended to do this since their DOSBox settings are not consistent and they use varying versions of mainline DOSBox which likely won't be the same as your default settings or the settings available to DOSBox Staging.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.2</strong> - 2024/08/24<ul class="plaintext">
+<li>Fixed bug wherein accessing the servers screen afer logging out and back in would cause an access violoation due to the servers screen being freed when logging out.</li>
+<li>Fixed bug causing crashes when accessing the server stats screen.</li>
+<li>Added Mode column header to selected mods list of the gameroom create/edit screen in the Win2k+ clients and to the available and selected mods lists of the gameroom create/edit screen in the Win9x/ME/NT4 clients.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.1</strong> - 2024/08/21<ul class="plaintext">
+<li>Fixed a bug related to empty JSON arrays or objects that was causing an access violation when attempting to run a game using mods when the mods didn't need to be synchronized (ie: they were already up-to-date locally).</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.30.0</strong> - 2024/08/21<ul class="plaintext">
+<li>New logo, icon, splash screen and button icons!  Big thanks to OpenRift, THEBaratusII and ZNukem for collaborating on this effort.</li>
+<li>Windows 95, 98 and ME are now supported!<ul>
+  <li>100% native, no DOSBox required.</li>
+  <li>All features supported except audio chat and serial games (serial games could be a future addition -- But it might not be technically possible).</li>
+  <li>Includes and installs the Winsock 2 update for Windows 95 (Will ask) if Winsock 2 is not already installed.</li>
+  <li>DAEMON Tools is included and installed (if not already installed and you say yes when asked to install it).  It is used to mount CD images with CD audio playback.  Make sure to disable auto insert notification on the CD drive used by DAEMON Tools. (via the Windows Device Manager)</li>
+  <li>Cross-play with DOSBox based clients.</li>
+  <li>Game customization files will be copied to the appropriate paths of the the selected game and cleaned up (deleted) afterwards if the option to do so is turned on.  This new option is located under the Games tab of the configuration screen and defaults to on.  If performance becomes an issue this option can be turned off.  Even when this option is off standalone game customizations will always be cleaned up due to the need to backup any files in the game folder that are part of the base game files.</li>
+  <li>User game profiles and user games have an option to disable mouse acceleration for games if Windows mouse acceleration causes issues.  The user game screen when adding a new game will default the value set in the user game profile.</li>
+  <li>User games can be configured to slow down the game for games that may run too fast on more modern machines using the DOS utility SLOWDOWN.COM.  There is a separate tab which allows for detecting CPU Speeds (slowdown units and setting the values which will work for their PC.</li></ul>
+</li>
+<li>Windows NT 4 is now supported!  This edition uses DOSBox SVN just like Windows 2000 and XP.  It supports all the features except TeamSpeak audio chat.</li>
+<li>Windows 95, 98 and ME are also now supported with a DOSBox edition that also supports all the features except TeamSpeak audio chat.  This edition uses DOSBOX SVN.  NOTE: It can be installed at the same time as the native client, but one client can still only be running at a time.</li>
+<li>The "I will be the server" option (or the misnamed P2P option) when used will now spawn an instance of a CGA server instead of using DOSBox as the server.<ul>
+  <li>This will allow for cross-play between DOSBox and native Win9x/ME clients when self hosting a game.</li>
+  <li>Supported under Win9x/ME with cross-play with DOSBox based clients.</li>
+  <li>The user profile config now has a section on the main tab named "Local Server Ports" with a new port added, "Sync", and the relay ports have been renamed "IPX" and "Serial" all with their respective protocols in perenthesis.</li>
+  <li>The default ports for the local server have been updated to match the CGA server default ports where the sync port will now be 6000 (TCP) and the relay port will now be 10450 (UDP for IPX and TCP for Serial).</li>
+  <li>The backend data for these ports has been updated to the defaults for all users if they had not been changed from the prior defaults.</li>
+  <li>The new default port for the IPX relay server will also correct an issue under linux where port 213 is not allowed to be opened by user applications. (ie: For users using WINE to run the client under Linux.)</li>
+  <li>The "Peer-to-peer" option listed in the game room info list will now be displayed as "Dedicated" with the same values of yes or no.</li>
+  <li>Renamed the option on the "Games" configuration screen tab for auto launching your game when creating a P2P game room to read a "non-dedicated server" game room instead of "P2P game room".</li></ul>
+</li>
+<li>Self-hosted (ie: non-dedicated server) game rooms can now use audio chat.<ul>
+  <li>Supported on Windows XP+.</li>
+  <li>Limited to 32 players.  Currently only affects the game Burnout Championship Drag Racing with its 64 max player count.  If more slots are needed you will have to run a dedicated server with a TeamSpeak SDK server license which grants more slots.</li>
+  <li>An "Audio Chat" port is configurable under the local server ports section of the user profiles screen.  It defaults to 9987 (UDP).</li></ul>
+</li>
+<li>Updated server ping process to ping until it receives a response at a short interval (100ms) up to the timeout amount (2s).</li>
+<li>Added some exception handling to the internal HTTP interface logic to help guard against potential crashes.</li>
+<li>Updated the HTTP interface to return the status error text message, such as "Service is unavailable" instead of the HTML content.</li>
+<li>Updated the Windows 2k/xp installers to include the correct DOSBox config file for DOSBox SVN-lfn.</li>
+<li>Updated the scenario when the logged on from another location notice is received and a game is running to now shutdown the running game before logging out.</li>
+<li>Fixed bug where non-dedicated server game rooms were resetting the temp max nodes when the owner started the game and set the server to online.
+<li>Fixed bug where non-owners of non-dedicated server game rooms would receive the notification in chat that they could change the temp max nodes.
+<li>The launch button in non-dedicated server game rooms will now disable for non-owner players when the server is stopped.</li>
+<li>Fixed bug where players in a non-dedicated server game room who are not the room owner were auto setting the temp max players to the number of the people in the room instead of using the max players of the room set by the owner running the server.</li>
+<li>Non-dedicated server game room owners will not auto set the max players when clicking launch after restarting their game after they stop their server.</li>
+<li>Beta builds will now setup the protocol handler cgabeta:// from the beta installers and will work independently from the live cga:// protocol handler.</li>
+<li>Added GOG profile for Mortal Kombat 3 and updated the max player count for MK3 to 12.</li>
+<li>Fixed bug wherein Windows XP and below would not restart or shutdown if the client was running due to its minimize on close setting.</li>
+<li>Added GOG profile for Elder Scrolls: Battlespire.</li>
+<li>Fixed bug wherein the CD image path set in the user game profile was not defaulting in the CD image selection dialog of the user game add/edit screen.</li>
+<li>Fixed bug wherein the game path edit box and game path select button and CD image selection button was always enabled on the user game add/edit screen.</li>
+<li>Updated the user game add/edit screen to always default the configuration type drop down to the first item that's added to it and to disable it if there is only one item to choose from.</li>
+<li>Updated the configuration screen to always open modally to prevent it from falling behind the main screen and allowing multiple copies of it to open.</li>
+<li>Updated the what's new screen to always open modally to prevent it from falling behind the main screen and allowing multiple copies of it to open.</li>
+<li>Fixed issue with client/server games (RoTT and NetKeen) where multiple players were being set as the server when connecting simultaneously too fast.  The owner of the room will always be set as the server now.</li>
+<li>Fixed bug where the LFG dialog would throw and index out of bounds error if going to select a game from the list and you don't actually select one.</li>
+<li>Fixed the enabling of the OK button on the LFG dialog when selecting a specific game to enable when a game is selected and if it's different than the currently selected game.</li>
+<li>Updated the launch button on the game room screen to use a differnt button control which allows for using an image with an enabled state and disabled state so the whole image is now the button.  The cursor will also change to the hand point when it's enabled.</li>
+<li>The audio chat column will no longer be displayed in the game room lobby list on clients that do not support audio chat.</li>
+<li>The allow audio chat option is no longer available on the game room create/edit screen to clients that do not support audio chat.</li>
+<li>The default allow audio chat option is no longer enabled on the config screen for clients that do not support audio chat.</li>
+<li>Added a delete button to the custom tab of game room create/edit screen and the user game custom screen to allow deleting game customizations.</li>
+<li>Fixed the popup menu on the display name section to read "Change Display Name" instead of "Change Global Handle".</li>
+<li>Main GUI refactoring.<ul>
+  <li>Removed the status screen which pops up when changing profiles.</li>
+  <li>Updated the level XP bar to display the user display name level on top of it.</li>
+  <li>Removed the game room drop down list.</li>
+  <li>The game room lobby, my games and entered game rooms can now be accessed via tabs above game room area.</li>
+  <li>Removed the My Games and Lobby buttons above the game room lobby.</li>
+  <li>Updated the status info to a status bar with size grip.</li>
+  <li>Removed the dedicated leave game room button and added an X button to the game room screen.</li>
+  <li>Removed the dedicated leave chat room button and added an X button to the chat room screen.</li>
+  <li>Moved the online player count and entered room count panels to below the bottom right users list.</li>
+  <li>Removed the chat lobby add user room button and previous and next button.
+  <li>Removed the chat lobby button.</li>
+  <li>Removed the chat room drop down list.</li>
+  <li>The lobby chat, user chat rooms and entered chat rooms can now be accessed via tabs above chat room area.</li>
+  <li>Moved the game room lobby, my games, chat room lobby and user chat room controls above their respective areas.</li>
+  <li>Moved the available chat rooms drop down list below the chat lobby user list and updated the first element to read "[Available Chat Rooms]".</li>
+  <li>Removed the enter button from the game room button bar and rearranged the buttons.</li>
+  <li>Moved the LFG button to the game room button bar.</li>
+  <li>Moved the user avatar and level info inside the chat looby tab to the left of the message entry box.</li>
+  <li>Moved the online status icon of the user to sit atop the user avatar.</li>
+  <li>Moved the user game profile drop down list into the main button bar on the my games tab.</li>
+  <li>Removed the resizing splitters on the chat room screens between the chat log and users list.</li>
+  <li>Removed the resizing splitter between the game room list and game room info panel.</li>
+  <li>Removed the resizing splitter between the user game list and game info panel.</li>
+  <li>Reduced the minimum and default height of the main screen to 550 pixels.
+  <li>Removed the enter user chat room button and rearranged the buttons.</li>
+  <li>Corrected a lot of the button hints throughout the client.</li>
+  <li>Updated the game room info panel to be hidden and will only display when clicking any of the info buttons.  Clicking the same button again will hide it.  The list also has a context menu with a hide menu item.</li>
+  <li>Updated the user game info panel to be hidden and will only display when clicking any of the info buttons.  Clicking the same button again will hide it.  The list also has a context menu with a hide menu item.</li>
+  <li>Moved the game room and user game info buttons to their respective screen's button bars.</li>
+  <li>All buttons on the main, game room and chat room screens have been updated with icons and the text removed.</li></ul>
+</li>
+<li>Updated startup process to not show the main screen until after the splash screen closes.</li>
+<li>Added support for Windows XP themes!  Includes 39 pre-built themes!  Supported
+<li>Font and background color customization for most of the GUI controls has also been added on the interface section of the configutation screen.  These options can be used in conjunction with or without runtime themes.  Supported in all versions.</li>
+<li>Options to save and load theme presets has been added below the control color customization options.  Presets include both the selected runtime theme and color settings.</li>
+<li>When the client first starts it will ask (only once) if you want to switch to the new default theme settings.  It you say yes, it will ask if you are using a CRT monitor.  If yes, the default theme for a CRT monitor is adjusted to the same on a CRT as it does on an LCD.</li>
+<li>Fixed flickering and slow redraw when using splitter between game rooms and lobby chat in modern client (when not using runtime themes or under Win2k).</li>
+<li>Added a "switch to" button to the user game profiles screen allowing you to switch to a different profile.</li>
+<li>Updated the Windows 2000/XP clients to hide the donoate button on the about screen, help menu item and tray menu item.</li>
+<li>Updated the Windows 2000/XP clients to hide the Discord help menu items.</li>
+<li>Updated the Windows 2000 client to hide the TeamSpeak website help menu item.</li>
+<li>Removed the option to enable/disable the DOSBox console.  The DOSBox console will now always be used, but the client will now capture and logs its output as well as close the console window automatically.</li>
+<li>The DOSBox console always on update required making a change to DOSBox SVN-lfn and the source code changes for it are unavailable so I reverted to its base SVN revision of r4336 in order to recompile DOSBox.  Windows 2000/XP now use DOSBox SVN r4336 without the "lfn" features, but they weren't being used for anything anywy.  The main feature that was being used was folder overlays and they are in this revision.</li>
+<li>The stat tracking initialization speed (for DOSBox clients) has been dramatically improved.  The time to initialize is essentially instant and seemless.  There is also no longer a wait poll as part of the DOSBox game startup.</li>
+<li>Fixed a scenario where the client might not log into the chat server upon auto logging in and render the client disabled.</li>
+<li>Removed the DOSBox tab from the configuration screen and moved the DOSBox debug mode option to the Games tab and renamed it "Enable Debug Mode".</li>
+<li>Added option to disable showing XP and level up notifications in the chat lobby and game room chat.</li>
+<li>Added Chasm: The Rift GOG profile.</li>
+<li>The game log will now log to a file named game.log in the root of the game data folder.  The game log can now be opened and view at anytime now from the Logs screen.</li>
+<li>There is a now a global system log which will write to a file named system.log in the root of the game data folder.  The system log can be viewed from the System tab of the Logs screen.</li>
+<li>The game and system log files will be cleared on client start-up.</li>
+<li>Added a main menu item under Games to open the game log with a shortcut of Shift+Ctrl+L.  The Log menu item under the View main menu item has been renamed "System Log" and will open the logs screen and show the system log page.</li>
+<li>Implemented IPX packet compression for both DOSBox clients and the Win9x/ME native client.</li>
+<li>The IPX client will now connect to the IPX relay server instantly without  having to wait for other clients to synchronize their connections.</li>
+<li>Added alternate Powerslave/Exhumed EXEs which fix some playability issues. The included EXEs will be named CPS.EXE and CEX.EXE when copied to the game folder and won't overwrite the original EXEs.</li>
+<li>Added support for IndyCar Racing.</li>
+<li>Added support for IndyCar Racing II.</li>
+<li>Added support for In Pursuit of Greed.</li>
+<li>When running the client in configuration mode the configuration screen will now show on the taskbar.</li>
+<li>Updated the user chat room filter label to enable and disable when the filter dropdown does.</li>
+<li>Moved the audio chat options on the config screen into corresponding tabs for capture and playback settings and reduced the overall height of the screen to 550 pixels.</li>
+<li>Updated installers to only allow installing on their respective Windows versions.</li>
+<li>Added game options for Mortal Kombat 3.  Doing this required updating the option list creation process to determine the correct width of the checkbox options based on the text so the text of the checkboxes would not get cut off.</li>
+<li>Added a GOG profile for Command HQ (Serial).  NOTE: This version of the game is only the 1.0 version while there is at least a 2.23 version with working IPX network support.  I posted in the GOG game forum about this:<br><a href="https://www.gog.com/forum/command_hq/most_recent_version_of_the_game">https://www.gog.com/forum/command_hq/most_recent_version_of_the_game</a></li>
+<li>Added the "Mode" field to game customization list on the game customization list screen, game room create/edit screen and user game custom screen.</li>
+<li>Updated the game customization list columns on the game customizations screen to be sortable when clicked.  The same has been done on the game room  create/edit and user game custom screen.</li>
+<li>Added Quake Steam profile.</li>
+<li>Added Quake expansions, Scourge of Armagon and Dissolution of Eternity.  User maps can be setup for these expansions.</li>
+<li>Added GOG and Steam profiles for Quake expansions.  NOTE: The Steam release of Quake and its expansions does not include the CD image so will not have CD audio.</li>
+<li>Added Steam profile for Operation Body Count.</li>
+<li>Added Steam profile for Last Rites.</li>
+<li>CGA Servers retrieved by the client will now have a ping port listed instead of an admin port unless you are viewing your own servers as the ping port is no longer the same port as the admin port.</li>
+<li>The CGA server admin server and the connection from the client to admin your own servers now uses TCP instead of UDP.</li>
+<li>Added a GOG profile for Dark Legions.</li>
+<li>Fixed a race condition in the async TCP client disconnect logic that was potentially causing crashes when disconnecting from a server or being disconnected from a server in the Windows NT based clients, but definitely causing issues in the Win9x/ME clients.</li>
+<li>Complete overhaul of backend framework (Prometheus WDE) which has increased API performance by reducing request handling time and reducing response time.</li>
+<li>Enabled dynamic content compression on backend webserver to reduce the size of API responses.</li>
+<li>Added support for NetMech (MechWarrior 2 multiplayer support).  It's listed as MechWarrior 2: NetMech.  NOTE:  It requires the MechWarrior 2 CD in order to be able to host a multiplayer game.</li>
+<li>Updated the my games list to no longer enable the play button for any games that do not have a single play EXE.  So far NetMech is the only one.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.29.0</strong> - 2024/02/09<ul class="plaintext">
+<li>Fixed access violation error when a game room update notice is received and the temp max players dropdown list box doesn't exist on the game room screen.</li>
+<li>Added a modified ROTTIPX.EXE to the installation package for Rise of the Triad multiplayer games.  It sets the tic rate to 2 in order to resolve its latency issues and prevents the game from eventually stalling when the first player runs as the server.  The EXE will not be overwritten in the game folder as it will be named CROTTIPX.EXE when copied.</li>  
+<li>Rise of the Triad will no longer spawn a separate instance for the server now that a modified ROTTIPX.EXE is now being used.</li>
+<li>Fixed bug wherein changing a dedicated server game room to a self-hosted game room was throwing an error stating the game room no longer exists.</li>  
+<li>The notice that you need to start the game for your self-hosted game room to be available to other players will be displayed after changing the settings.</li>
+<li>Fixed backend bug causing an invalid game object error when trying to rate a mod.</li>
+<li>Added a "Downloaded" filter to the game mods/maps list screen and to the game room create/edit screen.</li>
+<li>Added a new setting to mods/maps named "Mode" which has the values "Live" and "Testing".  A filter for this setting has been added to the game mods/maps list screen and the game room create/edit screen.</li>
+<li>Fixed access violation error when changing between the game list items too fast in the games mods/maps list screen.</li>
+<li>Mods for Duke Nukem 3D, Redneck Rampage, Redneck Rampage Rides Again, NAM and WWII:GI have now been setup to allow selecting map files and no longer has a separate maps setup/selection.</li>
+<li>Corrected the about screen to no longer display the DOSBox SVN-lfn version for builds using DOSBox Staging (Vista+).</li>
+<li>Game mods/maps will now be referred to collectively as "Game Customizations" and the list screen and menu items have been updated accordingly.</li>
+<li>The game list in the game customizations screen is no longer a tree view and all mods/maps will be displayed in the customization list.</li>
+<li>The customization type can now also be set when adding a new game customization, however, for all games except Shadow Warrior and Quake this field will either default to "Modification" or "User Map" and cannot be changed.  When editing a Shadow Warrior or Quake customization this field cannot be changed.</li>
+<li>When adding/editing a game customization there is now a category selection which can be one of the follow values, depending on the customization type (ie: mod or map), "Mods", "Maps", "Mods & Maps", "Sounds", "Music", "Sounds & Music" or "Total Conversion".  If the customization type is set to "User Map" the category will be set to "Maps" and cannot be changed.</li>
+<li>Added a "Type" and "Category" filter to the game customizations list screen.</li>
+<li>Removed the author field from the customization list and moved it to the description header panel if one exists.</li>
+<li>The custom column of the game room lobby list will now just say "Yes" or "No" and the info list will display "Custom" with "Yes or "No" instead of "Maps" and "Mods".</li>
+<li>Reorganized the game room create/edit screen using a tab control and the main game room setup is now on the "Setup" tab, the options are now on the "Options" tab, and if the game had cusomtizations the Mods/Maps selection are now done on the "Custom" tab.  The options and custom tabs will only be visible if the selected game has options or customizations.</li>
+<li>The new custom tab of the game room create/edit screen has been updated to have all the same columns for each customization as the game customizations list screen and all the new filters have also been added.</li>
+<li>The mod/maps details panel of the game room/creat edit screen has been removed and the description field has been moved below the selected game customizations.  The original author, if one is set, will be displayed in the description header panel just like the game customizations screen.</li>
+<li>The game room create/edit screen has been enlarged to a fixed size and no longer expands if a game has customizations.</li>
+<li>The user game custom screen has had all the same updates made to it that the game room create/edit screen has.</li>
+<li>The names of the game customizations in the game customizations list screen, game room create/edit screen and the user game custom screen will now display the number of files in brackets to the left of the name if the game has a selected file count limit.  (ie: Doom engine games with a 19 WAD file limit)</li>
+<li>When selecting game customizations in the game room create/edit screen or the user game custom screen standalone mods will now be properly enforced.</li>
+<li>Converted backend IRC message relay system to use TCP instead of UDP to ensure messages are transmitted and received properly.  Should resolve sporadic issues related to game rooms not updating in real-time or auto launch not properly informing all clients to launch a game.</li>
+<li>Corrected an issue in the client wherein the user's online status wasn't always being set to offline.</li>
+<li>Corrected an issue where a user's online status was not always beiung set to online.  This will resolve a sporadic issue where the launch button in auto launch rooms wasn't always enabling when enough players were in the room.</li>
+<li>Added alternate EXE for Strife which corrects a net play issue and weapon issue when using the mouse.  This EXE is named STRIFNET.EXE and will not overwrite the original strife1.exe.  Also included is DOS4GW.EXE as it requires it to run.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.28.1</strong> - 2023/12/14<ul class="plaintext">
+<li>Fixed bug wherein the DeHacked INI files were no longer being processed since the overlay folder for mods was being mounted after the dehacked command.  The overlay folder will now be mounted before the call to dehacked.</li>
+<li>Updated the client to write the generated DOSBox config file to the game path instead of the user's Windows profile folder to workaround the bug in DOSBox Staging which is preventing it from handling paths with Unicode in them.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.28.0</strong> - 2023/11/20<ul class="plaintext">
+<li>Fixed minor bug wherein the game room launch process would attempt to set the temporary max players to 1 if there was only one player in the room and they clicked launch.</li>
+<li>Removed the DC Offset PC Speaker option from the audio configuration tab of the user profile and user game screens since it's no longer an option in DOSBox Staging.</li>
+<li>DOSBox settings no longer supported by DOSBox Staging will not be written to the configuration file.  The client has been updated to conditionally write the options for DOSBox Staging (Vista+) and DOSBox SVN-lfn (Win2k/XP).</li>
+<li>The user game profile and user game screen will now disable/enable only the controls corresponding to the DOSBox version used by the client.</li>
+<li>The client will now set the memory size for DOSBox to 31 or 63 when it's configured to be 32 or 64 respectively as to prevent DOSBox from complaining.</li>
+<li>Fixed bug wherein mods that were downloaded when launching a game weren't being hashed due to the fully qualified path to the filename not being passed to the cache function and resulting in an error stating the zip file could not be found.</li>
+<li>Fixed bug wherein the game room create button on the lobby screen would not enable after adding a game to a newly created game profile for a new user.</li>
+<li>The "My Games" button and game room dropdown box will now disable after logging out.</li>
+<li>Windows 2000 is now supported!  This version uses DOSBox SVN-lfn.  Audio chat via TeamSpeak is not supported.</li>
+<li>Windows XP is now supported!  This version uses DOSBox SVN-lfn.  All features are supported.</li>
+<li>Reverted the changes made for ACE Engine mods and added a new option to the mod/map add/edit screen to allow flagging a mod as being ACE compatible.  When adding mods to a game room or single player custom setup if an ACE mod is already added to the selected mods list and you attempt to add a non-ACE compatible mod you will be asked if you really want to add it to the list or not and vise versa.</li>
+<li>When using an ACE Engine mod, stat tracking will be disabled (for now).</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.27.0</strong> - 2023/11/15<ul class="plaintext">
+<li>Added support for 7 Colors puzzle game.</li>
+<li>Added support for Dungeon Keeper: Deeper Dungeons and its GOG profile.</li>
+<li>Fixed A/V error when opening the game list screen for the first time and a new game had been added to the backend database.</li>
+<li>Removed the deactivate/reactivate process for temporary game rooms since they now expire after 24 hours.  This also eliminated the bug wherein players were being kicked from game rooms when they became deactivated.</li>
+<li>Updated game room allow enter logic for games that must wait on all players (ie: Doom, Duke3D, etc.) to allow entry as long as the number of players in the room is less than the max players.</li>
+<li>Game rooms for games that must wait on all players, temporary or permanent, auto launch or not, will now auto set the temporary max players or reset to max players based on the number of players in the room.  You can still manually set the temp player count, but you don't have to now.</li>
+<li>Cleaned up logic around enabling/disabling the launch game button in the game room screen.  There where some scenarios where it could enable when it should not.</li>
+<li>Added a menu item under "Games" and a button on the my games screen to update the main game list.</li>
+<li>Added country and ping to the server list on the game room create screen.</li>
+<li>Added country to the server list screen.</li>
+<li>Columns on the server list screen are now sortable.</li>
+<li>Added "ACE Engine Mod" checkbox to the game mod add/edit screen.  When checking it, it will disable and uncheck the "Requires Exe Hack" checkbox. If these games have the "No Vertical Mouse" option selected in their configs it will be ingorned when running the game.  When selecing mods from the game room create/edit screen and single player custom screen you won't be able to mix ACE Engine mods and mods the require and EXE hack. This new option applies to Doom II and Final Doom.</li>
+<li>Duke Nukem 3D: Atomic Edition mods can now be configured as "standalone" if they have files the same name as the base game files.  If the mod has a custom CFG file it can now be selected in the mod setup and passed in on the command line using -setupfile switch.</li>
+<li>The custom cache will now cache the hash values of the zip files so that each mod/map can be shown as needing to be updated or not.  There is a new column in the list labelled "Update?" which will say "Yes" or "No" and any mod/map that needs to be updated will be colored red.  The cache will rebuild the first time starting the client after this update.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.26.1</strong> - 2023/11/09<ul class="plaintext">
+<li>Corrected the custom overlay mount from mounting twice for games that use mods that can use DeHacked or DeuSF.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.26.0</strong> - 2023/11/09<ul class="plaintext">
+<li>Fixed minor bug where the game dropdown list on the user game add screen was displaying newly added games at the end if the list after refreshing the game list in the game list screen or using the reset data cache function in the configuration screen.  The dropdown was not sorting its entries, but is now.</li>
+<li>Added support for Stunt Driver.</li>
+<li>Added support for A.D Cop.</li>
+<li>Added support for NCAA Championship Basketball.</li>
+<li>Added support for Madden NFL '97.</li>
+<li>Updated the mod/map mouting logic to no longer allow for some games to mount an X: drive and instead just mount the custom folder as an overlay.  This is related to the following games: Ultimate Doom, Rise of the Triad: Dark War, Heretic: Shadow of the Serpent Riders, Doom II: Hell On Earth, HeXen: Beyond Heretic, Strife, Chasm: The Rift, Final Doom (TNT: Evilution), Final Doom (The Plutonia Experiment)</li>
+<li>Fixed issues with ROTT map files either not being found or not loading after running the game once.</li>
+<li>You can now map virtual CD drives to drive X.</li>
+<li>Updated the Rise of the Triad: Dark War mod configuration to use the &lt;a trick that the Doom Engine games use to load mods and skip the warning that the game has been modified.</li>
+<li>Updated Rise of the Triad: Dark War mods to allow maps and map files can be setup as a mod and just selecting the RTC file in the zip.  The existing maps have been updated to be mods.</li>
+<li>The ROTT.ROT file which sets up the custom map file will now be deleted after DOSBox closes to clean up properly.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.25.0</strong> - 2023/11/03<ul class="plaintext">
+<li>Fixed bug where editing a game's setup would clear its single player custom setup (mods/maps) locally, preventing selected mods/maps from displaying in the edit window.</li>
+<li>Updated the "Refresh All" button on the servers screen and the refresh servers button on the game room create screen to delete the server cache file before requesting the server list.</li>
+<li>Updated the "Refresh" button on the game list screen to delete the games cache file before requesting the games list.</li>
+<li>Added a button labeled "Reset Data Cache" to the general tab of the configuration screen if you want to delete and refresh the client's downloaded data it caches suchs as games, servers, etc.</li>
+<li>Added support for Network Q RAC Rally Championship.  This required client code to generate the config file located at VAR\RALLYC.ZOG in order to config the CD drive letter.</li>
+<li>Fixed bug related to game config profiles (ie: Steam, GOG) where a game with a DOS subfolder wouldn't be mounted properly if the subfolder was in the base folder in some way.  For example, Caramageddon's GOG profile has a DOS subfolder of CARMA and the base game folder is "Carmageddon Max Pack".</li>
+<li>Fixed bug where a game config profile wasn't properly mounting the CD if the game base path was set to the DOS subfolder instead of the base path.</li>
+<li>Added Strife GOG profile.</li>
+<li>Added Quake GOG profile.</li>
+<li>Added Heretic: Shadow of the Serpent Riders GOG profile.</li>
+<li>Added HeXen: Beyond Heretic GOG profile.</li>
+<li>Added HeXen: Death Kings of the Dark Citadel GOG profile.</li>
+<li>Fixed the Battle Isle 2 (Scenery CD) GOG profile with its proper DOS subfolder.</li>
+<li>Fixed issue where the config file for Doom Engine games using DeHacked or DeuSF would not be copied back to the game folder after DOSBox closes.</li>
+<li>Updated the configuration for NAM to copy its EXE back to the game folder in the event it is updated using the Build Mouse Fix and is saved to an overlay folder.</li>
+<li>Updated Blood (Cryptic Passage), HeXen and Rise of the Triad to copy and remove the files they modify during runtime from the custom overlay folder.</li>
+<li>Fixed issue where a game room could be removed from the main listing after receiving an update notification and an error occurred trying to request the updated game room data.  A game room will now only be removed in this scenario if the game room no longer exists.</li>
+<li>Blood (Cryptic Passage) will now use BLOOD.EXE when applying the Build Mouse Fix instead of trying to modify CRYPTIC.EXE which fails.</li>
+<li>Updated Doom Engine games to update the game config in-place in order to set the autorun value and revert it in-place instead of backing up the config and restoring it.  This will prevent losing any changes made to game settings while playing.</li>
+<li>The autorun setting for Doom Engine games can now be set/unset while running the corresponding setup program.</li>
+<li>Added a right-click context menu to the game mod list screen's mod list frame.</li>
+<li>Added Multiplayer and Single Player filters to the mods/maps list on the mods/maps screen and moved the Owner filter to the bottom of the list with the new filters.</li>
+<li>Added Multiplayer and Single Player mod/map filters to the game room create/edit screen.</li>
+<li>Added a link to the DOSBox Staging website in the Help main menu.</li>
+<li>Updated the mods/maps system to locally store a cache file for each mod/map which contains a list of the files extracted and the original zip file name.</li>
+<li>The game mods & maps screen will now denote whether mods or maps have been downloaded or not and will be bolded if they have and the new column "DL" will say "Yes" or "No".</li>
+<li>You can now delete the local files for mods/maps from the game mods & maps screen.  Individually or multiple at one time.</li>
+<li>When running a game with mods or maps and any of those mods or maps have been changed by the owner their local files will now be cleaned up before re-downloading and extracting.</li>
+<li>The local mod/map cache will now also be maintained when adding, editing or deleting from the game mod & maps screen.</li>
+<li>Fixed a bug wherein editing a mod or map and updating using a new zip filename wouldn't update the filename of the local object leading to the client asking if you want to download the missing zip file when trying to edit the object before refreshig the list.</li>
+<li>When adding a new mod or map from the game mods & maps screen the entire list will no longer be refreshed, the new object will just be added to the list.</li>
+<li>Updated mod/map zip extract process to also remove hidden and system file attributes.  The mod called "Airquake" for Quake has a file named "DESCRIPT.ION" which is set to hidden and can cause the same issues as the files that were flagged as read-only.  If you have this mod downloaded you will need to delete this file and re-download the mod so it corrects the local file.</li>
+<li>Fixed issue with LZMA decompression wherein it was calling the OnProgress event handler of its parent class multiple times when it should not have been and in some cases passing a filename without the full extracted path which could lead to an error being thrown when trying to reset the file attributes due the file not existing.  The map "$4,000,000 Map" for "C&C: Red Alert - Aftermath" was having this issue.</li>
+<li>If the local mod/map cache has not been built the client will download a list of all active mods/maps and build the cache for any files that have already been downloaded prior to this update upon client startup.</li>
+<li>The mod/map cache can be force rebuilt from the Game Mods & Maps screen by using the "Rebuild Cache" button next to the "Refresh" button above the game tree view.</li>
+<li>Fixed bug with the game refresh button on the game mods and maps screen wherein if a node was selected in the tree it would systematically select all nodes prior to it consequently refreshing the mod list on every node.</li>
+<li>Updated the game mod/map create/edit screen to perform the upload and copy to cache and extract process in a separate thread so it doesn't lock up the UI when working with large files.  If an error occurs trying to copy the zip to your custom cache or extracting the file the added object is now removed from the cloud.</li>
+<li>Fixed the tab order of the controls on the game mod/map create/edit screen.</li>
+<li>Code cleanup to facilitate a beta test build.</li>
+<li>Beta build of the client will now use a separate user config folder to save its settings (.cgaclient_beta).</li>
+<li>Beta build of the client will now work independently of the live client.  This will allow for running both the beta and live client together.</li>
+<li>Updated the about and splash screen to display a label with "Beta!" under the title and version in the beta build.  The application title and main form will also have "[Beta]" appended to it.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.24.0</strong> - 2023/10/09<ul class="plaintext">
+<li>Updated game room copy URL buttons to use new link format which now links to the website instead of a direct protocol url.</li>
+<li>Fixed bug wherein trying to run a single player game using a mod/map that had not been downloaded yet would cause an access violation (was introduced in last update).</li>
+<li>Added support for Z.A.R. Mission Pack.  Note that this game is only in Russian.</li>
+<li>Updated the message when trying to enter a game room for a game you do not have configured and your currently selected game profile's config type (ie: GOG, Steam) is not supported by the game.  It will now state what the current profile config type is and what config types the game supports.</li>
+<li>Added support for NASCAR Racing.</li>
+<li>Added support for NASCAR Racing 2.  This game required client code to handle the fact that it cannot be run from a root directory such as "C:\" so the client will mount the game to the configured path + "..\" then CD to the subfolder the game is in before running it.  If the main game folder is longer than 8 characters the client will automatically use the long folder notation such as NASCAR~1. (whatever the first 6 characters are + "~1")</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.23.0</strong> - 2023/10/08<ul class="plaintext">
+<li>Fixed issue where the client was no longer properly auto reconnecting to the chat server if the chat server dropped the connection.</li>
+<li>Fixed bug wherein the user's online status was not being updated when logging out.</li>
+<li>Refactored code related to game rooms and the main game room lobby list view which should resolve most of the "Index out of bounds" errors.  This also resolved similar errors when switching to another Windows user account and back to the previous account, re-entering windows after locking/sleeping the computer as well as another scenario if you had a game room selected in the lobby view and game rooms where automatically added or removed via real-time notications.</li>
+<li>Fixed issues with other list views causing "Index out of bounds" errors when switching to another Windows user account and back to the previous account or re-entering windows after locking/sleeping the computer.</li>
+<li>Renamed the "Room" button on chat rooms to "Online".</li>
+<li>Added option to the configuration screen under the Games tab to set a default game room filter.</li>
+<li>Game room filter will now default to "All Rooms".</li>
+<li>Renamed game room filter "Rooms on Your Servers" to "Rooms on My Servers".</li>
+<li>Added game room filter "All for My Games" which will display all game rooms regardless of availability for all your configured games.</li>
+<li>Fixed issue with game rooms not adding, updating or deleting from the main game room list based on the selected game room filters from real-time notifications.</li>
+<li>Added configuration option under the Games tab of the configuration screen to default "Allow Audio Chat" to on or not when creating games rooms.  It defaults to off.</li>
+<li>Moved the P2P warning message to a game room creator that the game must be launched before the room becomes visible to other players to below the game options listing in the chat window.</li>
+<li>Moved the message to a game room creator that they may change the max number of players to below the game options listing in the chat window.</li>
+<li>Moved the message stating that a game is in progress with a temporary lowered player count to below the game options listing in the chat window.</li>
+<li>P2P game rooms will now be announced to the chat lobby and Discord afer the owner launches the game and their client connects to the game room.</li>
+<li>Fixed bug wherein a P2P game room would be created with auto launch enabled if a dedicated server was selected before the P2P server option was selected.</li>
+<li>Fixed bug where offline P2P game rooms would disappear from the owner's game room list when refreshing the game room list.</li>  
+<li>Fixed bug where an access violation would be thrown when selecting the game room filter "Rooms on My Servers" and you have created P2P rooms.</li>
+<li>You can now use the delete key to delete game rooms.</li>
+<li>You can now use the delete key to delete user chat rooms.</li>
+<li>P2P game rooms are now linked to the user game profile they were created under and when the P2P ports of a user game profile are changed the associated P2P game room relay ports will be updated.</li>
+<li>Added an option under the Games tab of the configuration screen to allow auto launching the game of a P2P game room when creating it.</li>
+<li>Reworked Windows suspend/resume event handler logic to completely logout and then log back in instead of just disconnecting/reconnecting to the chat server.  This also resolves some issues if the user logged in from another location while the suspended system was offline and then brought back online.</li>
+<li>Fixed issue where logging in after logging out was not always re-enabling the chat room drop down.</li>
+<li>Removed the back/forward game room buttons.</li>
+<li>Added a "My Games" button to the gamme room lobby control bar.</li>
+<li>Added labels to the "Rooms" and "Profiles" game room dropdowns.</li>
+<li>Changed the "Leave All" game rooms button to just an "X" and moved it to the far right of the game rooms control bar.</li>
+<li>Game rooms listed in the game room dropdown and menus are now listed using the game room name and the game name in brackets.</li>
+<li>Added labels to the "Rooms" and "Avail Rooms" chat room dropdowns.</li>
+<li>Changed the "Leave All" chat rooms button to just an "X" and moved it to the far right of the chat rooms control bar.</li>
+<li>Added configuration option under the Chat tab of the configuration screen "Disable friend status notifications" which, when enabled will suppress friend online/offline and AFK messages from being printed to the chat windows.</li>  
+<li>User and game XP gains as well as user level and game level gains are now logged to the client log file as they occur and to the lobby chat window and game room chat window.  The game entry in the my games list will also be updated.</li>
+<li>Fixed bug where an access denied error could occur when connecting to a game room server and the server owner changed their server to no longer require a password and a user still has the old password cached.</li>
+<li>Updated the "You cannot enter this game room" error message to provide more information such as the "Game room is full", "Game room is no longer available", "You do not have <game> configured" and "Your selected profile's config type does not allow for configuring <game>".<br>(<em>may need to revisit this at a later time</em>)</li>
+<li>Fixed bug when adding a new game and attempting to set shader files or sound font files throws an access violation.</li>
+<li>Fixed bug where the game XP and level for a newly added game was defaulting to 0 XP and level 1 instead of using the values passed from the backend.  Was either accidentally undone in the modem Windows version or only done in the Win9x version.  Either way, it now works as it was supposed to in the last update.</li>
+<li>Fixed bug wherein you could enter a game room for a game you just deleted.</li>
+<li>Game rooms will now be refreshed after deleting a configured game.</li>
+<li>If you are in a game room for a game you just deleted you will be removed from that game room.</li>
+<li>Fixed bug where the "Setup" and "Play" buttons on the edit game screen would not run a game when editing the game from the game room screen and the game was not selected in the "My Games" list.</li>
+<li>Fixed bug where the edit game room button would not re-enable after launching the game, exiting and returning to the game room for permanent game rooms.</li>
+<li>Fixed issue wherein trying to enter a game room for a game that's not configured and cannot be configured due to the current game profile's config type (ie: GOG, Steam) and the user would not be asked to switch profiles.</li>
+<li>Temporary game rooms will now expire after 24 hours.</li>
+<li>If trying to launch a game from a game room and the room is no longer available or expired you will now be removed from the room automatically after affirming the error message.</li>
+<li>Refactored all user list view related code in a similar way to the game room and chat room list view code which should resolve any "Index out of Bounds" errors and possible access violations being caused due to similar scenarios as stated above.</li>  
+<li>Merged the game room user and server user lists and their functionality. The "Room" and "Server" buttons/tabs have been removed.</li>
+<li>Upon entering a game room the user listing will now show the connected states of each user immediately.</li>
+<li>Game rooms will now notifiy players when any player has started and completed downloading mods/maps.  Added a yellow icon which will change out to denote downloading.  Updated the audio chat talking/quiet icons to match the other icons in style.</li>
+<li>Updated the audio chat disabled and muted user icons to match the style of the other icons.</li>
+<li>Fixed bug where a user's auto chat status might not update to disabled if it was transitioning from talking/quiet or vise versa.</li>
+<li>Added a new game room user icon when connected to the game room and no audio chat is being used.</li>
+<li>Fixed bug where a user's local muted status icon might not update to muted if it was transitioning from talking/quiet or vise versa.</li>
+<li>Fixed issue where dedicated server authentication could fail if the game room server was changed due to some of the game room and server fields not being pulled from the backend after receiving the game room update notification.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.22.0</strong> - 2023/09/18<ul class="plaintext">
+<li>Corrected misspelling of "Change History" on the Help menu.</li>
+<li>Config Type label will now properly enable/disable on the user game profile add/edit screen.</li>
+<li>Updated the backend and front end to get and display a game's XP and level when being added for the first time (since the game could be under another profile)</li>
+<li>Moved the game config types (ie: Manual, GoG, Steam, etc) to the games.json config file from the dosboxsettings.json config file.</li>
+<li>Will now log when the game stat driver is initialized during a game launch.</li>
+<li>When attempting to enter a game room from a protocol link and the room no longer exists,  the main screen will now be restored so the message will be displayed properly.</li>
+<li>You can now configure a virtual CD drive for KKND: Krush, Kill 'n' Destroy.</li>
+<li>The virtual CD drive for KKND will only be able to start at E when using DOSBox due to the goofy setup for it.</li>
+<li>Fixed Shadow Warrior: Twin Dragon and Eradicator GOG profiles to allow selecting just the root GOG game folder.</li>
+<li>If the connection is lost to a CGA server during a running game it will now shutdown the running game, properly complete and display a lost connection error message.</li>
+<li>Resolved some client hanging issues wherein it would not shutdown in different scenarios.</li>
+<li>Fixed type-o of "Classic Gaming Arena" in splash screen "Conneting to..." message.</li>
+<li>When logging on from another location the client will no longer popup a message dialog and will no longer display in the lobby chat window that you were disconnected from the global chat system twice.</li>
+<li>Fixed synchronization issues when creating, updating and deleting game rooms related to real-time updates.</li>
+<li>Fixed issue where Final Doom was not properly cleaning up the mod_list tag when creating the command line parameters to blank when no mods were being used.</li>
+<li>Updated Steam profile for Final Doom to copy IPXS_VU.EXE for multiplayer.</li>
+<li>Fixed issue where mods used with Final Doom (The Plutonia Experiment) were not properly loading due to PLUTONIA.WAD explictly being passed on the command line.</li>
+<li>The Steam profiles for Final Doom, Plutonia and TNT, can now handle multiple base paths such as "finaldoombase" if being setup from the Doom 2 installation or "base" if being setup from the Final Doom installation.  If the game path is setup to include the base path the profile base path will no longer be appended.  This applies to any non-manual game configuration (ie: Steam, GOG, etc, etc).</li>
+<li>Corrected the game room copy URL button hints.</li>
+<li>Fixed issue wherein an access violation was being thrown when trying to rejoin a chat channel you had previously left.</li>
+<li>Mods are now supported for the game Abuse.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.21.0</strong> - 2023/07/19<ul class="plaintext">
+<li>Added Inno Setup logo and link to the about screen.</li>
+<li>Updated the DOSBox setting startup_verbosity to quiet which should result in slightly quicker game startup times.</li>
+<li>Disabled the DOSBox automount option.</li>
+<li>The update process will now delete the contents of the updates folder when doing an update check so as not to continuously take up space.</li>
+<li>Added support for Transport Tycoon Deluxe.</li>
+<li>Fixed crash that could occur after login for some users due to regional date/time settings not being in a specific format.  This was a backend and frontend fix and regional settings no longer matter.</li>
+<li>Raw mouse input will now default to true for new game profiles and when resetting to defaults.  If you need raw mouse input to be on you will need to update your existing game profiles to enable it and it will be on when adding new games.</li>
+<li>Any files inside mod/map zip files that are read-only will now have that file attribute removed so they will overwrite when the file is extracted again.  If you have any files that were throwing an error due to read-only files delete the zip and the extracted files and re-download.</li>
+<li>Added Conquest of the New World Steam profile.</li>
+<li>Unicode compatibiliy updates in both the backend and frontend.</li>
+<li>Completely replaced IRC client code to improve stability, reliability and efficiency.</li>
+<li>Removed OpenSSL libraries as they are no longer used for IRC.</li>
+<li>Added a "Remember me" checkbox to the login dialog which upon sucessful login will save the user's login credentials and set auto login to true.  Each subsequent launch of the client will auto login that user.</li>
+<li>Fixed bug wherein re-entering a user chat room after leaving would no longer list the users in the room.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.20.0</strong> - 2023/04/29<ul class="plaintext">
+<li>Fixed bug wherein refreshing the game list on the game list screen would not disable the buttons or context menu items.</li>
+<li>Fixed bug on the game list screen that was not disbaling the add button or context menu item for unsupported games.</li>
+<li>Players can now rate and review game mods and maps.  This can be accssed from the game mods and maps list screen, the game custom screen and the game room create/edit screen.</li>
+<li>Upgraded DOSBox Staging to version 0.80.1.</li>  
+<li>The 64-bit client now uses 64-bit DOSBox Staging.</li>
+<li>Fixed bug wherein stat tracking would sometimes not initialize properly.</li>
+<li>Fixed issue wherein DOSBox would crash unless you turned on the DOSBox console.  This issue turned out to be with the stdout and stderr files that are written if -noconsole is used with DOSBox.  If they were attempting to be written to a write-protected folder, DOSBox would crash.  These files will now be written to the client's data folder under the user's profile in order to prevent this.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.19.0</strong> - 2023/04/06<ul class="plaintext">
+<li>Added support for KKND: Krush, Kill 'n' Destroy.  Make sure to run the setup program after adding to your game profile and select "Reconfigure" inside the game setup program.  This will configure the sound card settings.  Also, just take the default options for the CD drive and game path.</li>
+<li>You can now configure a default CD Image path per user game profile which will be used as the default path when selecting a CD image file for a new game during manual setup.</li>
+<li>Mods and maps can now be used in single player!  From "My Games" click the custom button for games which allow for mods and/or maps, select which mods or maps you want to use and that's it.  Launch the game.</li>  
+<li>Updated Doom Engine games to remove their config files from overlayed folders, since they auto save after the game exits. (backend)</li>
+<li>Improvements to Ultimate Doom and Doom II stat tracking drivers.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.18.0</strong> - 2023/03/30<ul class="plaintext">
+<li>Added filters to the game list window for game type (full, shareware, etc.), genre and relay type (IPX, serial).</li>
+<li>You can now add games to the currently selected profile from the game list screen.</li>
+<li>Added buttons to the game list screen for adding a game, visiting a game website and viewing the players with the selected game.</li>
+<li>Corrected button hints on users with a game list screen.</li>
+<li>Updated game room entry restriction logc for auto launch rooms to restrict based on number of players in the room either on temp max players or max players. (backend)</li>
+<li>Fixed bug wherein leaving a game room would reset the room connection count and temp max players values resulting in undesired behavior. (backend)</li>
+<li>Fixed bug wherein the launch button would not properly enable or disable for auto launch game rooms in some scenarios.</li>
+<li>Added an option to set a default game room name under the Games tab of the configuration screen.</li>
+<li>Moved the mods/maps download location setup to the Games tab of the configuration screen.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.17.0</strong> - 2023/03/28<ul class="plaintext">
+<li>Added a game room filter named "Rooms on your Servers" which will filter the list down to rooms only on your dedicated servers.</li>
+<li>Changed hint of the "Allow Max Players Change" checkbox on the game room create screen to make more sense.</li>
+<li>Fixed bug wherein a newly added user server via the CGA client will cause an access violation when trying to create a game room immediately after adding the server.</li>
+<li>Users can now update the country of their dedicated servers from the user servers screen.  A backend change has also been made wherein when a new server is registered the hostname or IP address will be geo located and the country set based on the geo location, or if that fails it will default to the user's country as it was before.</li>
+<li>User game profiles can now be configured with a game config type (ie: Manual, GOG, Steam).  If anything other than manual is selected the user game add/edit screen game selection combobox will be limited to games with the profile's game config type.</li>
+<li>Added support for Corridor 7: Alien Invasion.  A GOG and Steam profile are also available.</li>
+<li>The default size of the main window can now be set.  The new size can also be set as the minimum size of the window.</li>
+<li>The main window can be configured to save its size and position on exit.
+<li>The main window settings are on a new tab of the configuration screen named "Interface".</li>
+<li>The client update notification will now let you know what version is now available and will only display if your client isn't the most recent version.</li>  
+<li>The backend game room reactivation logic will now make sure the server it's on has enough connection slots available before activating the room.</li>
+<li>Added support for Future Conflict.  This game's fix EXE has been added to the client installer as well and will be copied to the game's folder on demand.</li>
+<li>Added a "Games" tab to the configuration screen and moved the game execution options from the general and "Misc" tabs to it.</li>
+<li>Renamed the "Misc" tab of the configuration screen to "DOSBox" and moved the do not ping servers at startup option to the "General" tab, leaving just the DOSBox related options on the DOSBox tab.</li>
+<li>On the "Games" tab of the configuration screen you can now set base game paths for each of the game config types (ie: Manual, GOG, Steam, etc.).</li>
+<li>Fixed bug wherein the selected game profile would become unselected in the main window's combobox when editing it.</li>
+<li>Trying to enter a game room that you don't have a game configured for will now ask if you want to add the game or switch to a game profile which has the game.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.16.0</strong> - 2023/03/23<ul class="plaintext">
+<li>Stat tracking initialization optimization.</li>
+<li>When creating a game room from the game room lobby list and a game is selected in the filter that game will now be selected by default on the create game room screen.</li> 
+<li>Updating your LFG status in the client will post to the lobby chat channel.   
+<li>GUI refinements.</li>
+<li>The game mod/map screen will no longer create tree sub nodes for games that only have mods or maps and clicking the game name will display its items.</li>
+<li>Fixed bug wherein the mod download button on the game mods/maps screen would allow the user to click and download a mod multiple times before a mod completed downloading and could result in access violation errors.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.15.0</strong> - 2023/03/19<ul class="plaintext">
+<li>Adjusted how the DeuSF and Sound File buttons work on the game mod add/edit dialog window.</li>
+<li>Changed the "M / M" column and the "M / M" button on game room info panel to "Custom".</li> 
+<li>You can now download multiple mods at the same time from the mods and maps screen.</li>
+<li>A custom location can now be set for where game mods and maps will be downloaded.  It can be set from the General tab of the configuration screen.</li>
+<li>Added support for Shadow Warrior map packs.  Add them via the "Mods" listing under Shadow Warrior and its expansions.</li>
+<li>Added support for William Shatner's Tekwar.  Also included is a patched EXE which will be used in multiplayer named TEKWAR11.EXE and will not overwrite the orignal TEKWAR.EXE.  This patched EXE improves network reliability.</li>
+<li>Added support for Grandmaster Chess.  A GOG profile is also available.</li>
+<li>Added support for Assault Rigs.</li>
+<li>Added support for Extreme Assault.</li>
+<li>Added option to run a game up to the command prompt from the "My Games" screen.  It is labelled "Prompt" and there is also a context menu item named "Run to Prompt".  This will allow you to test and/or experiment with a game without auto running it and auto exiting DOSBox.</li>
+<li>Added a "Create Room" button on the "My Games" screen and added a context menu item named "Create Game Room".  This will open the create game room dialog window with it defaulted to the selected game.</li>
+<li>Game room creators can now set whether max players can be changed or not for temporary rooms for games that require waiting for players.</li>
+<li>Updating your LFG status in the client will post to the #looking-to-play Discord channel.</li>
+<li>Added circular input and deadzone joystick options.  All Joystick options will now also reset to default or profile settings.</li>
+<li>Added PC Speaker options DC Offset and IBM PS/1 Audio.</li>
+<li>Fixed some of the sound options on the user game screen which were not triggering the "Apply" button to enable.</li>
+<li>Moved sound options on the user game profile and user game dialog windows into a page control broken out into Speaker, MIDI, Sound Blaster and Gravis Ultra Sound tabs.</li>
+<li>Updated MIDI devices to the DOSBox Staging supported devices.</li>
+<li>Implemented the DOSBox Staging FluidSynth options.  In order to use SoundFonts you must select the "FluidSynth" MIDI device and within the game setup change your music card to "General MIDI".</li>
+<li>Terminal Velocity can now use mods/maps.</li>
+<li>Added support for Battles of Destiny.  A GOG profile is also available.</li>
+<li>Added support for Theatre of War.  A GOG profile is also available.</li>
+<li>Improved game stat tracking initialization process which will allow for much easier updates of DOSBox Staging and porting the client to new platforms.</li>
+<li>Fixed bug introduced in previous update wherein saving a mod file when adding or editing which requires extracting the zip contents to a subfolder would be extracted to the base game mod folder instead.</li>
+<li>Added an option for Blood mods to be set as "Standalone" mods if they are meant to override the game's base files such as the TILESxxx.ART files or any other.  The mod "Vodka" is an exameple of this.  This option instructs the client to extract the mod files to a subfolder for the mod and mount that folder as an overlay in order to load the mod files.  This will prevent this type of mod from interferring with other mods.</li>
+<li>Fixed bug where mods/maps would not filter on the game room create/edit screen when editing the game room.</li>
+<li>Added support for Abuse.</li>
+<li>Game room creators for games that must wait for players and that are temporary can now bet set to auto launch which allows the creator to launch the game for everyone.</li>
+<li>When changing the max players in a tempoary game room the max players data will now sync to all other players when changed instead of when the game is launched.  The chat notices have also been updated to reflect who made the change.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.14.0</strong> - 2023/03/04<ul class="plaintext">
+<li>Added LZMA zip decompression support for game mods and map files.  This means that mods and maps can now be zipped using 7zip or other tools which support LZMA zip compression.</li>
+<li>Added error handling to gracefully handle corrupted avatar images.</li>
+<li>Added better error handling in the event a mod or map zip file is unable to be extracted.</li>
+<li>DeHackEd v3.0a has been implemented for Ultimate Doom, Doom II and Final Doom mods which require it.</li>
+<li>DeuSF has been implemented for Ultimate Doom, Doom II and Final Doom mods which require it.</li>
+<li>Added CWSDPMI.EXE to the client installer and will be used for DeuSF since, in some cases, DOSBox will fail to run DeuSF due to a "no DPMI" error. (??)</li>
+<li>Improved mod/map adding and editing.  The zip files will now be copied to the respective game mod folder when adding/updating.  For mods/maps that require selecting files from the zip will be opened during editing to list the files in the event they need to be adjusted.  If a mod or map zip file does not exist in your local cache then you will be asked to download it first.  (This would apply to any mods you uploaded before this update and never used in a game room)</li>
+<li>Corrected bug which was causing an access violation when attempting to move mods/maps up and down in the game room mods/maps selected lists.</li>
+<li>Corrected bug wherein attempting to access a mod or map from the mods & maps screen after opening a game room for the same game would result in an access violation.</li>
+<li>Renamed the "Edit" button in the game room lobby screen to "Edit Room".</li>
+<li>Added Steam profiles for Chasm the Rift and Chasm the Rift (Add On Maps).</li>
+<li>Blood mods can now be configured to use additional command line parameters.  -ART, -SND and -RFF.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.13.0</strong> - 2022/09/09<ul class="plaintext">
+<li>Added support for Transport Tycoon.</li>
+<li>Added packet reduction options for Duke Nukem 3D.</li>
+<li>Updated the Redneck Rampage Rides Again GOG profile to work correctly with the latest GOG Redneck Rampage installation folder structure.</li>
+<li>The autorun setting for Doom engine games will no longer be applied when running the setup program or the config file be backed up.</li>
+<li>Fixed bug where message stating you can change the max number of players for a game room will no longer be shown when the max players is set to 2.</li>
+<li>All Doom engine games will now use IPXS_VU.EXE instead of IPXSETUP.EXE whether or not mods are used.  This will allow the -dup 2 and -extratics 1 options to be used since IPXSETUP.EXE does not support them.</li>
+<li>Added FIX.EXE for Redneck Rampage to the installer so it can be copied and used for RR installs not through GOG.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.12.0</strong> - 2022/08/26<ul class="plaintext">
+<li>Auto updates will now install silently/automatically instead of having to click through the prompts.</li>
+<li>The apply graphics settings to all games in profile checkbox on the user game add/edit screen will now update all the graphics settings on the games in the user game profile.</li>
+<li>There is now an apply graphics settings to all games in profile checkbox on the user game profile edit screen.</li>
+<li>The user game add/edit screen and user game profile add/edit screen will now prevent saving if Gravis Ultra Sound is enabled and its IRQ is the same as the Sound Blaster IRQ.</li>
+<li>Doom Engine games now have the option to enable auto run.</li>
+<li>Renamed the "Mods" column of the game room lobby to "M / M" for "Mods and Maps" and it will now have a value of either "Mods", "Maps", "Both" or blank.</li>
+<li>Added buttons above the game room information panel to allow switching between room info, room options, room mods and maps, and room players.</li>
+<li>Players in a game room and their status can now be seen before entering a game room by clicking the "Players" button above the room information panel.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.11.0</strong> - 2022/08/09<ul class="plaintext">
+<li>Updated base conf file to default the "negotiate" of the "mixer" section to false.</li>
+<li>The select shader file button will now only enable when selecting "Shader File" or "User Shader File" from the GL Shaders dropdown.</li>
+<li>Fixed bugs related to games that had a graphic mode set that is no longer supported by DOSBox Staging.</li>
+<li>Added support for World War II: GI.  GOG profile is also available.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.10.0</strong> - 2022/08/08<ul class="plaintext">
+<li>Client will now better handle removing/updating non-permanent game rooms which were automatically deactivated and synchronized for clients not in the game room.</li>
+<li>Updated the restrict session to IP option to default to false.  NOTE: It's recommended that this option be turned off unless you have a static IP.</li>
+<li>Possibly resolved the random "List index out of bounds (-2)" error.  If you still encounter this, please let me know.</li>
+<li>Fixed bug where the game room create screen would randomly switch between game option tabs when changing games instead of defaulting to the first tab.</li>
+<li>Files that should not be saved to a game's overlay mount are now deleted before the game starts and if they exist after the game ends it copies them to the game folder and then deletes them.  This affects the config files for these games:<ul>
+    <li>Blood</li>
+    <li>Blood (One Unit Whole Blood)</li>
+    <li>Command & Conquer: Red Alert</li>
+    <li>Command & Conquer: Red Alert - Aftermath</li>
+    <li>Command & Conquer: Red Alert - Counterstrike</li>
+    <li>Descent</li>
+    <li>Descent II</li>
+    <li>Duke Nukem 3D: Atomic Edition</li>
+    <li>NAM</li>
+    <li>NetKeen</li>
+    <li>Redneck Rampage</li>
+    <li>Redneck Rampage Rides Again</li>
+    <li>Shadow Warrior</li>
+    <li>Shadow Warrior: Twin Dragon</li>
+    <li>Shadow Warrior: Wanton Destruction</li>
+    <li>Warcraft II</li>
+    <li>Warcraft II: Beyond the Dark Portal</li>
+  </ul>
+</li>
+<li>The same previous fix will also handle the Build engine games that allow for using the Build Mouse Fix EXE patch.  These game's EXEs will be handled:<ul>
+    <li>Blood</li>
+    <li>Duke Nukem 3D</li>
+    <li>Shadow Warrior</li>
+    <li>Redneck Rampage</li>
+  </ul>
+</li>
+<li>Added EXE hacks for Heretic and Hexen.</li>
+<li>Updated the graphics mode setting to only include the settings that DOSBox staging supports: Surface, OpenGL, OpenGLnb, OpenGLpp, Texture, TextureNB and TexturePP.</li>
+<li>Added DOSBox staging Texture Renderer graphics option for game profiles and user games.</li>
+<li>Added DOSBox staging VSync and VSync Skip graphics options for game profiles and user games.</li>
+<li>Added DOSBox staging Mouse Raw Input option for game profiles and user games. Located on the "Input" tab of the profile and game configuration screens.</li>
+<li>Added DOSBox staging GL Shaders graphics option for game profiles and user games.  You can choose between selecting a complete absolute path to a GLSL file or a GLSL file located in the global DOSBox user "glshaders" folder.</li>
+<li>Fixed bug where the double buffering check box on the user profiles screen was enabled before enabling a profile to edit.</li>
+<li>Updated the "Auto Lock" mouse input option to set the DOSBox Staging "capture_mouse" option.  On = onstart middlegame, Off = onclick middlegame. This option still defaults to on and should work the same as mainline DOSBox.</li>
+<li>Updated to pass the -nolocalconf command line argument to DOSBox as to not load any dosbox.conf files that may be in a game's folder, potentially causing problems.</li>
+<li>Game room creators and game room server owners can now kick players from the rooms.</li>
+<li>Updated the "Add" button of the "My Servers" screen to only enable if the player is a SysOp.  A notice will also be displayed the first time the screen is opened stating that in order to add or maintain servers you first need to install the CGA dedicated server and configure it for remote administration.</li>
+<li>Games that do not require waiting on max players will now allow for auto launching the game from a protocol URL instead of just entering the room.  There is also now a copy launch URL button on the game room lobby screen.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.9.0</strong> - 2022/08/01<ul class="plaintext">
+<li>Added 64MB as an option to DOSBox memory options. (note: DOSBox will set its memsize to 63)</li>
+<li>Removed asking to run game setup program after editing a game.</li>
+<li>Added run and setup game buttons to game edit screen which will enable after applying changes to a game's configuration.</li>
+<li>Changed all references to "Global Handle" to "Display Name".</li>
+<li>Updated the change display name dialog to properly validate the display name characters and only enable the "Ok" button when the name differs from the current display name.</li>
+<li>Updated account screen to denote the first name, last name and homepage fields as optional.</li>
+<li>Game room creation now has an option to announce the newly created game room to the chat lobby.  This option is on by default, but can be turned off in the configuration.  The game room screen also has an announce button on it which can be used by the room creator or server owner to also announce the room to the chat lobby.  Rooms will only be announced to players who have the game of the game room configured.</li>
+<li>Moved the game room screen buttons out of the tittle bar and to a panel inbetween the title bar and chat widnow.</li>
+<li>Game rooms will now be synced between all online players when they are added, edited and deleted.  The lobby list will update automatically.</li>
+<li>Fixed bug where the "Players" column of the game room lobby was showing "1" instead of the sum of all the players in the room.</li>
+<li>Temp max player count will now be synced to all players in a game room so it's now visible when it changes.  A notification will also be displayed in the game room chat window.</li>
+<li>The "Reset to Profile" and "Reset to Default" buttons of the game edit screen will now always be enabled.</li>
+<li>The main window title no longer shows your display name and neither does the tray icon title.</li>
+<li>Game room creation now has an option to announce the newly created game room to Discord in the #game-rooms channel.  This option is on by default, but can be turned off in the configuration.  The game room screen also has an announce button on it which can be used by the room creator or server owner to also announce the room to Discord.</li>
+<li>The cga:// protocol handler has been reimplemented and will allow for entering game rooms from a link.  These links are being used in the Discord game room announcement messages.</li>
+<li>From a game room's lobby you can now copy its cga:// URL to the clipboard.  A prompt will appear when copying asking to format for Discord, if "Yes" is clicked the URL will be formatted for pasting into Discord chat and if not it will just be the plain link.</li>
+<li>A notification will now be displayed in a non-permanent game room when it becomes inactive and explains how it can be reactivated.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.8.0</strong> - 2022/07/28<ul class="plaintext">
+<li>Fixed bug where editing a game room for a game with a max of 2 players was no longer setting the already selected server settings.</li>
+<li>Added an option (default to on) which sets the max players on a new game room to the max for games that require waiting on all players to start the game.</li>
+<li>The ability to temporarily change the max players on a game room for games that require waiting on all players to start the game is no longer restricted to permanent game rooms.</li>
+<li>Fixed bug where the edit button for a non-permanent game room would still be active after the room has become inactive.  It will now enable after reactivating the game room.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.7.0</strong> - 2022/07/27<ul class="plaintext">
+<li>Mods and maps for Ultimate Doom, Doom II and Final Doom can now be configured to require their respective EXE hacks.  These additional EXE files are included in the installer.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.6.0</strong> - 2022/07/25<ul class="plaintext">
+<li>Moved the Build MFX and Doom No Vertical Mouse options to the main game tab of the game add/edit screen.</li>
+<li>Changed the name of "Paths" tab of the game create/edit screen to "General".</li>
+<li>Max players will now be automatically set to 2 players if the game being set in a game room only allows for 2 players max.</li>
+<li>ZOOM Platform has been added as a game config type.</li>
+<li>Zone Raiders is now supported.  ZOOM profile available.</li>
+<li>Added permanent chat channel for Zone Raiders.</li>
+<li>Client will now delete its base config files after an upgrade.  This is to ensure any new settings are always downloaded from the cloud.</li>
+<li>The game room lobby will now show the number of players in a room under the "Players" column and the number of players playing in the "Playing" column.</li>
+<li>Updated Steam profiles for Ultimate Doom and Doom II to not require selecting the "base" folder when setting up these games.</li>
+<li>Fixed bug where Ultimate Doom for Steam and Doom II for GOG and Steam would not correctly work with stat tracking after updating profiles to allow for selecting each game's root folder.</li>
+<li>GOG profile for Ultimate Doom is now available.</li>
+<li>GOG profile for Doom II is now available.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.5.0</strong> - 2022/07/25<ul class="plaintext">
+<li>Renamed "My Profiles" to "My Game Profiles" under the main "Edit" menu, updated the profile screen title to "Game Profiles" and updated the profile selector hint to read "Game Profiles" instead of "User Profiles".</li>
+<li>DOSBox EXE will be validated before enabling stat tracking.</li>
+<li>Accounts can now be created from within the client.</li>
+<li>Account information can now be edited from client from the "Edit" --> "My Account" menu item.</li>
+<li>Added an option (default to on) which asks the player if they want to run a game's setup program after adding/editing a game.  If they click yes then the game's setup program is run.</li>
+<li>Players can now set and change their account avatar from the account edit screen.  The player's avatar is now also shown on the bottom left corner of the main window.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.4.0</strong> - 2022/07/10<ul class="plaintext">
+<li>Corrected the Gravis Ultrasound driver path in the base DOSBox configuration file to Y:\ULTRASND.</li>
+<li>Added GOG profile for Syndicate: American Revolt.  Note that this game must be set to 16MB of memory for it to run.</li>
+<li>Added a server refresh button to the game room create/edit screen.  This will perform a complete refresh of the server list and ping all servers, even ones that had previously not be contacted.</li>
+<li>Fixed bug that was causing Quake mods to not extract properly to their respective sub folders.</li>
+<li>Fixed bug where downloading NetKeen mods from the mod management screen would extract the files to a subfolder with the extension name instead of the root folder.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.3.0</strong> - 2022/07/09<ul class="plaintext">
+<li>Cryptic Passage for Blood is now supported.  GOG profile is also available.  It is listed as "Blood (Cryptic Passage)".</li>
+<li>Blood (Shareware) is now supported.</li>
+<li>Earth 2140 is now supported.  GOG profile is also available.</li>
+<li>Rise of the Triad: Dark War (Site CD) has been removed and any configured player games have been changed to the regular full ROTT game.  This is because the regular full version of ROTT and the Site CD version are compatible.</li>
+<li>Added permanent chat channels for:<ul>
+    <li>Alien Trilogy</li>
+    <li>Z.A.R.</li>
+    <li>Mass Destruction</li>
+    <li>International Moto X</li>
+    <li>Battle Arena Toshinden</li>
+    <li>Star Control III</li>
+    <li>Last Rites</li>
+    <li>SU-27 Flanker</li>
+    <li>Earth 2140</li>
+  </ul>
+</li>
+<li>Renamed permanent chat channel "Syndicate: American Revolt" to just "Syndicate" now that Syndicate Wars is now supported.</li>
+<li>You can no longer edit a game room for a game not in your current user game profile.</li>
+<li>Refreshing the server list while in a game room will no longer send you back to the lobby unless the game room is no longer available.</li>
+<li>Game room will now list mods and maps in the chat window when entering the room.</li>
+<li>Game room launch button will no longer disable for a non-permanent room on a dedicated server and that room is deactivated.  If a player from the room launches the game again it will reactivate the room as long as they are still in the room.</li>
+<li>Added a "Reactivate" button to the game room screen which a game room owner or server owner can user to reactivate a room they are still in that just became deactivated.  The button will enable after all players have launched the games, the room is on a dedicated server and it's not a permanent room.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.2.0</strong> - 2022/07/07<ul class="plaintext">
+<li>Adjusted the default AFK timeout to 30 minutes.</li>
+<li>Fixed bug preventing the client from running on Windows 7 because the Windows API calls "RegisterSuspendResumeNotification" and "UnregisterSuspendResumeNotification" do not exist in Windows 7.</li>
+<li>Added room location and mods fields to the main lobby listing.</li>
+<li>Mod management screen will now display single player only mods/maps.</li>
+<li>Added support for NetKeen custom maps.</li>
+<li>Client will now enforce the 75MB file upload size limit.</li>
+<li>Syndicate Wars is now supported.  GOG profile is also available.</li>
+<li>Last Rites is now supported.  GOG profile is also available.</li>
+<li>Star Control III is now supported.  GOG profile is also available.</li>
+<li>Tyrian 2000 is now supported.  GOG profile is also available.</li>
+<li>Battle Arena Toshinden is now supported.</li>
+<li>International Moto X is now supported.</li>
+<li>Mass Destruction is now supported.</li>
+<li>Z.A.R. is now supported.  Steam profile is also available.</li>
+<li>Alien Trilogy is now supported.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.1.0</strong> - 2022/07/05<ul class="plaintext">
+<li>You can now double click on a game mod in the game mod management screen to edit it if you own it.</li>
+<li>Corrected game mod create/edit screen from enabling the OK button before selecting files from the zip when it's necessary for the game.</li>
+<li>The Shadow Warrior and Redneck Rampage GOG releases will now launch properly when using custom maps and mods.</li>
+<li>You can now delete mods and maps from the mods and maps management screen.</li>
+<li>Updated the default DOSBox mouse capture settings to "onstart middlegame".</li>
+<li>Updated the stat tracking system to work properly with DOSBox Staging.</li>
+<li>AFK Timeout can now be configured in the configuration screen. 0 = no AFK.</li>
+<li>Final Doom can now use mods.</li>
+<li>Corrected bug where a game's options would not always load in the game room create/edit screen after leaving the mod management screen.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.0.0</strong> - 2022/07/02<ul class="plaintext">
+<li>Change history will now load in a window instead of having the OS open the changes.txt file in the user's default text editor.</li>
+<li>Added an option to allow disabling the splash screen on start up.</li>
+<li>Corrected a bug that would sometimes causes the game room list to duplicate on start up.</li>
+<li>Corrected a bug where a newly created game room was not being assigned its associated server object and causing a crash if that server was not actually available when trying to connect to it.</li>
+<li>Corrected a bug where the server pings were not properly saving when a server wasn't available for a game room and the client tried to connect to it.</li>
+<li>Added a "Refresh" menu item to the main "Games" menu item with an F5 shortcut.</li>
+<li>Installer will no longer have the "View Release Notes" post install task checked by default.</li>
+<li>The game room lobby list columns are now sortable.</li>
+<li>The "My Games" list columns are now sortable.</li>
+<li>The user chat room list columns are now sortable.</li>
+<li>Added the Embarcadero Delphi logo and link to the Delphi website in the about screen.</li>
+<li>A sound will now play when a chat message arrives.  This can be turned off and on in the chat configuration.  It will not play when a game is running.</li>
+<li>Corrected a division by zero error that could potentially happen on the server stats screen.</li>
+<li>EULA will now load in a window instead of having the OS open the lincese.txt file in the user's default text editor.</li>
+<li>Added a "What's New" screen which will display the first time opening the client after updating.  It can be disabled/enabled in the general configuration.</li>
+<li>User game profiles now have a base game path field which will be used for doing manual game installs and game detection.  It will also be the default path when selecting a path for a new game.</li>
+<li>Corrected bug where the client would crash on start up if prompt for login was  not set and auto login was not set.</li>
+<li>User servers can now always be deleted even if a remote admin password is not set.
+<li>The single player and multiplayer stats buttons for user games will now only enable for games that have trackable stats.</li>
+<li>Client will now handle a system channel notice which will inform the user that a client update is now available and display a Windows notification and a chat room notice message in the current chat room they are in.</li>
+<li>Client will now properly handle the Windows suspend/resume states and disconnect and reconnect respectively to the chat system.  This will allow for properly notifiying friends when a player's computer goes to sleep and wakes up.  This will also allow for an accurate online player listing on the website.  If for any reason a player's computer doesn't suspend properly and their chat connection times out, our backend system will handle setting the player to offline.</li>  
+<li>Updated game room create/edit screen so that you no longer have to select a server type before selecting a server and unchecking/checking "Allow audio chat" will filter the server list.  Servers that do not support audio chat will not be in the server list if "Allow audio chat" is checked.</li>
+<li>The "I will be the server" server option will now be the last server in the game room create/edit screen server list, but only if "Allow audio chat" is not checked and the player has P2P ports configured for the current user profile.  It is now also labelled as "Not Recommended".</li>
+<li>Global Conquests's GCFIX.COM file will now be copied to the game folder so it can be used automatically.</li>
+<li>Client now includes the Build engine mouse fix file BUILDMFX.EXE which will be copied to the player's game folder automatically, but will only used if the game is configured to use it.  This patch works with the following games:<ul>
+  <li>Blood</li>
+  <li>Duke Nukem 3D</li>
+  <li>Shadow Warrior</li>
+  <li>Redneck Rampage</li>
+  </ul>
+  It can be enabled and disabled on the "Input" tab of the game edit screen.
+</li>
+<li>Client now includes the no vertical mouse movement fix file NOVERT.COM which will be copied to the player's game folder automatically, but will only be used if the game is configured to use it.  All Doom engine games have been updated to allow using this fix:<ul>
+    <li>Doom</li>
+    <li>Doom II</li>
+    <li>Heretic</li>
+    <li>Hexen</li>
+    <li>Strife</li>
+    <li>Final Doom</li>
+  </ul>
+  It can be enabled and disabled from the "Input" tab of the game edit screen.
+</li>
+<li>Adjusted the DOSBox default settings and the DOSBox settings will now be downloaded when using the reset to default DOSBox settings in the user profile and user game screen.  These are now the defaults for these settings:<ul>
+    <li>Rendering = OpenGLnb</li>
+    <li>Fullscreen = On</li>
+    <li>Keep Aspect Ratio = On</li>
+    <li>Scaling Engine = None</li>
+    <li>RAM = 32MB</li>
+    <li>Joystick Type = Auto</li>
+  </ul>
+</li>
+<li>Corrected a bug where when using the "Reset to Default" or "Reset to Profile" options when editing a game would not always save the changes.</li>
+<li>Operation Body Count is now supported.  Its GOG profile is also available.</li>
+<li>Powerslave / Exhumed is now supported.  Its GOG profile is also available.</li>
+<li>NAM is now supported.  Its GOG profile is also available.</li>
+<li>Final Doom is now supported.  It is listed as 2 games:<ul>
+    <li>Final Doom (TNT: Evilution)</li>
+    <li>Final Doom (The Plutonia Experiment)</li>
+  </ul>
+  Their GOG and Steam profiles are also available.
+</li>  
+<li>All Ultimate Doom, Doom II, Heretic and Hexen map names have been renamed to include their respective in-game names.</li>
+<li>The 3 deathmatch levels for Heretic: Shadow of the Serpent Riders are now available (E6M1, E6M2 and E6M3).</li>
+<li>Added permanent chat channels for NAM, Operation Body Count and Powerslave.</li>
+<li>Updated the "Debug Mode" option on the miscellaneous configuration tab to read "DOSBox Debug Mode".</li>
+<li>Updated the game room create/edit screen to not enable the "Ok" button until all required fields are populated.</li>
+<li>Command & Conquer: Red Alert - Aftermath now supported.</li>
+<li>Game mods and maps can now be used when setting up game rooms!  Currently supported games (only full games):<ul>
+    <li>Ultimate Doom</li>
+    <li>Doom II</li>
+    <li>Heretic</li>
+    <li>Hexen</li>
+    <li>Strife</li>
+    <li>Rise of the Triad</li>
+    <li>Chasm: The Rift</li>
+    <li>Blood / Blood (One Unit Whole Blood)</li>
+    <li>Quake</li>
+    <li>Warcraft II / Warcraft II: Beyond the Dark Portal</li>
+    <li>Descent</li>
+    <li>Descent II</li>
+    <li>Command & Conquer: Red Alert / Counterstrike / Aftermath</li>
+    <li>Shadow Warrior / Wanton Destruction / Twin Dragon</li>
+    <li>NAM</li>
+    <li>Duke Nukem 3D</li>
+    <li>Redneck Rampage / Redneck Rampage: Rides Again</li>
+  </ul>  
+</li>  
+<li>Game mods and maps will be uploaded to our servers so they can be used by all players and will be synchronized automatically when launching the games from a game room.</li>
+<li>Any custom mods and/or maps will display in the game room info panel.</li>
+<li>DOS Drive "X:" is no longer available when setting up a virtual CD-ROM drive for a game as it is now being used for mounting the mods and maps folder.</li>
+<li>For games that have pre-start options with enemy/monster selections the default is now "None".</li>
+<li>Corrected a bug where selected info panel items' values would not clear from the bottom panel when the info panel's associated list view no longer had a selected item.  The screens fixed were the game room lobby, my games, my servers and servers.</li>
+<li>Doom engine games will now use a version of IPXSETUP.EXE from the fragglet/vanilla-utilities suite in order to ensure all mods are properly passed to the primary EXE: https://github.com/fragglet/vanilla-utilities. The games using this alternate EXE are:<ul>
+    <li>Ultimate Doom</li>
+    <li>Doom II</li>
+    <li>Heretic</li>
+    <li>Hexen</li>
+    <li>Strife</li>
+  </ul>
+  The alternate EXE will not overwrite IPXSETUP.EXE, but will be named 
+  IPXS_VU.EXE.  
+</li>
+<li>Upgraded DOSBox to version 0.78.1 of the DOSBox Staging build which provides mount overlay support which is being used to handle mapping to CGA's game mod and maps folders for games that need custom mods and maps to exist in these games' parent folder without copying the files to that folder.</li>
+<li>The game list view columns are now sortable.</li>
+<li>The View menu now has a "Game Mods & Maps" menu item which will open the screen that displays all the games with mods and/or maps and users who have uploaded mods or maps can maintain them from here.</li>  
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.7.0</strong> - 2022/06/07<ul class="plaintext">
+<li>The client will now run a separate DOSBox instance for Rise of the Triad's dedicated server.</li>
+<li>The first person to start the game in a game room for Rise of the Triad or NetKeen will be the server instead of the room owner.</li>
+<li>Game room names can now be set and edited from the client and are displayed in the main game room list as well as the game room info panel.  When entering a game room a message will now be displayed that says "You have entered &lt;room_name&gt;!"</li>
+<li>Fixed several instances in the GUI where text with ampersands would be rendered as accelorator key shortcuts (ie: an underscore) instead of an ampersand.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.6.0</strong> - 2022/05/27<ul class="plaintext">
+<li>The game room launch game process will now check to see if the client needs to be updated before allowing the client to launch the game and connect to the game room.  If an update is needed the launch process is halted and the player is now asked if they want to check for updates.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.5.0</strong> - 2022/05/25<ul class="plaintext">
+<li>Corrected an issue which would hang the client when connecting to a game room's server and the client is immediately disconnected before connecting to the server's relay server.</li>
+<li>If a server is not able to be connected to when launching a game from a game room the player will automatically leave the game room and the server ping time will be set to 9999 which will also flag it from being used by the player to create game rooms.  If the player created the game room they will be asked if they want to delete the game room.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.4.0</strong> - 2022/05/22<ul class="plaintext">
+<li>Corrected access violation when an update is found during the client startup process that prevents the client from closing</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.3.0</strong> - 2022/05/22<ul class="plaintext">
+<li>Corrected access violation when attempting to access the server list screen after logging out and back in again.</li>
+<li>Pinging servers on startup will not longer ping servers that were previously flagged as unreachable.</li>
+<li>The startup process will no longer wait on the server ping process to complete.</li>
+<li>The refresh all and ping all functions of the servers screen will be disabled while the startup server ping process is running.</li>
+<li>The ping all button of the servers screen will now stay disabled until the ping process completes.</li>
+<li>Unreachable servers will no longer be selectable when creating or editing game rooms.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.2.0</strong> - 2022/05/10<ul class="plaintext">
+<li>Corrected crash when regional settings are not set to United States.</li>
+<li>Updated the Discord join URL to a permanent discord URL: <a href="https://discord.gg/SvQyFQZEYp" target="_blank">https://discord.gg/SvQyFQZEYp</a></li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.1.0</strong> - 2022/03/02<ul class="plaintext">
+<li>Corrected some buttons throughout the client that had incorrect hints.</li>
+<li>Corrected some access violations that could occur if the user had no default profile (which has been corrected on the backend as well) or if they do not connect to the chat server and they attempt to navigate to some of the main menu items.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.0.0</strong> - 2022/02/28<ul class="plaintext">
+<li>The client is now a complete desktop application.  Windows only to start, but
+  has a lot of new options and features including:<ul>
+   <li>All funtionality from the website has been carried over to the desktop
+     client, plus a lot more!</li>
+   <li>Lots of stability and bug fixes.</li>
+   <li>Starting when Windows starts.</li>
+   <li>Start the client minimized when auto starting.</li>
+   <li>Start the client maximized.</li>
+   <li>Minimize on close.</li>
+   <li>System tray icon.</li>
+   <li>System notifications.</li>
+   <li>Auto login.</li>
+   <li>Loading the last game profile used when logging in after client is closed.</li>
+   <li>Pinging servers with the option to not ping them on startup.</li>
+   <li>DOSBox console can now be set to show when starting a game.</li>
+   <li>Players can change their password.</li>
+   <li>Players can change their global handle.</li>
+   <li>Game list screen will now allow you to see the players who have each game.</li>
+   <li>Game list screen will now allow you to go a game's official website (if it
+     has one).</li>
+   <li>Game list now shows each game's genre.</li>
+   <li>Server list will now show all information about the server.</li>
+   <li>Server list will now allow viewing each server's room and session 
+     statistics the same as from the user servers screen.</li>
+   <li>Game room screens now have functioning chat.</li>
+   <li>You can now restrict the client session to your current IP.</li>
+   <li>Client is now using TLS to communicate with the web API and no longer
+     uses a custom encryption scheme.</li>
+   <li>The game room screens will now show the welcome message from a dedicated
+     server if it has one configured (new feature of servers) when connecting to
+   it.</li>  
+  </ul></li>
+<li>32-bit and 64-bit versions.</li>
+<li>A complete chat system has been added.<ul>  
+   <li>Players can created up to 5 custom chat channels.</li>
+   <li>Option for auto excepting chat room invites in general or from friends
+     only.</li>
+   <li>Option for auto excepting private chat session invites in general or from 
+     friends only.</li>
+   <li>Option to auto switch to auto accepted chat room ivites in general or from
+     friends only.</li>
+   <li>Option to auto switch to auto accepted private chat session ivites in 
+     general or from friends only.</li>
+   <li>Auto-join up to 10 chat channels after login.</li>
+   <li>Option to display message timestamps.</li>
+   <li>Each game now has its own dedicated chat chanel.</li>
+   <li>There is now a dedicated help channel.</li>
+   <li>Server SysOps will now have access to a dedicated SysOps channel which is
+     only available to SysOps.</li>
+  </ul>
+  </li>
+<li>A friends system has been added.<ul>
+   <li>You can have up to 100 friends.</li>
+   <li>You can see each friend's online status.</li>
+   <li>System notifcations  when friends come online and go offline. These can be
+     disabled.</li>
+  </ul></li>
+<li>Players can now invite other players to chat rooms, game rooms and private
+  chat sessions.  All user listings will have a context menu with these options.</li>
+<li>You can now set a default game profile per user.</li>
+<li>Added an option to always run game setup programs in windowed mode.</li>
+<li>Game rooms can now be edited.</li>
+<li>Added the start of a game stat tracking (ie: frags, bullets collected) system 
+  with XP.<ul>
+   <li>Games supported so far: "Ultimate Doom" and "Doom II".</li>
+   <li>Leader boards.</li>
+   <li>User global XP and levels.</li>
+   <li>Individual game XP and levels.</li>
+   <li>You can disable stat tracking globally.</li>
+   <li>You can enable/disable stat tracking per game profile.</li>
+   <li>Game list now shows if a game supports stat tracking.</li>
+   </ul></li>
+<li>Added ability to configure all previously unavailable DOSBox settings.<ul>
+   <li>Sound card settings.</li>
+   <li>Joystick settings.</li>
+   <li>Memory settings.</li>
+   <li>Frameskip options.</li>
+   <li>Miscellaneous options.</li>
+   <li>Mouse sensitivity settings.</li>
+   </ul></li>
+<li>Added Gravis Ultrasound driver files for players that want to use the GUS for
+  sound and/or music.  The folder is setup to be Y:\ULTRASND and the Y:\ drive 
+  is no longer available for use as a virtual CD drive on game setups.</li>
+<li>Each game will now have its own DOSBox key mapper file when mappings are set
+  when a game is running.</li>
+<li>Player can now open and view the session log in real-time.</li>   
+<li>Networking improvements.<ul>
+   <li>Client will now use the server's local IP address if the player is 
+     connecting from the same remote address as the server.</li>
+   <li>Client will now send its local IP address for P2P games for this same
+     purpose.</li>
+   <li>Improved communication security with dedicated servers.</li>
+   </ul></li>
+<li>Client can only have one instance running on any machine.</li>
+<li>Client will be auto logged out if player logs in from another location.</li>
+<li>Each game now has a genre set on them.</li>
+<li>Client can now shutdown a running game when exiting.</li>
+<li>Game profiles now have defefault DOSBox settings which are used when adding
+  new games to a profile.</li>
+<li>All DOSBox settings have defaults.</li>
+<li>You can now reset a game's DOSBox settings to the default or to the profile's
+  default settings.</li>
+<li>Server SysOps can now maintain their servers completely from the "My Servers"
+  screen:<ul>
+   <li>Add, edit and delete servers.</li>
+   <li>Start, stop and restart servers.</li>
+   <li>View all server information.</li>
+   <li>Ping servers.</li>
+   <li>View server game room and session statistics.</li>
+   </ul></li>
+<li>Game rooms configured as permanent with a game that requires having to wait
+  on all players configured for the room (ie: Ultimate Doom with 4 players) 
+  before the game will start can now be temporarily set to less players.</li>
+<li>Added a looking for game (LFG) system.  Players can now set themselves as 
+  looking for any game, a specific game or not looking.</li>
+<li>Added an away from keyboard (AFK) setting and time out.<ul>
+   <li>Players can set if they are AFK or not.</li>
+   <li>There is a 10 minute AFK idle timeout.</li>
+   <li>Once automatically AFKed the player will come out of AFK by interacting
+     with the client.</li>
+   <li>Player will not go auto AFK if they are playing a game.</li>
+   <li>All player listings will show a players online/AFK status.</li>
+   </ul></li>
+<li>Added a find player system.<ul>
+   <li>The find plater screen can be access from a game room screen or from the 
+     main menu.</li>
+   <li>There are several filtering options:<ul>
+      <li>Country.</li>
+    <li>Players with a specific game or any game.</li>
+    <li>Players looking for any game or a specific game.</li>
+    <li>Excluding AFK players.</li>
+    <li>Players within a certain level range.</li>
+    <li>Players within a certain game level range.  Only avialable for games 
+      which currently have stat tracking.</li>
+    </ul></li>
+   <li>Returned list of players allows for inviting another player:<ul>
+      <li>To the current chat room you are in.</li>
+    <li>To any of the chat rooms you are in.</li>
+    <li>To the current game room you are in.</li>
+    <li>To any of the game rooms you are in.</li>
+    <li>To a private chat session.</li>
+    <li>To be friends.</li>
+   </ul></li>
+  </ul></li>
+<li>Updated to support creating the game Z's batch file it needs to use to launch.</li>
+<li>Added the DOS executable PS10.EXE to the "etc" folder which is a fix for 
+  "Chasm: The Rift" so it will work when DOSBox's core setting is set to 
+  "Dynamic".</li>
+<li>Game rooms now have a separate player list for players that are connected to
+  the game room for play.  The player will also be switched to this view when
+  they connect.  From this list the player can now:<ul>
+   <li>See all player's audio chat enabled/disabled status.</li>
+   <li>See all player's audio chat talking status.</li>
+   <li>Mute other player's audio chat.</li>
+   <li>Open the configuration screen to the audio chat settings.</li>
+   <li>Audio chat settings can now be changed while they are connected to a 
+     server with audio chat.  Even disabled and enabled without having to
+     disconnect and reconnect.</li>
+  </ul></li>
+<li>Game rooms now have buttons to allow editing a game's setup, running the 
+  game's setup program or editing the game room itself before launching.</li>
+<li>Audio chat push-to-talk (Windows only) support has been improved.</li>
+<li>keypress.dll is no longer included as the mouse and keyboard hooks have
+  been converted to low level hooks and moved into the client.</li>
+<li>Audio chat local loopback bugs have been resolved.</li>
+<li>Installer now has option to start client after installation (default).</li>
+<li>If a game room has audio chat enabled all players will now connect to the 
+  audio chat server even if they have audio chat disabled.  They will not be 
+  able to hear anyone talking unless they enable audio chat, but this can now be 
+  done without disconencting and reconnecting.</li>
+<li>When creating a new game room dedicated servers with audio chat is now the 
+  first option and P2P is last.</li>
+<li>When a server owner is creating a new game room on their own server and the
+  server is private and the server has the new "Friend Private Access" option 
+  disabled they will now have the option to allow friends to access that 
+  specific room without knowing the server password.</li>
+<li>Friends of a server owner can now create rooms on a private server with no
+  player rooms enabled if the server owner enabled the new "Friend Rooms" 
+  option.</li>
+<li>Friends of a server owner can now access game rooms on a private server 
+  without knowing the password if the server owner has enabled the new option
+  "Friend Private Access".</li>
+<li>You can now view all information about each game room from the lobby scren.</li>
+<li>These files will be removed as they are no longer necessary:<ul>
+   <li>cga.exe</li>
+   <li>cgaclientcfg.exe</li>
+   <li>conf\cgaclient.conf</li>
+  </ul></li>
+<li>Registry key which registered the CGA protocol handler will be removed since
+  the client will no longer be launched from the website.</li>
+<li>Added a PayPal donate link in the main\help menu, system tray menu and about
+  screen.  Donations are not necessary, but very welcome:<ul>
+     <li>https://www.paypal.com/donate?hosted_button_id=D5VAULBZS3UY2</li>
+  </ul></li>
+<li>Added a bug reporting tool.</li>
+<li>Added a feature request tool.</li>
+<li>Game room game options will now be displayed in the chat window when the game
+  room becomes ready and the game has options that can be set before starting.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">3.2.1.0</strong> - 2014/01/22<ul class="plaintext">
+<li>Removed AES encryption when getting game room data.  The AES code was buggy and not working correctly all the time.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">3.2.0.0</strong> - 2014/01/10<ul class="plaintext">
+<li>Mac OSX now supported!</li>
+<li>Windows and Mac client include a small menu program.  In Windows the shortcut is named "Classic Gaming Arena" and you have the option during install to add it to the desktop and/or the quick launch.  It is also in the start menu.  On Mac it is the default program run when the application is launched.  It is also now launched by default for the Windows client if nothing is passed on the command line instead of the website being opened.</li>
+<li>Corrected the bug that played a "player left" sound whenever someone left any game room on the server the client was connected.</li>
+<li>Added a debug mode option to the client configuration which will allow the player to see all the dos commands being run by DOSBox.  It will also pause execution before the game runs and after the game exits.  This feature works in multiplayer, single player and game setup mode.  This option is also configurable from the configuration program under the misc tab.</li>
+<li>New logo icon now being used where applicable.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">3.1.0.0</strong> - 2013/04/23<ul class="plaintext">
+<li>Improved security.</li>
+<li>Now passes player name, country, OS and game name to the sever for debugging purposes.</li>
+<li>Added TCP keep-alive.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">3.0.0.0</strong> - 2013/03/18<ul class="plaintext">
+<li>Added integrated audio chat using TeamSpeak 3 SDK!</li>
+<li>Corrected code that writes the log file for the first time.  It now sets the correct permissions under Linux.</li>
+<li>Log file is now just "cgaclient.log" with no date.</li>
+<li>Re-added the client configuration program.  It can be executed using the -c or --configure command line arguments with the CGA Client.  Its settings are saved per user in the .cgaclient/conf folder under their respective user profile folder.</li>
+<li>Push-to-Talk audio chat feature added. (Windows only)</li>
+<li>Linux users: The PID file path, config path and dosbox path can now be set in the new cgaclient shell script used to launch the CGA Client for Linux users.  Located in /usr/bin.</li>
+<li>Now reports its OS to the website.</li>
+<li>CPU settings are now passed to DOSBox from the website.</li>
+<li>Video hardware setting is now passed to DOSBox from the website.</li>
+<li>Now supports the config file for Elder Scrolls: Battlespire.</li>
+<li>Client will now edit game config files in single player and setup mode if needed. (Screamer 2 and Elder Scrolls: BattleSpire)</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.4.3.0</strong> - 2012/09/21<ul class="plaintext">
+<li>Uses the new serial options data field that has been added for use by some games (Jurassic War) that use a serial connection for multi-player support.  This option allows us to tweak the serial settings for these games.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.4.2.0</strong> - 2012/09/20<ul class="plaintext">
+<li>Refined TCP code to work with updated server.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.4.1.0</strong> - 2012/07/29<ul class="plaintext">
+<li>Corrected a bug where in the client would not log that it was already running in the event that a second instance of the client was run.</li>
+<li>Added system error logging when errors occur during file copy processes so that the problem can be determined more accurately.  ie: if a file is missing or a permissions problem occurs.</li>
+</ul></p>
+  
+
+<p class="plaintext">
+<strong class="plaintext2">2.4.0.0</strong> - 2012/07/16<ul class="plaintext">
+<li>Now supports private CGA servers.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.3.0.0</strong> - 2012/07/07<ul class="plaintext">
+<li>General code cleanup and optimization.</li>
+<li>Adding more error handling.</li>
+<li>Added logging.  A "log" folder will now be created under your user profile.<br><br>
+"%profile%/.cgaclient/log"<br><br>
+The log file format is "cgaclient_yyyy_mm_dd.log".</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.2.1.0</strong> - 2012/07/05<ul class="plaintext">
+<li>Added a register new account link to the Start Menu group.</li>
+<li>Singleplayer mode and setup mode will now update the current profile on the website with the client's version.</li>
+</ul></p>
+  
+<p class="plaintext">
+<strong class="plaintext2">2.2.0.0</strong> - 2012/06/17<ul class="plaintext">
+<li>The client now has several operating modes.<ol class="plaintext"> 
+  <li>Multiplayer mode. (normal)</li>
+  <li>Single player mode.  This will launch a game with no network connectivity and will only be playable in single player mode.  Initiated from the website.</li>
+  <li>Setup mode.  This mode launches a game's setup program.  It is initiated from the website.</li>
+  <li>Update check mode.  This mode will check for updates and tell you if your client is up-to-date.</li>
+  <li>Version update mode.  This mode will update current logged in profile with version of the your client.  Initiated from the website.</li>
+  </ol>
+</li>  
+<li>Updated the "CGA Client on the Web" start menu link to point to:<br>
+  "http://www.classicgamingarena.com/help/cgaclilent"</li>
+<li>Added a "Check for Updates" start menu link.</li>
+<li>Added an "End-User License Agreement" start menu link.</li>
+<li>Added the setup executables for Doom and Doom II for the Steam distributed versions since they were not shipped with these versions of the game.  They will be copied to their respective game directories when launched from the website.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.1.0.0</strong> - 2012/06/08<ul class="plaintext">
+<li>DOSBox is now distributed with the CGA Client.  It will be used for all games including those purchased from GOG.com and Steam.</li>
+<li>The option to configure the CGA Client has been removed.  It will return with future feature updates.  The installer no longer offers to run the configuration after install.</li>
+<li>Added a change history file. (changes.txt)   The installer now offers the options to view the change history after installation has completed.</li>
+<li>A menu item has been added to the start menu group to view the change history.</li>
+<li>Added innosetup_license.txt.</li>
+<li>Files copied to the user profile path are now copied to:<bR><bR>"%profile%/.cgaclient"</li>
+<li>Added an End-User License Agreement (EULA) contained within license.txt.</li>
+<li>A screen shot and video capture path is now created under the aforementioned client path as "capture".  A profile id sub folder will also be created for each CGA profile that accesses the client.  This path will be as the capture folder for DOSBox. (this is for a future feature)</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.0.1.0</strong> - 2012/02/27<ul class="plaintext">
+<li>For serial games DOSBox is now always configured to use its Serial1 interface (COM1 in DOS terms). So make sure to configure your games to always use COM1.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.0.0.0</strong> - 2012/02/26<ul class="plaintext">
+<li>Now supports serial connections. (nullmodem)</li>
+</ul></p>
+
+
+<p class="plaintext">
+<strong class="plaintext2">1.4.2.0</strong> - 2012/02/05<ul class="plaintext">
+<li>The configuration file that ships with the client is now used as a temporary file and copied to your user profile folder when the client is launched, edited for use by the current game room and deleted when the client shuts down.</li>
+<li>You can now configure most of the DOSBox graphics options per game from the CGA Website.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.4.1.0</strong> - 2012/02/04<ul class="plaintext">
+<li>Games purchased from GOG.com and Steam are now supported.</li>
+<li>No longer creates a batch file (cga.bat) that gets copied to the game folder.</li>
+<li>DOSBox is no longer launched with the cga.bat file.</li>
+<li>All necessary commands needed to launch DOSBox, connect to a server and start a game are now added to the autoexec section of the DOSBox configuration file being used. They are then removed.</li>
+<li>For GOG.com and Steam games the version of DOSBox that ships with them is used instead of a preinstalled version. The DOSBox configuration file for these games is copied to your home folder and used for CGA's purposes and deleted when the client closes.</li>
+<li>IPXSETUP.EXE is now included with the client and will be copied to the game folder for Steam based id games since they did not ship them with this file.  It is required for network play.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.3.2.0</strong> - 2012/01/19<ul class="plaintext">
+<li>Minor TCP code changes.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.3.1.0</strong> - 2011/11/15<ul class="plaintext">
+<li>Full screen mode is no longer part of the global DOSBox configuration. It is now set per game on the website.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.3.0.0</strong> - 2011/11/09<ul class="plaintext">
+<li>Your DOSBox path no longer has to be configured through the website.</li>
+<li>The CGA Client now has command line parameters to launch it in configuration mode.<br><br>
+--configure or -c</li>
+<li>In Windows there is now a shortcut added to the start menu named "CGA Client (Configure)" which lauches it in configuration mode.</li>
+<li>The new configuration mode allows you to configure your DOSBox path and fullscreen mode.</li>
+<li>The CGA installer will launch the client in configuration mode after the installation has finished. You also have the option to not have it run after the installation completes.</li>
+<li>All error messages that the client previously returned as a pop-up dialog are now opened in your web browser. This change makes cross-platform development/deployment more efficient since it removes the need for GUI controls.  It also allows for better explanation of the errors as well as how to correct them.</li>
+<li>The Linux version is almost ready for public release. So far it is working just like the Windows version!</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.3.0</strong> - 2011/11/04<ul class="plaintext">
+<li>Your DOSBox configuration file no longer has to be configured on the website.  This will make setup quicker and easier.</li>
+<li>The CGA Client now comes with a DOSBox configuration file which it copies to your user profile path the first time it is run. It is never overwritten and you can modify as you see fit. The file name is called cga-dosbox.conf.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.2.0</strong> - 2011/09/24<ul class="plaintext">
+<li>This update removes cdiupdate.dll. The update checking logic is now built into the client.</li>
+<li>NOTE: The update logic has also been updated slightly so previous versions will not be able to detect this new version. It will have to be downloaded and installed manually.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.0.0</strong> - 2011/09/22<ul class="plaintext">
+<li>This update of the client now checks to make sure your local CD path exists (CD-ROM or ISO), returns an error if it does not and exits th client. Also with this version the cient is now executed using a custom URL protocol instead of a MIME type. What this means is an easier confiuratin and less chance for security issues since there is no file to download.</li>
+<li>You will need to download and install this version of the client manually before you will be able to use the website to launch games.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.1.0.11</strong> - 2011/08/18<ul class="plaintext">
+<li>This updated corrects the issue wherein the client will crash internally if the player's DOSBox paths have not been set and reports the error that the CGA file is corrupt instead of reporting that the paths are blank.</li>
+<li>This update also adjusts the order in which an update check to the client occurs. It now occurs first instead of after processing the CGA file. In the earlier versions of the client and the website the player's user profile was passed in the CGA file so the updater had to run after opening the file and reading the user profile path. This no longe is necessary since the client looks up the player's user profile path.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.1.0.2</strong> - 2011/02/18<ul class="plaintext">
+<li>The client will no longer copy the netbios.exe file and execute it for every game. Only the games that need it will this occur.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.1.0.0</strong> - 2011/02/17<ul class="plaintext">
+<li>NetBIOS support.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.0.0.250</strong> - 2011/01/31<ul class="plaintext">
+<li>The only change is that the client no longer requires the player's local user profile path passed in from the website. The client now determines it. It can no longer be configured on the website as well since it is no longer needed.</li> 
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.0.0.244</strong> - 2011/01/26<ul class="plaintext">
+<li>Client will now check for updates and inform the player. The client will not allow outdated versions to run. This is to ensure there are no discrepencies between the server and client software.</li>
+<li>Games such as Duke Nukem 3D that require a configuration INI file to be edited to set the network settings will now work correctly.</li>
+<li>Virtual Networks: Client passes to the latest server a unique network id so that each game room is segregated from the others. Allowing data packets for each game room to only be sent between connections within that room.</li>
+</ul></p>
+
+<p class="text1">
+<br>
+Continue to <a href="/help/serverchangelog"><strong>Server Change Log</strong></a>...
+</p></td>
+            </tr>
+            <tr>
+                <td class="align-justify"> </td>
+            </tr>
+        </table> </td>
+        <td background="/images/inside10.jpg"><img src="/images/inside07.jpg" alt="" width="41" height="100"></td>
+        <td background="/images/index47.gif"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+
+            <tr>
+                <td><img src="/images/spacer.gif" alt="" width="1" height="13"></td>
+            </tr>
+            <tr>
+                <td><p><ul>
+				<li><a href="/help"><strong class="text1">Overview</strong></a></li>
+				<li><a href="/help/gettingstarted"><strong class="text1">Getting Started</strong></a></li>
+                <li><a href="/help/configcgaclient"><strong class="text1">Configuring the CGA Client</strong></a></li>
+                <li><a href="/help/configgames"><strong class="text1">Configuring Your Games</strong></a></li>
+                <li><a href="/help/gamerooms"><strong class="text1">Game Rooms</strong></a></li>
+                <li><a href="/help/servers"><strong class="text1">Servers</strong></a></li>					
+                <li><a href="/help/configservers"><strong class="text1">Configuring Your Servers</strong></a></li>
+                <li><a href="/help/managingprofiles"><strong class="text1">Managing Profiles</strong></a></li>
+                <li><a href="/help/cgaclient"><strong class="text1">CGA Client</strong></a></li>
+                <li><a href="/help/cgaserver"><strong class="text1">CGA Dedicated Server</strong></a></li>
+                <li><a href="/help/multiplayernocga"><strong class="text1">Multiplayer Without Using CGA</strong></a></li>
+				<li><a href="/help/resources"><strong class="text1">Resources</strong></a></li>
+				<li><a href="/help/clientchangelog"><strong class="text1">Client Change Log</strong></a></li>
+				<li><a href="/help/serverchangelog"><strong class="text1">Server Change Log</strong></a></li>
+                </ul>							
+				</p> 
+                </td>
+            </tr>
+            <tr>
+
+                <td class="align-justify"> </td>
+            </tr>
+        </table> </td>
+        <td background="/images/inside11.jpg"><img src="/images/inside08.jpg" alt="" width="22" height="100"></td>
+    </tr>
+    <tr>
+        <td width="670" colspan="5"><img src="/images/inside12.jpg" alt="" width="670" height="10"></td>
+    </tr>
+</table>
+   		            </td>
+				</tr>		
+                <tr>
+                    <td align="left">
+					    <table width="630"  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" valign="bottom" class="style1" height="20"><a href="/">Home</a>  |  <a href="/about">About</a>  |  <a href="/forums">Forums</a>  |  <a href="/downloads">Downloads</a>  |  <a href="/games">Games</a>  |  <a href="/help">Help</a>  |  <a href="/news">News</a>  |  <a href="/contact">Contact Us</a>  |  <a href="/legal">Legal</a></td>
+                        </tr>
+						<tr>
+                            <td align="left"><img src="/images/spacer.gif" alt="" width="1" height="16"></td>
+                        </tr>
+						<tr>
+                            <td><a href="/dosbox" target="_blank">
+								<img src="/images/dosbox.jpg" alt="dosbox.jpg" title="DOSBox - Official emulator for Sierra Compilations" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/teamspeak" target="_blank"><img src="/images/ts3_bg_logo_small.png" border="0" title="Audio Chat Powered by TeamSpeak" > </a>
+							</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="middle" class="text3" height="90"><br>Powered by <a href="http://www.prometheuswde.com" target="_blank">Prometheus</a>. Copyright &copy; 2024 <a href="http://www.cdiware.com" target="_blank">Creative Design Interactive</a>. All Rights Reserved.<br>This site hosts no abandonware. There is no material that is knowingly illegal here.  CDI will not be held responsible for users' posts. This disclaimer is brought to you thanks to the BSA.  Please read our <a href="/legal">legal</a> statement.
+						  <br><br>Website template designed by <a href="http://www.arixmedia.com" target="_blank">ArixMedia</a>. Copyright &copy; 2005 ArixMedia, LLC.<br>
+						  <br>
+						  </td> 
+                        </tr>
+                        </table>
+					</td>
+                </tr>
+				
+            </table>
+			
+		</td>
+        <td width="47" style="background-image: url('/images/index33.gif');"><img src="/images/index04.jpg" alt="" width="47" height="350"></td>
+        <td align="left" valign="top" class="bg1"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom">  </td>
+        <td width="47" valign="bottom" style="background-image: url('/images/index32.gif');"><img src="/images/index34.jpg" alt="" width="47" height="100"> </td>
+		<td width="47" valign="bottom" style="background-image: url('/images/index33.gif')"><img src="/images/index35.jpg" alt="" width="47" height="100"> </td>
+        <td align="left" valign="bottom"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom"> &nbsp; </td>
+        <td width="764" colspan="3" align="right" valign="bottom"><img src="/images/index36.jpg" alt="" width="764" height="78"></td>
+        <td align="left" valign="bottom"> &nbsp; </td>
+    </tr>
+    	
+</table>
+
+</body>
+</html>

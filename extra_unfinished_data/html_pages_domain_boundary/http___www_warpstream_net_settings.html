@@ -1,0 +1,244 @@
+<html>
+<head><title>WarpStream - Settings</title></head>
+
+
+<table id="navbar-container" width="750" bgcolor="#FFFFFF" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="center" bgcolor="#FFFFFF">
+        <td id="header-left" valign="top">
+                                    <a href="/"><img id="logo" alt="WarpStream - Home" border="0" src="/img/header-left.gif" height="50" width="187"></a>
+                                </td>
+                <td id="header-middle" height="50" width="385" valign="center" background="/img/header-middle-ext.gif" align="center">
+                <form action="results" method="GET">
+            <input  type="text" name="q">
+            <select name="type" id="type">
+                <option value="videos">Videos</option>
+                <option value="users">Channels</option>
+                <!-- <option value="lists">Playlists</option> -->
+            </select>
+            <input type="submit" value="Search">
+          </form>
+        </td>
+        <td id="header-right" height="50" width="178">
+            <font color="#000000" face="Arial, MS Sans Serif, sans-serif" size="2">
+                                    <b>Online: </b><font color="green">3</font><br>
+                                <b>Videos: </b>111641<br>
+                <b>Channels: </b>72500            </font>
+        </td>
+        </tr>
+    </table>
+    <table width="750" cellpadding="4" cellspacing="0"  align="center">
+      <tr>
+
+	<td id="nav-bar" bgcolor="#000000" height="20" valign="MIDDLE" nowrap="" colspan="4" background="/img/gradientbar.gif">
+		<font color="#FFFFFF" face="Verdana, Arial" size="1">
+		<b>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="home-link" style="color:#ffffff;text-decoration:none;" href="/" target="_top"><font color="#ffffff">Home</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="videos-link" style="color:#ffffff;text-decoration:none;" href="/browse" target="_top"><font color="#ffffff">Videos</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="channels-link" style="color:#ffffff;text-decoration:none;" href="/channels" target="_top"><font color="#ffffff">Channels</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="playlists-link" style="color:#ffffff;text-decoration:none;" href="/playlists" target="_top"><font color="#ffffff">Playlists</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="settings-link" style="color:#ffffff;text-decoration:none;" href="/settings" target="_top"><font color="#ffffff">Settings</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="history-link" style="color:#ffffff;text-decoration:none;" href="/history" target="_top"><font color="#ffffff">History</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+				</b>
+		</font>
+        </td>
+</tr>
+    </table>
+<body link="#7487FA" vlink="#7487FA" alink="#CFAC38" bgcolor="#FFFFFF" topmargin=0 leftmargin=0 bottommargin=0 rightmargin=0 marginheight=0 marginwidth=0>
+<font face="Arial, MS Sans Serif, sans-serif"><table width="700" align="center">
+<tr>
+<td>
+<font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+<h1>Settings</h1>
+<h2>General</h2>
+</font>
+</td></tr>
+<tr><td width="35%">
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+    <form action="submit_settings" method="GET">
+        <label for="player">Media player:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="player" name="player">
+                    <option value="1">Flash Player - 2005</option>
+                    <option value="2">Flash Player - 2006</option>
+                    <option value="3">Flash Player - 2007</option>
+                    <option value="4">Flash Player - 2008</option>
+                    <option value="5">Flash Player - Basic</option>
+                    <option value="6" selected>RealPlayer</option>
+                    <option value="7">Windows Media Player</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="autoplay">Autoplay:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="autoplay" name="autoplay">
+                    <option value="1" selected>Yes</option>
+                    <option value="2">No</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="comments">Show video comments:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="comments" name="comments">
+                    <option value="1" selected>Yes</option>
+                    <option value="2">No</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="logo">Site logo:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="logo" name="logo">
+                    <option value="1" selected>Default</option>
+                    <option value="2">New Millennium</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="theme">Site theme:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="theme" name="theme">
+                    <option value="1" selected>Default</option>
+                    <option value="2">Dark Mode</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+        
+<font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+<h2>Flash Player</h2>
+</font>
+</td></tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="color">Appearance (2008 player only):</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="color" name="color">
+                    <option value="1" selected>White</option>
+                    <option value="2">Blue</option>
+                    <option value="3">Red</option>
+                    <option value="4">Green</option>
+                    <option value="5">Yellow</option>
+                    <option value="6">Purple</option>
+                    <option value="7">Orange</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="subtitles">Subtitles (2008 player only):</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="subtitles" name="subtitles">
+                    <option value="1" selected>Enabled</option>
+                    <option value="2">Disabled</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="playerQuality">Player Quality:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="playerQuality" name="playerQuality">
+                    <option value="1">High</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Low</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+
+<font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+<h2>Other Players</h2>
+</font>
+</td></tr>
+<tr><td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="quality">Video quality:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="quality" name="quality">
+                    <option value="1" selected>Modem (56k/s)</option>
+                    <option value="2">ISDN (128k/s)</option>
+                    <option value="3">DSL (192k/s)</option>
+                    <option value="4">Cable (300k/s)</option>
+                </select>
+    </font>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+        <label for="crop">Crop to fullscreen:</label>
+    </font>
+    </td>
+    <td>
+    <font face="Arial, MS Sans Serif, sans-serif">
+        <select id="crop" name="crop">
+                    <option value="1" selected>No</option>
+                    <option value="2">Yes</option>
+                </select>
+    </font>
+    </td>
+</tr>
+<tr><td>
+<font face="Arial, MS Sans Serif, sans-serif">
+<br>
+
+        <input type="submit" value="Submit">
+    </form>
+</font>
+</td></tr></table>
+
+<br>
+<table id="footer" width="700"  align="center" border="0" cellspacing="0"><tr><td>
+<footer>
+<hr>
+    <div align="center">
+    <font color="#000000" size=2 face="Arial, MS Sans Serif, sans-serif">
+        <span id="discord-link"><a href="https://discord.gg/XzZYQtARxS">Contact Us on Discord</a></span> | <span id="about-link"><a href="/about.html">About This Site</a></span> | <span id="help-link"><a href="/help.html">Support Guide</a></span><br>
+        &copy; 2024 WarpStream.net
+    </font>
+    </div>
+</footer>
+</td></tr></table>
+<br></body>
+</html>

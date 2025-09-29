@@ -1,0 +1,92 @@
+source_url,source_url_text,target_url,target_url_text,link_text,domain,depth,status_code,content_type
+http://www.reuters.com,Reuters: The Business of Information,http://www.reuters.com/rtrnews/images/home.htm,Reuters: Top News,Enter the news room,www.reuters.com,1,200,text/html; charset=UTF-8
+http://www.reuters.com,Reuters: The Business of Information,http://www.reuters.com/maps/flagbar2.map,Imagemap Error,,www.reuters.com,1,200,application/x-httpd-imap
+http://www.warpstream.net,WarpStream - Home,http://www.warpstream.net/,WarpStream - Home,,www.warpstream.net,1,200,text/html; charset=UTF-8
+http://www.warpstream.net/,WarpStream - Home,http://www.warpstream.net/browse,WarpStream - Videos,Videos,www.warpstream.net,2,200,text/html; charset=UTF-8
+http://www.warpstream.net/browse,WarpStream - Videos,http://www.warpstream.net/channels,WarpStream - Featured Channels,Channels,www.warpstream.net,3,200,text/html; charset=UTF-8
+http://www.warpstream.net/channels,WarpStream - Featured Channels,http://www.warpstream.net/playlists,WarpStream - Featured Playlists,Playlists,www.warpstream.net,4,200,text/html; charset=UTF-8
+http://www.warpstream.net/browse,WarpStream - Videos,http://www.warpstream.net/playlists,WarpStream - Featured Playlists,Playlists,www.warpstream.net,3,200,text/html; charset=UTF-8
+http://www.wikipedia.org,Main Page - Wikipedia,http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,Main Page,www.wikipedia.org,1,200,text/html; charset=UTF-8
+http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,http://www.wikipedia.org/wiki/Special:Recentchanges,Special:Recentchanges - Wikipedia,Recent changes,www.wikipedia.org,2,200,text/html; charset=UTF-8
+http://2004scape.org,Non-Affiliation Disclaimer | 2004Scape,http://2004scape.org/title,2004Scape - the massive online adventure game,,2004scape.org,1,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,http://2004scape.org/news,Latest News | 2004Scape,,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,http://2004scape.org/news?page=2,Latest News | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,http://2004scape.org/news?page=3,Latest News | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=0,Latest News | 2004Scape,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=0,Latest News | 2004Scape,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=1,Latest News | 2004Scape,http://2004scape.org/news?cat=1&page=2,Latest News | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=1,Latest News | 2004Scape,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=2,Latest News | 2004Scape,http://2004scape.org/news?cat=3,Latest News | 2004Scape,Customer Support,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,http://2004scape.org/news/180,Removed 2 world regions (for now!) | 2004Scape,Removed 2 world regions (for now!),2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/180,Removed 2 world regions (for now!) | 2004Scape,http://2004scape.org/news/159,2 new world regions! | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/159,2 new world regions! | 2004Scape,http://2004scape.org/news/152,New World Map | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,http://2004scape.org/news/179,November 16th Alpha Updates | 2004Scape,November 16th Alpha Updates,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/179,November 16th Alpha Updates | 2004Scape,http://2004scape.org/news/178,November 10th Alpha Updates | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/178,November 10th Alpha Updates | 2004Scape,http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,October 31st Alpha Updates,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,http://2004scape.org/news/176,October 11th Alpha Updates | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/176,October 11th Alpha Updates | 2004Scape,http://2004scape.org/news/175,September 21st Alpha Updates | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://68k.news,68k.news: Headlines From the Future,http://68k.news/index.php?loc=US,68k.news: Headlines From the Future,TOP,68k.news,1,200,text/html; charset=UTF-8
+http://68k.news/index.php?loc=US,68k.news: Headlines From the Future,http://68k.news/index.php?section=world&loc=US,68k.news: Headlines From the Future,WORLD,68k.news,2,200,text/html; charset=UTF-8
+http://68k.news/index.php?section=world&loc=US,68k.news: Headlines From the Future,http://68k.news/index.php?section=nation&loc=US,68k.news: Headlines From the Future,NATION,68k.news,3,200,text/html; charset=UTF-8
+http://halo.bungie.org,HBO: Part of your balanced breakfast.,http://halo.bungie.org/about.html,About This Site,About This Site,halo.bungie.org,1,200,text/html; charset=UTF-8
+http://halo.bungie.org/about.html,About This Site,http://halo.bungie.org/,HBO: Gah!,,halo.bungie.org,2,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: We are NOT Bungle Studios.,http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,News Archive,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,http://halo.bungie.org/conceptart/,Halo Concept Art,Concept Art,halo.bungie.org,4,200,text/html; charset=UTF-8
+http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,http://halo.bungie.org/halobulletins/,Waypoint's Halo Bulletins,Halo Bulletins,halo.bungie.org,4,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: We are NOT Bungle Studios.,http://halo.bungie.org/conceptart/,Halo Concept Art,Concept Art,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: We are NOT Bungle Studios.,http://halo.bungie.org/halobulletins/,Waypoint's Halo Bulletins,Halo Bulletins,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://retro.classicgamingarena.com,Classic Gaming Arena :: Home,http://retro.classicgamingarena.com/,Classic Gaming Arena :: Home,Classic Gaming Arena,retro.classicgamingarena.com,1,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/,Classic Gaming Arena :: Home,http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,4.1.32.0,retro.classicgamingarena.com,2,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,4.1.1.0,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,13,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,13,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://www.cornica.org,Home &mdash; Cornica,http://www.cornica.org/,Home &mdash; Cornica,,www.cornica.org,1,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,http://www.cornica.org/games,Games &mdash; Cornica,Games,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,http://www.cornica.org/videos/,Videos &mdash; Cornica,Videos,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/,Videos &mdash; Cornica,http://www.cornica.org/amiga/,Amiga &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/videos/,Videos &mdash; Cornica,http://www.cornica.org/apple/,Apple &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,http://www.cornica.org/videos/games/,Games &mdash; Cornica,Games,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/games/,Games &mdash; Cornica,http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,3dfx - Interview with Scott Sellers,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,3dfx - Interview with Scott Sellers,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,http://www.cornica.org/games/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,3dfx - Interview with Scott Sellers,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,http://www.cornica.org/movies,Movies &mdash; Cornica,Movie trailers,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/movies,Movies &mdash; Cornica,http://www.cornica.org/videos/movies/,Movies &mdash; Cornica,Movies,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/movies/,Movies &mdash; Cornica,http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,007 - A View To A Kill,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/movies,Movies &mdash; Cornica,http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,007 - A View To A Kill,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,http://www.cornica.org/movies/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,007 - A View To A Kill,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",no. 1,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",http://www.cornica.org/videos/commercials/,Commercials &mdash; Cornica,Commercials,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/commercials/,Commercials &mdash; Cornica,http://www.cornica.org/1984/,1984 - The commercial &mdash; Cornica,1984 - The commercial,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",http://www.cornica.org/commercials/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica","Introducing Macintosh (1984, 128k Mac)",www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,http://www.cornica.org/computer-for-the-rest-of-us,The Computer For The Rest of Us &mdash; Cornica,no. 2,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/computer-for-the-rest-of-us,The Computer For The Rest of Us &mdash; Cornica,http://www.cornica.org/commercials/computer-for-the-rest-of-us/,The Computer For The Rest of Us &mdash; Cornica,The Computer For The Rest of Us,www.cornica.org,3,200,text/html; charset=utf-8
+http://dosboxdmclub.com,DOSBox Deathmatch Club,http://dosboxdmclub.com/about.php,DOSBox Deathmatch Club,About,dosboxdmclub.com,1,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/about.php,DOSBox Deathmatch Club,http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,Go Back!,dosboxdmclub.com,2,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,http://dosboxdmclub.com/team.php,DOSBox Deathmatch Club,Team,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,http://dosboxdmclub.com/links.php,DOSBox Deathmatch Club,Links,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,http://dosboxdmclub.com/changelog.php,DOSBox Deathmatch Club,Changelog,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dreampipe.net,Dreampipe,http://dreampipe.net/updates/,Dreampipe   : Updates,,dreampipe.net,1,200,text/html; charset=UTF-8
+http://dreampipe.net/updates/,Dreampipe   : Updates,http://dreampipe.net/leaderboards,Dreampipe   : Leaderboards,,dreampipe.net,2,200,text/html; charset=UTF-8
+http://www.ericexperiment.com,The Eric Experiment,http://www.ericexperiment.com/,The Eric Experiment,,www.ericexperiment.com,1,200,text/html; charset=UTF-8
+http://legacy.escargot.chat,Escargot,http://legacy.escargot.chat/,Escargot,Home,legacy.escargot.chat,1,200,text/html; charset=utf-8
+http://legacy.escargot.chat/,Escargot,http://legacy.escargot.chat/connect/,Get Started | Escargot,Get Started,legacy.escargot.chat,2,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/,Get Started | Escargot,http://legacy.escargot.chat/download/,Downloads | Escargot,Download,legacy.escargot.chat,3,200,text/html; charset=utf-8
+http://legacy.escargot.chat/download/,Downloads | Escargot,http://legacy.escargot.chat/download/msn/,Escargot,MSN/Windows Live Messenger,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://legacy.escargot.chat/download/,Downloads | Escargot,http://legacy.escargot.chat/download/msn/extras/,Extras | Escargot,MSN Extras,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/,Get Started | Escargot,http://legacy.escargot.chat/connect/guides/,Connection Guides | Escargot,connection guides,legacy.escargot.chat,3,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/guides/,Connection Guides | Escargot,http://legacy.escargot.chat/patcher/,Patcher | Escargot,Escargot Patcher,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://www.eternal-september.org,www.eternal-september.org,http://www.eternal-september.org/,www.eternal-september.org,Home,www.eternal-september.org,1,200,text/html; charset=UTF-8
+http://www.eternal-september.org/,www.eternal-september.org,http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,Peering,www.eternal-september.org,2,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,NoCeM,www.eternal-september.org,3,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,http://www.eternal-september.org/index.php?showpage=abuse,www.eternal-september.org,Usenet Abuse FAQ,www.eternal-september.org,4,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,http://www.eternal-september.org/index.php?showpage=stats,www.eternal-september.org,Statistics,www.eternal-september.org,4,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,http://www.eternal-september.org/index.php?showpage=abuse,www.eternal-september.org,Usenet Abuse FAQ,www.eternal-september.org,3,200,text/html; charset=UTF-8

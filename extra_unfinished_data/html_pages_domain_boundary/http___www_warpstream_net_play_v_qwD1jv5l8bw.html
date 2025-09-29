@@ -1,0 +1,528 @@
+
+<html>
+
+<head>
+    
+        <script language="javascript" type="text/javascript">
+
+        function showInline(elName) {
+            var theElemenet = document.getElementById(elName);
+            if (theElemenet) {
+                theElemenet.style.display = "inline";
+            }
+        }
+        function hideInline(elName) {
+            var theElemenet = document.getElementById(elName);
+            if (theElemenet) {
+                theElemenet.style.display = "none";
+            }
+        }
+
+        // Player stuff
+
+        function openFull() {
+            var fsold = window.open("/watch_fullscreen?video_id=qwD1jv5l8bw&l=491&fs=1&title=" + "Playing DOOM on my 486 DX2 66MHz" + "&width=" + screen.availWidth + "&height=" + (screen.availHeight - 42),
+                "FullScreenVideo", "toolbar=no,width=" + screen.availWidth + ",height=" + (screen.availHeight - 42)
+            + ",status=no,resizable=yes,fullscreen=yes,scrollbars=no");
+            params = 'width='+screen.width;
+            params += ', height='+screen.height;
+            params += ', top=0, left=0';
+            params += ', fullscreen=yes';
+            params += ', directories=no';
+            params += ', location=no';
+            params += ', menubar=no';
+            params += ', resizable=no';
+            params += ', scrollbars=no';
+            params += ', status=no';
+            params += ', toolbar=no';
+            
+                        var fs = window.open("/watch_fullscreen?video_id=qwD1jv5l8bw&l=491&fs=1&title=Playing+DOOM+on+my+486+DX2+66MHz", "FullScreenVideo", params);
+                        
+            fs.focus();
+        }
+        
+        function checkCurrentVideo(video_id) {
+            //2007 and 2008 players call this function upon exiting native fullscreen mode.
+            //If the user clicked on an end screen video while in fullscreen, we navigate to the page for that video.
+            //It may be possible to handle this a better way in the future by changing the text on the current page.
+            if ("qwD1jv5l8bw" != video_id) {
+                window.location.href = "/play?v=" + video_id;
+            }
+        }
+
+        function gotoNext() {
+                        
+        }
+
+        function hideDiv(d) {
+            d.style.display = "none";
+        }
+
+        function showDiv(d) {
+            d.style.display = "block";
+        }
+
+        function shareVideoFromFlash() {
+            //TODO: open a popup template to share the video. Used with 2007 player
+        }
+    </script>
+    
+    <style type="text/css">
+    div.relModuleEntry {
+	    border-bottom: 1px dashed #999999;
+    }
+    </style>
+
+    <title>WarpStream - Playing DOOM on my 486 DX2 66MHz</title>
+</head>
+
+
+<table id="navbar-container" width="750" bgcolor="#FFFFFF" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="center" bgcolor="#FFFFFF">
+        <td id="header-left" valign="top">
+                                    <a href="/"><img id="logo" alt="WarpStream - Home" border="0" src="/img/header-left.gif" height="50" width="187"></a>
+                                </td>
+                <td id="header-middle" height="50" width="385" valign="center" background="/img/header-middle-ext.gif" align="center">
+                <form action="results" method="GET">
+            <input  type="text" name="q">
+            <select name="type" id="type">
+                <option value="videos">Videos</option>
+                <option value="users">Channels</option>
+                <!-- <option value="lists">Playlists</option> -->
+            </select>
+            <input type="submit" value="Search">
+          </form>
+        </td>
+        <td id="header-right" height="50" width="178">
+            <font color="#000000" face="Arial, MS Sans Serif, sans-serif" size="2">
+                                    <b>Online: </b><font color="green">3</font><br>
+                                <b>Videos: </b>111641<br>
+                <b>Channels: </b>72500            </font>
+        </td>
+        </tr>
+    </table>
+    <table width="750" cellpadding="4" cellspacing="0"  align="center">
+      <tr>
+
+	<td id="nav-bar" bgcolor="#000000" height="20" valign="MIDDLE" nowrap="" colspan="4" background="/img/gradientbar.gif">
+		<font color="#FFFFFF" face="Verdana, Arial" size="1">
+		<b>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="home-link" style="color:#ffffff;text-decoration:none;" href="/" target="_top"><font color="#ffffff">Home</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="videos-link" style="color:#ffffff;text-decoration:none;" href="/browse" target="_top"><font color="#ffffff">Videos</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="channels-link" style="color:#ffffff;text-decoration:none;" href="/channels" target="_top"><font color="#ffffff">Channels</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="playlists-link" style="color:#ffffff;text-decoration:none;" href="/playlists" target="_top"><font color="#ffffff">Playlists</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="settings-link" style="color:#ffffff;text-decoration:none;" href="/settings" target="_top"><font color="#ffffff">Settings</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="history-link" style="color:#ffffff;text-decoration:none;" href="/history" target="_top"><font color="#ffffff">History</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+				</b>
+		</font>
+        </td>
+</tr>
+    </table>
+<body link="#7487FA" vlink="#7487FA" alink="#CFAC38" bgcolor="#FFFFFF" topmargin=0 leftmargin=0 bottommargin=0 rightmargin=0 marginheight=0 marginwidth=0>
+<font face="Arial, MS Sans Serif, sans-serif">
+<table id="play-page" width="750" border=0 cellpadding="6" cellspacing="2" align="center" valign="center">
+    <tr>
+        <td id="video-title" bgcolor="#FFFFFF" colspan="2">
+            <font size="5" color="#000000" face="Arial, MS Sans Serif, sans-serif"><b>Playing DOOM on my 486 DX2 66MHz</b></font>
+        </td>
+    </tr>
+    <tr>
+        <td id="main" bgcolor="#FFFFFF" width="60%" valign="top">
+            <table border=0 width="100%">
+                <tr>
+                    <td>
+                        <div id="playerDiv" align="center" style="height: 370px;">
+                                                                    <OBJECT ID="Player" WIDTH=352 HEIGHT=360
+                                        CLASSID="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95" TYPE="application/x-oleobject">
+
+                                        <PARAM name="autoStart"
+                                            value="True">
+                                        <PARAM name="uiMode" value="mini">
+                                        <PARAM name="filename"
+                                            value="http://www.warpstream.net/playlist.asx?v=qwD1jv5l8bw&q=1&crop=0&title=Playing+DOOM+on+my+486+DX2+66MHz&author=FiveLeggedSpider&copyright=Warpstream.net">
+                                        <PARAM name="ShowStatusBar" value="True">
+
+                                        <EMBED TYPE="application/x-mplayer2" NAME="Player" WIDTH=352 HEIGHT=360
+                                            FILENAME="http://www.warpstream.net/playlist.asx?v=qwD1jv5l8bw&q=1&crop=0&title=Playing+DOOM+on+my+486+DX2+66MHz&author=FiveLeggedSpider&copyright=Warpstream.net"
+                                            AUTOSTART="True"
+                                            SHOWSTATUSBAR=1>
+                                        </EMBED>
+                                        <!-- the following line is for systems that do not have the Windows Media Player plugin installed. -->
+                                        <NOEMBED>It seems like you do not have the Windows Media Player 6.4+ plugin installed.
+                                            You can try <A HREF="/playlist.asx?v=qwD1jv5l8bw&q=1">playing the clip using the
+                                                stand-alone player</A> instead!</NOEMBED>
+                                    </OBJECT>
+
+                                    <!-- <br>
+                    Bitrate: <a href="/embed_asf.cgi?v=qwD1jv5l8bw&q=1">56k</a> <a href="/embed_asf.cgi?v=qwD1jv5l8bw&q=2">128k</a> <a href="/embed_asf.cgi?v=qwD1jv5l8bw&q=3">192k</a> <a href="/embed_asf.cgi?v=qwD1jv5l8bw&q=4">256k</a>
+                    <br>
+                    Launch player: <a href="/playlist.asx?v=qwD1jv5l8bw&q=1">56k</a> <a href="/playlist.asx?v=qwD1jv5l8bw&q=2">128k</a> <a href="/playlist.asx?v=qwD1jv5l8bw&q=3">192k</a> <a href="/playlist.asx?v=qwD1jv5l8bw&q=4">256k</a>
+                    -->
+                                                        </div>
+                    </td>
+                </tr>
+                                <tr>
+                    <td>
+                        <table id="stat-box" width="100%" border="0" cellpadding="4" bgcolor="#CCCCCC">
+                            <tr>
+                                <td bgcolor="#FFFFFF" width="100%">
+                                    <table width="100%">
+                                        <tr>
+                                            <td valign="top" width="20%">
+                                                <font size=2 face="Arial, MS Sans Serif, sans-serif">
+                                                    <font color="gray"><b>Rating </b></font><br>
+                                                </font>
+                                                <img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif">                                                <br>
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">(0 ratings)</font>
+                                            </td>
+                                            <td bgcolor="#FFFFFF" width="52%" valign="top" align="center">
+
+                                                <!-- EXTRA BUTTONS GO HERE -->
+                                                <table id="player-selectors" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+                                                                                                    <tr>
+                                                        <td id="real-button" bgcolor="#FFFFFF">
+                                                            <center><a href="play?v=qwD1jv5l8bw&f=rm&q=4"><img
+                                                                        src="http://www.inode.com/icons/g2_video.gif"
+                                                                        alt="Stream on Real" border="0" id="real-button-img"></a></center>
+                                                        </td>
+                                                        <td bgcolor="#FFFFFF">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td id="real-modem">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                Modem&nbsp;<br></font><a
+                                                                                href="play?v=qwD1jv5l8bw&f=rm&q=1">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">56k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                    <td id="real-isdn">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                &nbsp;ISDN&nbsp;<br></font><a
+                                                                                href="play?v=qwD1jv5l8bw&f=rm&q=2">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">128k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                    <td id="real-cable">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                &nbsp;Cable<br></font><a
+                                                                                href="play?v=qwD1jv5l8bw&f=rm&q=4">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">300k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                                                                                                                                                                    <tr>
+                                                        <td id="flash-button" bgcolor="#FFFFFF" colspan="2">
+                                                            <center><a href="play?v=qwD1jv5l8bw&f=flv"><img id="flash-button-img" src="http://www.inode.com/images/flash_logo_s.gif" alt="Stream on Flash" border="0"></a></center>
+                                                        </td>
+                                                    </tr>
+                                                                                                </table>
+
+                                            </td>
+                                            <td id="video-stats" valign="top" bgcolor="#FFFFFF" width="30%">
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                    <font color="gray"><b>Views: </b></font>
+                                                    3<br>
+                                                    <font color="gray"><b>Comments: </b></font>
+                                                    N/A<br>
+                                                    <font color="gray"><b>Favorited: </b></font>
+                                                    N/A<br>
+                                                </font>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td id="about-support">
+                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+                        <b>Playback issues?</b> See our <a href="help.html">support guide</a>.<br><br>
+                    </font>
+                    </td>
+                </tr>
+                                <tr>
+                    <td id="comments">
+                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+                                            </font>
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+        <td id="sidebar" width="40%" valign="top">
+            <table bgcolor="#CCCCCC" width="100%">
+                <tr>
+                    <td bgcolor="#FFFFFF" width="100%" valign="top">
+                        <table width="100%" border=0 cellpadding="4" cellspacing="2" align="center">
+                            <tr>
+                                <td id="about-video">
+                                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif" id="about-title" size="3">
+                                        <b>About this video</b>
+                                    </font><br><br>
+                                    <span id="about-contents">
+                                    <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                        <font id="added" color="gray"><b>Added on </b></font>
+                                        <span id="upload-date">December 6, 2024</span><br>
+                                        <font id="by" color="gray"><b>by </b></font><a id="uploader"
+                                            href="profile?u=FiveLeggedSpider">
+                                            FiveLeggedSpider                                        </a> <span id="upload-count">(28 videos)</span>
+                                    </font>
+                                    <br><br>
+                                    <span id="vidDescBegin" style="display: inline">
+                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                            Work is nearing completion on my 486, I ended up needing to 3D print and<br />
+spray paint an entire new front panel for this computer.<br />
+<br />
+System Specs:<br />
+IBM PC-350 OPTi Chipset Motherboard<br />
+Intel 486 DX2-66<br />
+128KB 15ns L2 Cache<br />
+8MB 70NS FPM Memory<br />
+Cirrus Logic GL-5430 1MB VLB Integrated<br />
+Creative Labs Soun                                        </font>
+                                    </span>
+                                                                            <span id="vidDescRemain" style="display: none">
+                                            <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                Work is nearing completion on my 486, I ended up needing to 3D print and<br />
+spray paint an entire new front panel for this computer.<br />
+<br />
+System Specs:<br />
+IBM PC-350 OPTi Chipset Motherboard<br />
+Intel 486 DX2-66<br />
+128KB 15ns L2 Cache<br />
+8MB 70NS FPM Memory<br />
+Cirrus Logic GL-5430 1MB VLB Integrated<br />
+Creative Labs SoundBlaster Vibra16 ISA with Yamaha YMF-262<br />
+Conner CFS-425A 425MB 3600RPM IDE HDD<br />
+3.5" 1.44MB Floppy Drive                                            </font>
+                                        </span>
+                                        <span id="vidDescMore" style="display: inline">... (<a href="#" class="eLink"
+                                                onclick="showInline('vidDescRemain'); hideInline('vidDescMore'); hideInline('vidDescBegin'); showInline('vidDescLess'); return false;">
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">more</font>
+                                            </a>)</span>
+                                        <span id="vidDescLess" style="display: none">(<a href="#" class="eLink"
+                                                onclick="hideInline('vidDescRemain'); hideInline('vidDescLess'); showInline('vidDescBegin'); showInline('vidDescMore'); return false;">
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">less</font>
+                                            </a>)</span>
+                                                                        <br><br>
+
+                                    <span id="tags"><font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                        <font color="gray"><b>Tags: </b></font>
+                                        <a href="results?q=Playing">Playing</a>, <a href="results?q=DOOM">DOOM</a>, <a href="results?q=on">on</a>, <a href="results?q=my">my</a>, <a href="results?q=486">486</a>, <a href="results?q=DX2">DX2</a>, <a href="results?q=66MHz">66MHz</a>                                        <br>
+                                    </font>
+                                    </span>
+                                    </span>
+                                    
+                                                                    </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table bgcolor="#CCCCCC" width="100%">
+                <tr>
+                    <td bgcolor="#FFFFFF" width="100%" valign="top">
+                        <table width="100%" border=0 cellpadding="4" cellspacing="2" align="center">
+                            <tr>
+                                <td id="sidebar-videos">
+                                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif" id="related-title" size="3"><b>Explore more videos</b></font><br><br>                                    <table id="related-videos" width="100%" cellspacing="5">
+                                                                                        <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=2ybwKfDvibY">
+                                                            <img src="img/thumbs/2/Y/2ybwKfDvibY/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=2ybwKfDvibY">
+                                                                BRUTAL DOOM DEATHMATCH                                                            </a><br>
+                                                            <b>
+                                                                00:54                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=PC RETROGAMERE 95">PC RETROGAMERE 95</a><br>
+                                                            Views: 18                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=ou1VBHiBsL8">
+                                                            <img src="img/thumbs/O/U/ou1VBHiBsL8/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=ou1VBHiBsL8">
+                                                                Half-Life 2 Anniversary Special: Gameplay on my Pentium 4                                                            </a><br>
+                                                            <b>
+                                                                12:51                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=FiveLeggedSpider">FiveLeggedSpider</a><br>
+                                                            Views: 3                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=4D00aIB6xgc">
+                                                            <img src="img/thumbs/4/D/4D00aIB6xgc/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=4D00aIB6xgc">
+                                                                my life story (told with flash cards)                                                            </a><br>
+                                                            <b>
+                                                                02:52                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=brahkie">brahkie</a><br>
+                                                            Views: 52                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=1kNILlSr6cs">
+                                                            <img src="img/thumbs/1/K/1kNILlSr6cs/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=1kNILlSr6cs">
+                                                                DOOM on HP Pavilion 502n running Windows 2000 w/ VDMSound                                                            </a><br>
+                                                            <b>
+                                                                00:59                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=THEBaratusII">THEBaratusII</a><br>
+                                                            Views: 6                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=5Vc-mtSzneg">
+                                                            <img src="img/thumbs/5/V/5Vc-mtSzneg/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=5Vc-mtSzneg">
+                                                                Installing Windows 95 OSR2 on the Toshiba Tecra 730XCDT                                                            </a><br>
+                                                            <b>
+                                                                37:42                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=The Flying Scotsman">The Flying Scotsman</a><br>
+                                                            Views: 2                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=6QEObI9yTdQ">
+                                                            <img src="img/thumbs/6/Q/6QEObI9yTdQ/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=6QEObI9yTdQ">
+                                                                Crimsonland (DOOM SB16 FM) - In Game Tune                                                            </a><br>
+                                                            <b>
+                                                                03:43                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=THEBaratusII">THEBaratusII</a><br>
+                                                            Views: 0                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=ZdjFOeY4U-s">
+                                                            <img src="img/thumbs/Z/D/ZdjFOeY4U-s/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=ZdjFOeY4U-s">
+                                                                RetroTutorial: Configuring mTCP on the Tandy 1000 HX and telnet/FTP/mutt on the Raspberry Pi                                                            </a><br>
+                                                            <b>
+                                                                17:48                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=RetroTech Chris">RetroTech Chris</a><br>
+                                                            Views: 6                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=10M3tlTgVTI">
+                                                            <img src="img/thumbs/1/0/10M3tlTgVTI/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=10M3tlTgVTI">
+                                                                Three Weird Old Computer Mice: Phasers, Pedals, & Little Tikes                                                            </a><br>
+                                                            <b>
+                                                                24:40                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=LGR">LGR</a><br>
+                                                            Views: 4                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
+<table id="footer" width="700"  align="center" border="0" cellspacing="0"><tr><td>
+<footer>
+<hr>
+    <div align="center">
+    <font color="#000000" size=2 face="Arial, MS Sans Serif, sans-serif">
+        <span id="discord-link"><a href="https://discord.gg/XzZYQtARxS">Contact Us on Discord</a></span> | <span id="about-link"><a href="/about.html">About This Site</a></span> | <span id="help-link"><a href="/help.html">Support Guide</a></span><br>
+        &copy; 2024 WarpStream.net
+    </font>
+    </div>
+</footer>
+</td></tr></table>
+<br></font>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Connection Guides | Escargot</title>
+    <link rel="stylesheet" href="/css/site.css?v=2">
+
+</head>
+<body marginwidth="50">
+
+<table class="w-100" width="100%">
+    <tr>
+        <td>
+            <h1 class="font">
+                <img alt="Escargot logo" class="escargot" src="/gif/favicon.gif">
+                <span>Escargot </span>
+                <font color="#808080" class="legacy">Legacy</font>
+            </h1>
+        </td>
+        <td class="text-right" align="right">
+            <p align="right" class="font"><a href="/">Home</a> | <a href="/connect/">Get Started</a> | <a href="/download/">Download</a></p>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<h1>Connecting</h1>
+<p class="text-muted">On this page are several guides for connecting to the Escargot MSN service.</p>
+
+<div id="msn-pre4-7">
+    <h2>Pre 4.7.2005</h2>
+    <p>Patching these versions of MSN ultimately involves the registry, but there are three ways to achieve this.</p>
+    <p>
+        The easiest way to patch MSN Messenger versions before 4.7.2005, or repatch versions with the old servers, is to use the
+        <a href="/patcher/">Escargot Patcher</a>. It'll patch everything needed easily.
+    </p>
+    <p>
+        The second way to patch these MSN Messenger versions is to download a registry file we made
+        specifically to get these versions to connect to Escargot, which is available
+        <a href="//storage.levelleap.com/nina/clients/msnp/SetEscargotServer.reg">here</a>.
+    </p>
+    <p>After downloading the file, double click it, and click "Yes". You should be ready to connect to our servers.</p>
+    <p>
+        The third, more advanced method is to go into the registry itself and add the key needed to connect to Escargot
+        from MSN Messenger. Note that you must be aware that if you're not experienced enough with modifying the Windows
+        registry, you can potentially corrupt your computer's configuration and potentially render it at an unusable state.
+        However, if you're feeling courageous or can't use our supplied registry file, then proceed with caution.
+    </p>
+    <p>
+        First, you must open Regedit. This is usually done by pressing Win + R, and typing <code>regedit</code> in the
+        dialog box that appears.
+    </p>
+    <img src="http://static.levelleap.com/sites/escargot.chat/support/connecting-msn-step1-alt-run.jpg"
+         class="mb-3 img-fluid" alt=""/>
+    <p>
+        In Regedit, navigate to <code>HKEY_CURRENT_USER\Software\Microsoft\MessengerService</code> (foreword for people
+        using 5.0 - 6.2, navigate to <code>HKEY_CURRENT_USER\Software\Microsoft\MSNMessenger</code> instead). In the
+        right-hand pane, check for a registry value named <code>Server</code>. If it exists, edit it so that it contains
+        <code>msnmsgr.escargot.chat</code>. If it doesn't, create a registry value with the exact name and value mentioned
+        before. Close Regedit after you're done with this process.
+    </p>
+    <p>
+        After you're done changing the configuration, make sure MSN Messenger isn't running in the background. If it is,
+        then close it. Launch it, and then proceed with login.
+    </p>
+</div>
+
+<div id="msn-4-5-patched">
+    <h2>5.0 and above (Pre-patched)</h2>
+    <p>
+        <a href="/download/msn/">Download</a> the version of MSN Messenger you seek. When you're done, if you're installing
+        MSN Messenger 5.0 - 6.2, follow the registry instructions mentioned in the <a href="#msn-pre4-7">pre-4.7.2005</a>
+        section. Other than that, you're good to go!
+    </p>
+</div>
+
+<div id="msn-4-5-unpatched">
+    <h2>4.7.2005-3001, 5.0 and above (Unpatched)</h2>
+    <p>
+        <i>
+            Our new patching method for these clients is a bit advanced, so we advise people who don't know what they're
+            doing to stay away from these instructions and possibly refer to someone that can patch them.
+        </i>
+    </p>
+    <p>
+        To patch these clients, you will need the <a href="/download/switcher/">Escargot Switcher</a> patch and the necessary
+        tools to apply it. First, extract the Switcher DLL and base configuration INI from the downloaded ZIP, change the
+        <code>type</code> value in the configuration to <code>msn</code>, and copy both files to MSN Messenger's program
+        directory, where <code>msnmsgr.exe</code> is located.
+    </p>
+    <p>
+        Next, open the <code>msnmsgr.exe</code> file in a PE editor and patch it with an import to the Switcher DLL you
+        copied. We have a quick guide on <a href="/download/switcher/#import-guide">Switcher's download page</a> on how
+        to perform this.
+    </p>
+    <p>
+        If you're patching WLM 2009, then you should also copy the Switcher files to the directory where <code>wlcomm.exe</code>
+        is located, and patch that in a similar manner to the previous file. If you're dealing with 4.7 - 6.2, then follow the
+        same registry instructions in the <a href="#msn-pre4-7">pre-4.7.2005</a> section. You should be able to use MSN
+        Messenger after completing all the steps.
+    </p>
+</div>
+
+
+<hr>
+<div class="info-legacy">
+    <FONT color="#808080" SIZE="-1">
+        <b>Hey!</b> Just so you know, you're using the legacy version of our website, meant for old devices and what-not. This is a simple website meant for simple browsing
+        and it's very simplified. Browse our website on a modern device for a better experience - <a href="https://escargot.chat">escargot.chat</a>
+
+    </FONT>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,745 @@
+
+<html>
+
+<head>
+    
+        <script language="javascript" type="text/javascript">
+
+        function showInline(elName) {
+            var theElemenet = document.getElementById(elName);
+            if (theElemenet) {
+                theElemenet.style.display = "inline";
+            }
+        }
+        function hideInline(elName) {
+            var theElemenet = document.getElementById(elName);
+            if (theElemenet) {
+                theElemenet.style.display = "none";
+            }
+        }
+
+        // Player stuff
+
+        function openFull() {
+            var fsold = window.open("/watch_fullscreen?video_id=leMzjdb2WVw&l=234&fs=1&title=" + "Take On Me" + "&width=" + screen.availWidth + "&height=" + (screen.availHeight - 42),
+                "FullScreenVideo", "toolbar=no,width=" + screen.availWidth + ",height=" + (screen.availHeight - 42)
+            + ",status=no,resizable=yes,fullscreen=yes,scrollbars=no");
+            params = 'width='+screen.width;
+            params += ', height='+screen.height;
+            params += ', top=0, left=0';
+            params += ', fullscreen=yes';
+            params += ', directories=no';
+            params += ', location=no';
+            params += ', menubar=no';
+            params += ', resizable=no';
+            params += ', scrollbars=no';
+            params += ', status=no';
+            params += ', toolbar=no';
+            
+                        var fs = window.open("/watch_fullscreen?video_id=leMzjdb2WVw&l=234&fs=1&title=Take+On+Me", "FullScreenVideo", params);
+                        
+            fs.focus();
+        }
+        
+        function checkCurrentVideo(video_id) {
+            //2007 and 2008 players call this function upon exiting native fullscreen mode.
+            //If the user clicked on an end screen video while in fullscreen, we navigate to the page for that video.
+            //It may be possible to handle this a better way in the future by changing the text on the current page.
+            if ("leMzjdb2WVw" != video_id) {
+                window.location.href = "/play?v=" + video_id;
+            }
+        }
+
+        function gotoNext() {
+                        
+        }
+
+        function hideDiv(d) {
+            d.style.display = "none";
+        }
+
+        function showDiv(d) {
+            d.style.display = "block";
+        }
+
+        function shareVideoFromFlash() {
+            //TODO: open a popup template to share the video. Used with 2007 player
+        }
+    </script>
+    
+    <style type="text/css">
+    div.relModuleEntry {
+	    border-bottom: 1px dashed #999999;
+    }
+    </style>
+
+    <title>WarpStream - Take On Me</title>
+</head>
+
+
+<table id="navbar-container" width="750" bgcolor="#FFFFFF" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="center" bgcolor="#FFFFFF">
+        <td id="header-left" valign="top">
+                                    <a href="/"><img id="logo" alt="WarpStream - Home" border="0" src="/img/header-left.gif" height="50" width="187"></a>
+                                </td>
+                <td id="header-middle" height="50" width="385" valign="center" background="/img/header-middle-ext.gif" align="center">
+                <form action="results" method="GET">
+            <input  type="text" name="q">
+            <select name="type" id="type">
+                <option value="videos">Videos</option>
+                <option value="users">Channels</option>
+                <!-- <option value="lists">Playlists</option> -->
+            </select>
+            <input type="submit" value="Search">
+          </form>
+        </td>
+        <td id="header-right" height="50" width="178">
+            <font color="#000000" face="Arial, MS Sans Serif, sans-serif" size="2">
+                                    <b>Online: </b><font color="green">3</font><br>
+                                <b>Videos: </b>111641<br>
+                <b>Channels: </b>72500            </font>
+        </td>
+        </tr>
+    </table>
+    <table width="750" cellpadding="4" cellspacing="0"  align="center">
+      <tr>
+
+	<td id="nav-bar" bgcolor="#000000" height="20" valign="MIDDLE" nowrap="" colspan="4" background="/img/gradientbar.gif">
+		<font color="#FFFFFF" face="Verdana, Arial" size="1">
+		<b>
+					&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="home-link" style="color:#ffffff;text-decoration:none;" href="/" target="_top"><font color="#ffffff">Home</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="videos-link" style="color:#ffffff;text-decoration:none;" href="/browse" target="_top"><font color="#ffffff">Videos</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="channels-link" style="color:#ffffff;text-decoration:none;" href="/channels" target="_top"><font color="#ffffff">Channels</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="playlists-link" style="color:#ffffff;text-decoration:none;" href="/playlists" target="_top"><font color="#ffffff">Playlists</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="settings-link" style="color:#ffffff;text-decoration:none;" href="/settings" target="_top"><font color="#ffffff">Settings</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-link" id="history-link" style="color:#ffffff;text-decoration:none;" href="/history" target="_top"><font color="#ffffff">History</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff">|</font>
+				</b>
+		</font>
+        </td>
+</tr>
+    </table>
+<body link="#7487FA" vlink="#7487FA" alink="#CFAC38" bgcolor="#FFFFFF" topmargin=0 leftmargin=0 bottommargin=0 rightmargin=0 marginheight=0 marginwidth=0>
+<font face="Arial, MS Sans Serif, sans-serif">
+<table id="play-page" width="750" border=0 cellpadding="6" cellspacing="2" align="center" valign="center">
+    <tr>
+        <td id="video-title" bgcolor="#FFFFFF" colspan="2">
+            <font size="5" color="#000000" face="Arial, MS Sans Serif, sans-serif"><b>Take On Me</b></font>
+        </td>
+    </tr>
+    <tr>
+        <td id="main" bgcolor="#FFFFFF" width="60%" valign="top">
+            <table border=0 width="100%">
+                <tr>
+                    <td>
+                        <div id="playerDiv" align="center" style="height: 370px;">
+                                                                                                    <OBJECT ID=RVOCX CLASSID="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA" WIDTH="352"
+                                        HEIGHT="288">
+                                        <PARAM name="src"
+                                            value="/rm?v=leMzjdb2WVw&q=1&crop=0&title=Take+On+Me&author=trrxybeth&copyright=Warpstream.net&comment=RealMedia%20G2">
+                                        <PARAM name="autostart"
+                                            value="true">
+                                        <PARAM name="controls" value="ImageWindow">
+                                        <PARAM name="console" value="video">
+                                        <EMBED TYPE="audio/x-pn-realaudio-plugin"
+                                            SRC="/rm?v=leMzjdb2WVw&q=1&crop=0&title=Take+On+Me&author=trrxybeth&copyright=Warpstream.net&comment=RealMedia%20G2"
+                                            WIDTH="352" HEIGHT="288"
+                                            AUTOSTART="true"
+                                            CONTROLS="ImageWindow" CONSOLE="video"></EMBED>
+                                        <!-- the following line is for systems that do not have the Real Player plugin installed. -->
+                                        <NOEMBED>It seems like you do not have the Real Player 8 plug-in installed. You can try
+                                            <A HREF="/rm?v=leMzjdb2WVw&q=1&crop=0">playing the clip
+                                                using the stand-alone player</A> instead!
+                                        </NOEMBED>
+                                    </OBJECT>
+                                    <br>
+
+                                    <OBJECT ID=RVOCX CLASSID="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA" WIDTH="352"
+                                        HEIGHT="140">
+                                        <!-- <PARAM name="controls" value="ImageWindow,ControlPanel,StatusBar"> -->
+                                        <!-- <PARAM name="controls" value="ImageWindow,InfoVolumepanel"> -->
+                                        <PARAM name="controls" value="PlayButton,InfoVolumePanel,Statusfield">
+                                        <PARAM name="console" value="video">
+                                        <EMBED TYPE="audio/x-pn-realaudio-plugin"
+                                            SRC="/rm?v=leMzjdb2WVw&q=1&title=Take+On+Me&author=trrxybeth&copyright=Warpstream.net&comment=RealMedia%20G2"
+                                            WIDTH="352" HEIGHT="140"
+                                            AUTOSTART="true"
+                                            CONTROLS="PlayButton,InfoVolumePanel,Statusfield" CONSOLE="video"></EMBED>
+                                    </OBJECT>
+                                    <!-- <br>
+Bitrate: <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=1">56k</a> <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=2">128k</a> <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=3">192k</a> <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=4">256k</a> <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=5">512k</a> <a href="/embed_rm.cgi?v=leMzjdb2WVw&q=3&audio=1">Audio</a>
+<br>
+Launch player: <a href="/rm?v=leMzjdb2WVw&q=1">56k</a> <a href="/rm?v=leMzjdb2WVw&q=2">128k</a> <a href="/rm?v=leMzjdb2WVw&q=3">192k</a> <a href="/rm?v=leMzjdb2WVw&q=4">256k</a> <a href="/rm?v=leMzjdb2WVw&q=5">512k</a> <a href="/rm?v=leMzjdb2WVw&q=3&audio=1">Audio</a>
+-->
+                                                                                        </div>
+                    </td>
+                </tr>
+                                <tr>
+                    <td>
+                        <table id="stat-box" width="100%" border="0" cellpadding="4" bgcolor="#CCCCCC">
+                            <tr>
+                                <td bgcolor="#FFFFFF" width="100%">
+                                    <table width="100%">
+                                        <tr>
+                                            <td valign="top" width="20%">
+                                                <font size=2 face="Arial, MS Sans Serif, sans-serif">
+                                                    <font color="gray"><b>Rating </b></font><br>
+                                                </font>
+                                                <img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif"><img class="star" src="img/star.gif">                                                <br>
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">(1,609 ratings)</font>
+                                            </td>
+                                            <td bgcolor="#FFFFFF" width="52%" valign="top" align="center">
+
+                                                <!-- EXTRA BUTTONS GO HERE -->
+                                                <table id="player-selectors" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+                                                                                                                                                    <tr>
+                                                        <td id="wmp-button" bgcolor="#FFFFFF">
+                                                            <center><a href="play?v=leMzjdb2WVw&f=wmp&q=4"><img
+                                                                        src="http://www.inode.com/icons/wmt_video.gif"
+                                                                        alt="Stream on Windows Media" border="0" id="wmp-button-img"></a>
+                                                            </center>
+                                                        </td>
+                                                        <td bgcolor="#FFFFFF">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td id="wmp-modem">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                Modem&nbsp;<br></font><a
+                                                                                href="play?v=leMzjdb2WVw&f=wmp&q=1">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">56k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                    <td id="wmp-isdn">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                &nbsp;ISDN&nbsp;<br></font><a
+                                                                                href="play?v=leMzjdb2WVw&f=wmp&q=2">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">128k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                    <td id="wmp-cable">
+                                                                        <center>
+                                                                            <font face="MS Sans Serif, sans-serif"
+                                                                                color="gray" size="-2">
+                                                                                &nbsp;Cable<br></font><a
+                                                                                href="play?v=leMzjdb2WVw&f=wmp&q=4">
+                                                                                <font
+                                                                                    face="Impact, Arial, MS Sans Serif, sans-serif"
+                                                                                    size="2">300k
+                                                                            </a>
+                                                                        </center>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                                                                                                                    <tr>
+                                                        <td id="flash-button" bgcolor="#FFFFFF" colspan="2">
+                                                            <center><a href="play?v=leMzjdb2WVw&f=flv"><img id="flash-button-img" src="http://www.inode.com/images/flash_logo_s.gif" alt="Stream on Flash" border="0"></a></center>
+                                                        </td>
+                                                    </tr>
+                                                                                                </table>
+
+                                            </td>
+                                            <td id="video-stats" valign="top" bgcolor="#FFFFFF" width="30%">
+                                                <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                    <font color="gray"><b>Views: </b></font>
+                                                    343,278<br>
+                                                    <font color="gray"><b>Comments: </b></font>
+                                                    583<br>
+                                                    <font color="gray"><b>Favorited: </b></font>
+                                                    5,067<br>
+                                                </font>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td id="about-support">
+                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+                        <b>Playback issues?</b> See our <a href="help.html">support guide</a>.<br><br>
+                    </font>
+                    </td>
+                </tr>
+                                <tr>
+                    <td id="comments">
+                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif">
+                        <b>Recent Comments</b><br><hr><font color="#000000" size="2"><div id="div_main_comment2">
+</div>
+<div id="div_3sh9KqHWptU">
+ <!-- comment_div_id -->
+ <a name="3sh9KqHWptU">
+ </a>
+ <div class="commentEntry" id="comment_3sh9KqHWptU">
+  <div class="commentHead">
+   <b>
+    <a href="/user/BukoNutz" rel="nofollow">
+     BukoNutz
+    </a>
+   </b>
+   <span class="smallText">
+    (4 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   the best music video ever hands down...it doesnt even compete.
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_3sh9KqHWptU">
+</div>
+<div id="div_3GLEbPu8IZs">
+ <!-- comment_div_id -->
+ <a name="3GLEbPu8IZs">
+ </a>
+ <div class="commentEntry" id="comment_3GLEbPu8IZs">
+  <div class="commentHead">
+   <b>
+    <a href="/user/scream1896" rel="nofollow">
+     scream1896
+    </a>
+   </b>
+   <span class="smallText">
+    (6 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   PLEASE DON'T READ THIS. You will get kissed on the nearest possible Friday by the love of your life. Tomorrow will be the best day of your life. However, if you don't post this comment to at least 3 videos, you will die within 2 days. Copy and paste this, to be saved
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_3GLEbPu8IZs">
+</div>
+<div id="div_xWOahUXSmjs">
+ <!-- comment_div_id -->
+ <a name="xWOahUXSmjs">
+ </a>
+ <div class="commentEntry" id="comment_xWOahUXSmjs">
+  <div class="commentHead">
+   <b>
+    <a href="/user/pwn3r21" rel="nofollow">
+     pwn3r21
+    </a>
+   </b>
+   <span class="smallText">
+    (6 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   lawl
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_xWOahUXSmjs">
+</div>
+<div id="div_llVf0ZnBBmc">
+ <!-- comment_div_id -->
+ <a name="llVf0ZnBBmc">
+ </a>
+ <div class="commentEntry" id="comment_llVf0ZnBBmc">
+  <div class="commentHead">
+   <b>
+    <a href="/user/ALICEFOREVER518" rel="nofollow">
+     ALICEFOREVER518
+    </a>
+   </b>
+   <span class="smallText">
+    (8 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   I love this song and video.  It's sweet how much he wants to be with her no matter what.  Don't see things like that anymore
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_llVf0ZnBBmc">
+</div>
+<div id="div_mD8cJ0S-ur8">
+ <!-- comment_div_id -->
+ <a name="mD8cJ0S-ur8">
+ </a>
+ <div class="commentEntry" id="comment_mD8cJ0S-ur8">
+  <div class="commentHead">
+   <b>
+    <a href="/user/libflynn" rel="nofollow">
+     libflynn
+    </a>
+   </b>
+   <span class="smallText">
+    (9 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   This will forever be my favorite video.... they don't make videos like this anymore and never will.. :)
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_mD8cJ0S-ur8">
+</div>
+<div id="div_7r7UjVvvSZU">
+ <!-- comment_div_id -->
+ <a name="7r7UjVvvSZU">
+ </a>
+ <div class="commentEntry" id="comment_7r7UjVvvSZU">
+  <div class="commentHead">
+   <b>
+    <a href="/user/bucurelpacura" rel="nofollow">
+     bucurelpacura
+    </a>
+   </b>
+   <span class="smallText">
+    (9 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   i agree, fuck nigger music. 80s own
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_7r7UjVvvSZU">
+</div>
+<div id="div_qjzFJ-4f5Ok">
+ <!-- comment_div_id -->
+ <a name="qjzFJ-4f5Ok">
+ </a>
+ <div class="commentEntry" id="comment_qjzFJ-4f5Ok">
+  <div class="commentHead">
+   <b>
+    <a href="/user/briganet" rel="nofollow">
+     briganet
+    </a>
+   </b>
+   <span class="smallText">
+    (13 hours ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   Esse é o melhor clipe dos anos 80 que eu já assisti em toda minha Vida. [CONFIRMO]
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_qjzFJ-4f5Ok">
+</div>
+<div id="div_WsI34Z_3h8Y">
+ <!-- comment_div_id -->
+ <a name="WsI34Z_3h8Y">
+ </a>
+ <div class="commentEntry" id="comment_WsI34Z_3h8Y">
+  <div class="commentHead">
+   <b>
+    <a href="/user/CenturyEndSaviour" rel="nofollow">
+     CenturyEndSaviour
+    </a>
+   </b>
+   <span class="smallText">
+    (1 day ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   That's interesting stuff, man. Cheers!
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_WsI34Z_3h8Y">
+</div>
+<div id="div_Xdv2S5X2MyA">
+ <!-- comment_div_id -->
+ <a name="Xdv2S5X2MyA">
+ </a>
+ <div class="commentEntry" id="comment_Xdv2S5X2MyA">
+  <div class="commentHead">
+   <b>
+    <a href="/user/CenturyEndSaviour" rel="nofollow">
+     CenturyEndSaviour
+    </a>
+   </b>
+   <span class="smallText">
+    (1 day ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   Best music video of the 80's, in my opinion. I can still remember it first time round, back when I was 8; blew me away
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_Xdv2S5X2MyA">
+</div>
+<div id="div_Bz725W53a_4">
+ <!-- comment_div_id -->
+ <a name="Bz725W53a_4">
+ </a>
+ <div class="commentEntry" id="comment_Bz725W53a_4">
+  <div class="commentHead">
+   <b>
+    <a href="/user/CHILANGASLOVE" rel="nofollow">
+     CHILANGASLOVE
+    </a>
+   </b>
+   <span class="smallText">
+    (1 day ago)
+   </span>
+  </div>
+  <div class="commentBody">
+   i've been listening to this song since i was 7 years old tha is back o nmexico city chilangos rifan y arriba los indocumentados
+  </div>
+  <br/>
+ </div>
+</div>
+<div id="div_comment_form_id_Bz725W53a_4">
+</div>
+<div id="div_main_comment2">
+</div>
+<div id="div_main_comment">
+</div>
+</font>                    </font>
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+        <td id="sidebar" width="40%" valign="top">
+            <table bgcolor="#CCCCCC" width="100%">
+                <tr>
+                    <td bgcolor="#FFFFFF" width="100%" valign="top">
+                        <table width="100%" border=0 cellpadding="4" cellspacing="2" align="center">
+                            <tr>
+                                <td id="about-video">
+                                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif" id="about-title" size="3">
+                                        <b>About this video</b>
+                                    </font><br><br>
+                                    <span id="about-contents">
+                                    <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                        <font id="added" color="gray"><b>Added on </b></font>
+                                        <span id="upload-date">March 8, 2006</span><br>
+                                        <font id="by" color="gray"><b>by </b></font><a id="uploader"
+                                            href="profile?u=trrxybeth">
+                                            trrxybeth                                        </a> <span id="upload-count">(1 video)</span>
+                                    </font>
+                                    <br><br>
+                                    <span id="vidDescBegin" style="display: inline">
+                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                            Aha - Take on me                                        </font>
+                                    </span>
+                                                                        <br><br>
+
+                                    <span id="tags"><font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                        <font color="gray"><b>Tags: </b></font>
+                                        <a href="results?q=aha">aha</a>, <a href="results?q=take">take</a>, <a href="results?q=on">on</a>, <a href="results?q=me">me</a>                                        <br>
+                                    </font>
+                                    </span>
+                                    </span>
+                                    
+                                                                    </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table bgcolor="#CCCCCC" width="100%">
+                <tr>
+                    <td bgcolor="#FFFFFF" width="100%" valign="top">
+                        <table width="100%" border=0 cellpadding="4" cellspacing="2" align="center">
+                            <tr>
+                                <td id="sidebar-videos">
+                                    <font color="#000000" face="Arial, MS Sans Serif, sans-serif" id="related-title" size="3"><b>Explore more videos</b></font><br><br>                                    <table id="related-videos" width="100%" cellspacing="5">
+                                                                                        <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=MlNzpl3vz5Y">
+                                                            <img src="img/thumbs/M/L/MlNzpl3vz5Y/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=MlNzpl3vz5Y">
+                                                                Take me or leave me from RENT                                                            </a><br>
+                                                            <b>
+                                                                04:29                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=eveyrocks">eveyrocks</a><br>
+                                                            Views: 20892                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=6C1fjfSysaI">
+                                                            <img src="img/thumbs/6/C/6C1fjfSysaI/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=6C1fjfSysaI">
+                                                                a-ha - The Sun Always Shines on TV                                                            </a><br>
+                                                            <b>
+                                                                04:36                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=BarryConvex">BarryConvex</a><br>
+                                                            Views: 67803                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=BmbsSw81Uww">
+                                                            <img src="img/thumbs/B/M/BmbsSw81Uww/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=BmbsSw81Uww">
+                                                                Insane Japanese Exercise Video                                                            </a><br>
+                                                            <b>
+                                                                04:47                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=mwowm23">mwowm23</a><br>
+                                                            Views: 47969                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=5X7TbjTY730">
+                                                            <img src="img/thumbs/5/X/5X7TbjTY730/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=5X7TbjTY730">
+                                                                Interpol - Take You On A Cruise                                                            </a><br>
+                                                            <b>
+                                                                06:11                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=mzzlanny">mzzlanny</a><br>
+                                                            Views: 15497                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=0Tgym93-Wq4">
+                                                            <img src="img/thumbs/0/T/0Tgym93-Wq4/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=0Tgym93-Wq4">
+                                                                frog peeing on me.                                                            </a><br>
+                                                            <b>
+                                                                00:18                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=DiANAsVideosx3">DiANAsVideosx3</a><br>
+                                                            Views: 40516                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=Bs4bZ8xz6ug">
+                                                            <img src="img/thumbs/B/S/Bs4bZ8xz6ug/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=Bs4bZ8xz6ug">
+                                                                My Grind On Me Video                                                            </a><br>
+                                                            <b>
+                                                                03:36                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=stitchATL">stitchATL</a><br>
+                                                            Views: 12915                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=EBB4-_mo2Dw">
+                                                            <img src="img/thumbs/E/B/EBB4-_mo2Dw/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=EBB4-_mo2Dw">
+                                                                Whitney Houston CeCe Winans and Shirley Caesar Gospel Medley                                                            </a><br>
+                                                            <b>
+                                                                09:33                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=acero2310">acero2310</a><br>
+                                                            Views: 54275                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                                <tr class="related-video" valign="top">
+                                                    <td width="80">
+                                                        <center>
+                                                            <a href="play?v=2zdyw3KStsw">
+                                                            <img src="img/thumbs/2/Z/2zdyw3KStsw/2.jpg"
+                                                                    width="80" height="60" border="0"></a><br>
+                                                        </center>
+                                                    </td>
+                                                    <td>
+                                                        <font color="#000000" size="2" face="Arial, MS Sans Serif, sans-serif">
+                                                            <a href="play?v=2zdyw3KStsw">
+                                                                Olivia Newton-John TV Gems 1972                                                            </a><br>
+                                                            <b>
+                                                                03:29                                                            </b><br>
+                                                            From:
+                                                            <a href="/profile?u=author31">author31</a><br>
+                                                            Views: 22603                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
+<table id="footer" width="700"  align="center" border="0" cellspacing="0"><tr><td>
+<footer>
+<hr>
+    <div align="center">
+    <font color="#000000" size=2 face="Arial, MS Sans Serif, sans-serif">
+        <span id="discord-link"><a href="https://discord.gg/XzZYQtARxS">Contact Us on Discord</a></span> | <span id="about-link"><a href="/about.html">About This Site</a></span> | <span id="help-link"><a href="/help.html">Support Guide</a></span><br>
+        &copy; 2024 WarpStream.net
+    </font>
+    </div>
+</footer>
+</td></tr></table>
+<br></font>
+</body>
+
+</html>

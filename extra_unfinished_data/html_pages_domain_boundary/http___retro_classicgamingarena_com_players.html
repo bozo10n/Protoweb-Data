@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Classic Gaming Arena :: Players Online</title>
+<meta name="title" content="Classic Gaming Arena :: Players Online">
+<meta name="description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<meta name="keywords" content="CGA, Classic, Gaming, Arena, DOOM, Warcraft, Descent, IPX, DOSBox, DOS, games, network, CGA Client, multiplayer, dedicated, server">
+<meta name="author" content="Creative Design Interactive">
+<meta property="og:title" content="Classic Gaming Arena :: Players Online">
+<meta property="og:description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<link href="/css/default.css" rel="stylesheet" type="text/css">
+<link href="/cgafeed" rel="alternate" type="application/rss+xml" title="Classic Gaming Arena">
+<script type="text/javascript" src="/js/checkboxes.js"></script>
+<script type="text/javascript" src="/wde/ajax.js"></script>
+<script type="text/javascript" src="/wde/utils.js"></script>
+<script type="text/javascript" src="/wde/captcha.js"></script>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+        <td align="right" valign="top" class="bg1"> </td>
+        <td width="47" valign="top" style="background-image: url('/images/index32.gif');"><img src="/images/index03.jpg" alt="" width="47" height="350"></td>
+        <td width="670" rowspan="2" valign="top" style="background-color: #0A2732;">
+
+		    <table width="670"  border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="326" rowspan="3" style="background-image: url('/images/index05.jpg');" height="91" ><a href="/" class="logo">Classic Gaming Arena</a><br><span class="logo1">Home for all your DOS multiplayer gaming needs.</span></td>
+                <td colspan="4"  align="left" height="32"  width="344" style="background-image: url('/images/index06.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Client:</strong>&nbsp;<a href="/help/clientchangelog">4.1.32.0</a>&nbsp;&nbsp;<strong class="text2">Server:</strong>&nbsp; <a href="/help/serverchangelog">4.1.1.0</a></div></td>
+            </tr>
+            <tr>                
+                <td colspan="4" valign="top" align="left" height="29"  width="344" style="background-image: url('/images/top_right_middle.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Players:</strong>&nbsp; <a href="/players">15</a>&nbsp;/&nbsp;1,344</div><br>
+<div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Games:</strong>&nbsp;<a href="/games">184</a>&nbsp;&nbsp;<strong class="text2">Servers:</strong>&nbsp;19&nbsp;/&nbsp;<a href="/servers">92</a>&nbsp;&nbsp;<strong class="text2">Rooms:</strong>&nbsp;<a href="/gamerooms">3</a></div></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right" height="30" valign="top" style="background-image: url('/images/index11.jpg')">
+					<div style="margin-top: 5px;"><!--<a href="/search" class="topMenu">Search</a>&nbsp;&nbsp;-->
+						 <a href="/contact" class="topMenu">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;						 
+						 <a href="/cgafeed" target="_blank"><img src="/wde/images/feeds.png" border="0" style="vertical-align: middle;" title="Subscribe to our RSS feed"></a>
+					</div>
+				</td>
+            </tr>
+            </table>
+				
+            <table width="670"  border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                    <td width="334"> <script type="text/javascript" src="/wde/strings.js"></script>
+<script type="text/javascript" src="/wde/swapfade.js"></script>
+<script type="text/javascript">
+    var img=new Array();
+    var urls=new Array();
+	
+    img[0]="/images/rotators/1/heretic_000.png";
+urls[0]="";img[1]="/images/rotators/1/orion2_000.png";
+urls[1]="";img[2]="/images/rotators/1/ultimate_doom.png";
+urls[2]="";img[3]="/images/rotators/1/doom2_000.png";
+urls[3]="";img[4]="/images/rotators/1/descentr_000.png";
+urls[4]="";img[5]="/images/rotators/1/duke3d_000.png";
+urls[5]="";img[6]="/images/rotators/1/war2_000.png";
+urls[6]="";img[7]="/images/rotators/1/war_000.png";
+urls[7]="";img[8]="/images/rotators/1/rott_000.png";
+urls[8]="";img[9]="/images/rotators/1/hexen_000.png";
+urls[9]="";
+
+    var ns6=document.getElementById&&!document.all
+    var current = 1 - 1;
+    var realCurrent = 1;
+    var doRotate = true;
+    var isPaused = false;
+    var rotateDelay = 10000;
+
+    var maxImages = 10;
+    var timer = null;
+    var justLoaded = true;
+
+    function changeItem(doSwap) {
+       if (isPaused) return;
+
+       if (!justLoaded)
+          swapfade(document.getElementById("featureimage"), img[current], '2', '');
+       justLoaded = false;
+
+       if (current==(maxImages-1)) { 
+          realCurrent = current+1;
+          current=0;      
+       }
+       else {
+          current++
+          realCurrent = current;
+       }
+       
+	//   AJAXGetNoResponse("/?setLastImageShown&irid=1&idx=" + realCurrent);
+	   
+	//   changeImgURL(realCurrent);
+	   
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+    }
+
+	function stopRotation() {
+	   clearTimeout(timer);
+	}
+	
+    window.onload=changeItem;
+    window.onunload=stopRotation;
+	
+    function setRotation(r) {
+       doRotate = r;
+       isPaused = !doRotate;
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+       else
+          clearTimeout(timer);
+    }
+
+    function changeImgURL(imgNum) {
+      if (ns6) {
+         document.getElementById("featureURL").href = urls[realCurrent-1];
+      }
+      else {
+         if (document.all) {
+            featureURL.href = urls[realCurrent-1];
+         }
+      }
+   }
+</script>
+
+<style>
+.imgRotate {
+   filter: alpha(opacity=100);   
+}
+
+.imgRotate.idupe {
+   position: absolute;
+   z-index: 30000;
+   visibility: hidden;
+}
+</style>
+
+<div style="border:0px solid #000000;">
+	<DIV id="featurebox" STYLE="text-align:center; height:181px;"><div style="position:relative;top:0px; left:0px; background-image: url('/images/ss_frame.png');width:334px;height:181px;z-index:100;"></div><div style="position:relative;top:-181px; left:0px;width:334px;height:181px;z-index:0;"><a id="featureURL" href="" target="_blank"><img class="imgRotate" id="featureimage" src="/images/rotators/1/heretic_000.png" BORDER="0" width="334" height="181"></a></div></div>
+</div>  </td> 
+                    <td width="140"><table width="140" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="140" height="26"><img src="/images/index13.jpg" alt="" width="140" height="26"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index14.jpg');" width="140" height="22"><a href="/news" class="menu">Latest News</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index15.jpg');" width="140" height="22"><a href="/forums" class="menu">Forums</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index16.jpg');" width="140" height="22"><a href="/downloads" class="menu">Downloads</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index17.jpg');" width="140" height="22"><a href="/games" class="menu">Games</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index18.jpg');" width="140" height="22"><a href="/help" class="menu">Help</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index19.jpg');" width="140" height="22"><a href="/servers" class="menu">Servers</a></td>
+                        </tr>
+                        <tr>
+                            <td width="140" height="23"><img src="/images/index20.jpg" alt="" width="140" height="23"></td>
+                        </tr>
+                    </table></td>
+                    <td width="196">
+   					   <table width="196"  border="0" cellpadding="0" cellspacing="0" background="/images/login_background.jpg">
+                       <tr>
+                          <td style="height: 181px; padding-left: 10px;" valign="top">
+                             <div style="width: 144px; padding-top: 20px;">
+      <form name="formLogin" method="post" action="/index.p?action=core@Login" onsubmit="return checkForGuest(this);">
+	  <div style="display: table;">	    
+		 <div id="unLabel" style="display: table-row;">
+            <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Username</strong></div>
+		 </div>		 
+		 <div id="unField" style="display: table-row;"> 
+		    <div style="display: table-cell; height: 18px;"><input name="un" type="text" class="input1"></div>
+		 </div>
+	     <div id="pwLabel" style="display: table-row;">		 		 
+  		    <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Password</strong></div>
+		 </div>
+         <div id="pwField" style="display: table-row;">		 
+		    <div style="display: table-cell; height: 18px; padding 0; margin: 0;"><input name="pw" type="password" class="input1" value=""></div>
+		 </div>
+   	     <div style="display: table-row;">
+		    <div style="display: table-cell; vertical-align: middle; height: 26px;">
+			   <input name="imageField" type="image" src="/images/but_login.jpg">
+            </div>
+		 </div>
+         <div id="kmli" style="display: table-row;">
+		    <div style="display: table-cell;">   
+               <div style="height: 2px;"></div>									   
+   	           <div class="checkbox" onClick="cbChange(this, document.formLogin.ali)"></div> <input name="ali" type="checkbox" class="styled"> Remember Me
+			</div>	  
+	     </div>		 
+	  </div>
+      </form>
+	  
+   </div>	
+   
+   <div style="height: 2px;"></div>
+   <div class="text4"><a href="/?action=core@LoginHelp">Login Help</a>  |  <a href="/register">Create an Account</a></div>
+						  </td>
+                       </tr>
+                       </table>	
+				    </td>
+                </tr>
+                <tr>
+                    <td width="670" colspan="3"><img src="/images/index37.jpg" alt="" width="670" height="18"></td>
+                </tr>
+            </table>			
+			
+            <table width="670" border="0" cellspacing="0" cellpadding="0">
+   			    <tr>
+                    <td align="left">
+                        <table cellpadding="0" cellspacing="0" border="0">
+<tr>
+                    <td><img src="/images/inside01.jpg" alt="" width="20" height="33"></td>
+                    <td style="background-image: url('/images/inside2_01.jpg');" height="33" width="628"><span class="header1">Players Online</span></td>
+                    <td><img src="/images/inside05.jpg" alt="" width="22" height="33"></td>
+                </tr>
+                <tr valign="top">
+                    <td style="background-image: url('/images/inside09.jpg');"><img src="/images/inside06.jpg" alt="" width="20" height="100"></td>
+                    <td style="background-color: #0D3242;"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><img src="/images/spacer.gif" alt="" width="1" height="13"></td>
+                        </tr>
+                        <tr>
+                            <td class="align-justify">
+							<p class="text1">
+<a href="/players"><img src="/images/refresh.png" title="Refresh" border="0" width="16" height="16" style="vertical-align: middle;"></a>&nbsp;<a href="/players"><strong>Refresh</strong></a>&nbsp;&nbsp;<img src="/images/server_status_online.png" border="0" width="16" height="16" style="vertical-align: middle;"> Online &nbsp;&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;"> AFK
+</p>
+<table  border="0" cellspacing="0" cellpadding="0" width="100%">
+
+<tr>
+   <td width="118" class="text1" height="20" valign="bottom">&nbsp;<strong class="text2">Player Name</strong></td>
+   <td width="18" class="text1" align="center" height="20" valign="bottom">&nbsp;<strong class="text2">Level</strong>&nbsp;</td>
+   <td width="15" class="text1" height="20" align="center" valign="bottom">&nbsp;<strong class="text2">Loc</strong>&nbsp;</td>
+   <td width="15" class="text1" height="20" align="center" valign="bottom">&nbsp;<strong class="text2">LFG</strong>&nbsp;</td>
+   <td width="150" class="text1" height="20" align="left" valign="bottom">&nbsp;<strong class="text2">LFG Option</strong>&nbsp;</td>   
+   <td width="20" class="text1" height="20" align="center" valign="bottom">&nbsp;<strong class="text2">SysOp</strong></td>      
+</tr>
+
+<tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;AgentChippy474</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;CodeJunkie</td>
+   <td width="18" class="text1" align="center" height="20">10</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">Yes</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;KAAN</td>
+   <td width="18" class="text1" align="center" height="20">5</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;karios</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;katmaixx</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;Lioness</td>
+   <td width="18" class="text1" align="center" height="20">2</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_online.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;OpenRift</td>
+   <td width="18" class="text1" align="center" height="20">16</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;Pilot</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/MX.png" width="16" height="11" border="0" style="vertical-align: middle;" title="Mexico"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;PwnerMeister</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;Ryske</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/FI.png" width="16" height="11" border="0" style="vertical-align: middle;" title="Finland"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;Sgeo</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;Stever1009</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;TheRedX</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/CA.png" width="16" height="11" border="0" style="vertical-align: middle;" title="Canada"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_1.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;TinyWonder</td>
+   <td width="18" class="text1" align="center" height="20">3</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr><tr style="background-image: url('/images/row_background_2.jpg');">
+   <td width="118" class="text1" height="20">&nbsp;<img src="/images/server_status_unknown.png" border="0" width="16" height="16" style="vertical-align: middle;">&nbsp;xXS1CKXxKiller</td>
+   <td width="18" class="text1" align="center" height="20">1</td>
+   <td width="15" class="text1" height="20" align="center"><img src="/wde/images/flags/US.png" width="16" height="11" border="0" style="vertical-align: middle;" title="United States"></td>
+   <td width="15" class="text1" height="20" align="center">&nbsp;No</td>
+   <td width="150" class="text1" align="left" height="20"></td>         
+   <td width="20" class="text1" align="center" height="20">No</td>
+</tr>
+
+</table>
+							</td>
+                        </tr>
+                        <tr>
+                            <td class="align-justify"> </td>
+                        </tr>
+                    </table></td>
+                    <td style="background-image: url('/images/inside11.jpg');" width="22"> </td>
+                </tr>
+
+                <tr>
+                    <td width="670" colspan="3"><img src="/images/inside2_02.jpg" alt="" width="670" height="10"></td>
+                </tr>
+				</table>
+   		            </td>
+				</tr>		
+                <tr>
+                    <td align="left">
+					    <table width="630"  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" valign="bottom" class="style1" height="20"><a href="/">Home</a>  |  <a href="/about">About</a>  |  <a href="/forums">Forums</a>  |  <a href="/downloads">Downloads</a>  |  <a href="/games">Games</a>  |  <a href="/help">Help</a>  |  <a href="/news">News</a>  |  <a href="/contact">Contact Us</a>  |  <a href="/legal">Legal</a></td>
+                        </tr>
+						<tr>
+                            <td align="left"><img src="/images/spacer.gif" alt="" width="1" height="16"></td>
+                        </tr>
+						<tr>
+                            <td><a href="/dosbox" target="_blank">
+								<img src="/images/dosbox.jpg" alt="dosbox.jpg" title="DOSBox - Official emulator for Sierra Compilations" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/teamspeak" target="_blank"><img src="/images/ts3_bg_logo_small.png" border="0" title="Audio Chat Powered by TeamSpeak" > </a>
+							</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="middle" class="text3" height="90"><br>Powered by <a href="http://www.prometheuswde.com" target="_blank">Prometheus</a>. Copyright &copy; 2024 <a href="http://www.cdiware.com" target="_blank">Creative Design Interactive</a>. All Rights Reserved.<br>This site hosts no abandonware. There is no material that is knowingly illegal here.  CDI will not be held responsible for users' posts. This disclaimer is brought to you thanks to the BSA.  Please read our <a href="/legal">legal</a> statement.
+						  <br><br>Website template designed by <a href="http://www.arixmedia.com" target="_blank">ArixMedia</a>. Copyright &copy; 2005 ArixMedia, LLC.<br>
+						  <br>
+						  </td> 
+                        </tr>
+                        </table>
+					</td>
+                </tr>
+				
+            </table>
+			
+		</td>
+        <td width="47" style="background-image: url('/images/index33.gif');"><img src="/images/index04.jpg" alt="" width="47" height="350"></td>
+        <td align="left" valign="top" class="bg1"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom">  </td>
+        <td width="47" valign="bottom" style="background-image: url('/images/index32.gif');"><img src="/images/index34.jpg" alt="" width="47" height="100"> </td>
+		<td width="47" valign="bottom" style="background-image: url('/images/index33.gif')"><img src="/images/index35.jpg" alt="" width="47" height="100"> </td>
+        <td align="left" valign="bottom"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom"> &nbsp; </td>
+        <td width="764" colspan="3" align="right" valign="bottom"><img src="/images/index36.jpg" alt="" width="764" height="78"></td>
+        <td align="left" valign="bottom"> &nbsp; </td>
+    </tr>
+    	
+</table>
+
+</body>
+</html>

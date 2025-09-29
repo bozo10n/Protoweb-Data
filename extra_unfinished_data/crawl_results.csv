@@ -1,0 +1,494 @@
+source_url,source_url_text,source_link_caption,target_url,target_url_text,target_link_caption,domain,depth,status_code,content_type
+http://www.reuters.com,Reuters: The Business of Information,,http://www.reuters.com/rtrnews/images/home.htm,Reuters: Top News,,www.reuters.com,1,200,text/html; charset=UTF-8
+http://www.reuters.com,Reuters: The Business of Information,,http://www.reuters.com/maps/flagbar2.map,Imagemap Error,,www.reuters.com,1,200,application/x-httpd-imap
+http://www.warpstream.net,WarpStream - Home,,http://www.warpstream.net/,WarpStream - Home,WarpStream - Home,www.warpstream.net,1,200,text/html; charset=UTF-8
+http://www.warpstream.net/,WarpStream - Home,WarpStream - Home,http://www.warpstream.net/browse,WarpStream - Videos,Videos,www.warpstream.net,2,200,text/html; charset=UTF-8
+http://www.warpstream.net/browse,WarpStream - Videos,Videos,http://www.warpstream.net/channels,WarpStream - Featured Channels,Channels,www.warpstream.net,3,200,text/html; charset=UTF-8
+http://www.warpstream.net/channels,WarpStream - Featured Channels,Channels,http://www.warpstream.net/playlists,WarpStream - Featured Playlists,Playlists,www.warpstream.net,4,200,text/html; charset=UTF-8
+http://www.warpstream.net/browse,WarpStream - Videos,Videos,http://www.warpstream.net/playlists,WarpStream - Featured Playlists,Playlists,www.warpstream.net,3,200,text/html; charset=UTF-8
+http://www.wikipedia.org,Main Page - Wikipedia,,http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,Main Page,www.wikipedia.org,1,200,text/html; charset=UTF-8
+http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,Main Page,http://www.wikipedia.org/wiki/Special:Recentchanges,Special:Recentchanges - Wikipedia,Recent changes,www.wikipedia.org,2,200,text/html; charset=UTF-8
+http://2004scape.org,Non-Affiliation Disclaimer | 2004Scape,,http://2004scape.org/title,2004Scape - the massive online adventure game,There is currently 1 person playing!Latest News and UpdatesRemoved 2 world regions (for now!)22-Nov-,2004scape.org,1,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,There is currently 1 person playing!Latest News and UpdatesRemoved 2 world regions (for now!)22-Nov-,http://2004scape.org/news,Latest News | 2004Scape,,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,,http://2004scape.org/news?page=2,Latest News | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,,http://2004scape.org/news?page=3,Latest News | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,,http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?page=2,Latest News | 2004Scape,,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,,http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=0,Latest News | 2004Scape,All Categories,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,,http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,http://2004scape.org/news?cat=1&page=2,Latest News | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=1,Latest News | 2004Scape,Game Updates,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/news,Latest News | 2004Scape,,http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news?cat=2,Latest News | 2004Scape,Website,http://2004scape.org/news?cat=3,Latest News | 2004Scape,Customer Support,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,There is currently 1 person playing!Latest News and UpdatesRemoved 2 world regions (for now!)22-Nov-,http://2004scape.org/news/180,Removed 2 world regions (for now!) | 2004Scape,,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/180,Removed 2 world regions (for now!) | 2004Scape,,http://2004scape.org/news/159,2 new world regions! | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/159,2 new world regions! | 2004Scape,,http://2004scape.org/news/152,New World Map | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,There is currently 1 person playing!Latest News and UpdatesRemoved 2 world regions (for now!)22-Nov-,http://2004scape.org/news/179,November 16th Alpha Updates | 2004Scape,,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/179,November 16th Alpha Updates | 2004Scape,,http://2004scape.org/news/178,November 10th Alpha Updates | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/178,November 10th Alpha Updates | 2004Scape,,http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://2004scape.org/title,2004Scape - the massive online adventure game,There is currently 1 person playing!Latest News and UpdatesRemoved 2 world regions (for now!)22-Nov-,http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,,2004scape.org,2,200,text/html; charset=utf-8
+http://2004scape.org/news/177,October 31st Alpha Updates | 2004Scape,,http://2004scape.org/news/176,October 11th Alpha Updates | 2004Scape,,2004scape.org,3,200,text/html; charset=utf-8
+http://2004scape.org/news/176,October 11th Alpha Updates | 2004Scape,,http://2004scape.org/news/175,September 21st Alpha Updates | 2004Scape,,2004scape.org,4,200,text/html; charset=utf-8
+http://68k.news,68k.news: Headlines From the Future,,http://68k.news/index.php?loc=US,68k.news: Headlines From the Future,TOP,68k.news,1,200,text/html; charset=UTF-8
+http://68k.news/index.php?loc=US,68k.news: Headlines From the Future,TOP,http://68k.news/index.php?section=world&loc=US,68k.news: Headlines From the Future,WORLD,68k.news,2,200,text/html; charset=UTF-8
+http://68k.news/index.php?section=world&loc=US,68k.news: Headlines From the Future,WORLD,http://68k.news/index.php?section=nation&loc=US,68k.news: Headlines From the Future,NATION,68k.news,3,200,text/html; charset=UTF-8
+http://halo.bungie.org,HBO: Nosebleed.,,http://halo.bungie.org/about.html,About This Site,About This Site,halo.bungie.org,1,200,text/html; charset=UTF-8
+http://halo.bungie.org/about.html,About This Site,About This Site,http://halo.bungie.org/,"HBO: Hear me, oh muse",News,halo.bungie.org,2,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: LouisWuIsNotCanon,News,http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,News Archive,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,News Archive,http://halo.bungie.org/conceptart/,Halo Concept Art,Concept Art,halo.bungie.org,4,200,text/html; charset=UTF-8
+http://halo.bungie.org/newsarchive.html,Old news but still good news! | December 2024,News Archive,http://halo.bungie.org/halobulletins/,Waypoint's Halo Bulletins,Halo Bulletins,halo.bungie.org,4,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: LouisWuIsNotCanon,News,http://halo.bungie.org/conceptart/,Halo Concept Art,Concept Art,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://halo.bungie.org/,HBO: LouisWuIsNotCanon,News,http://halo.bungie.org/halobulletins/,Waypoint's Halo Bulletins,Halo Bulletins,halo.bungie.org,3,200,text/html; charset=UTF-8
+http://retro.classicgamingarena.com,Classic Gaming Arena :: Home,,http://retro.classicgamingarena.com/,Classic Gaming Arena :: Home,Classic Gaming Arena,retro.classicgamingarena.com,1,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/,Classic Gaming Arena :: Home,Classic Gaming Arena,http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,4.1.32.0,retro.classicgamingarena.com,2,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,4.1.32.0,http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,4.1.1.0,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,4.1.1.0,http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,13,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/serverchangelog,Classic Gaming Arena :: Help :: Server Change Log,4.1.1.0,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,4.1.32.0,http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,13,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/players,Classic Gaming Arena :: Players Online,13,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,4,200,text/html; charset=utf-8
+http://retro.classicgamingarena.com/help/clientchangelog,Classic Gaming Arena :: Help :: Client Change Log,4.1.32.0,http://retro.classicgamingarena.com/games,Classic Gaming Arena :: Games,184,retro.classicgamingarena.com,3,200,text/html; charset=utf-8
+http://www.cornica.org,Home &mdash; Cornica,,http://www.cornica.org/,Home &mdash; Cornica,Logo Cornica,www.cornica.org,1,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,Logo Cornica,http://www.cornica.org/games,Games &mdash; Cornica,,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,,http://www.cornica.org/videos/,Videos &mdash; Cornica,Videos,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/,Videos &mdash; Cornica,Videos,http://www.cornica.org/amiga/,Amiga &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/videos/,Videos &mdash; Cornica,Videos,http://www.cornica.org/apple/,Apple &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,,http://www.cornica.org/videos/games/,Games &mdash; Cornica,Games,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/games/,Games &mdash; Cornica,Games,http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/games,Games &mdash; Cornica,,http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,,http://www.cornica.org/games/3dfx/,3dfx - Interview with Scott Sellers &mdash; Cornica,3dfx - Interview with Scott Sellers,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,Logo Cornica,http://www.cornica.org/movies,Movies &mdash; Cornica,,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/movies,Movies &mdash; Cornica,,http://www.cornica.org/videos/movies/,Movies &mdash; Cornica,Movies,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/movies/,Movies &mdash; Cornica,Movies,http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/movies,Movies &mdash; Cornica,,http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,,http://www.cornica.org/movies/a-view-to-a-kill/,007 - A View To A Kill &mdash; Cornica,007 - A View To A Kill,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,Logo Cornica,http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",,http://www.cornica.org/videos/commercials/,Commercials &mdash; Cornica,Commercials,www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/videos/commercials/,Commercials &mdash; Cornica,Commercials,http://www.cornica.org/1984/,1984 - The commercial &mdash; Cornica,,www.cornica.org,4,200,text/html; charset=utf-8
+http://www.cornica.org/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica",,http://www.cornica.org/commercials/introducing-macintosh/,"Introducing Macintosh (1984, 128k Mac) &mdash; Cornica","Introducing Macintosh (1984, 128k Mac)",www.cornica.org,3,200,text/html; charset=utf-8
+http://www.cornica.org/,Home &mdash; Cornica,Logo Cornica,http://www.cornica.org/computer-for-the-rest-of-us,The Computer For The Rest of Us &mdash; Cornica,,www.cornica.org,2,200,text/html; charset=utf-8
+http://www.cornica.org/computer-for-the-rest-of-us,The Computer For The Rest of Us &mdash; Cornica,,http://www.cornica.org/commercials/computer-for-the-rest-of-us/,The Computer For The Rest of Us &mdash; Cornica,The Computer For The Rest of Us,www.cornica.org,3,200,text/html; charset=utf-8
+http://dosboxdmclub.com,DOSBox Deathmatch Club,,http://dosboxdmclub.com/about.php,DOSBox Deathmatch Club,,dosboxdmclub.com,1,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/about.php,DOSBox Deathmatch Club,,http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,,dosboxdmclub.com,2,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,,http://dosboxdmclub.com/team.php,DOSBox Deathmatch Club,,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,,http://dosboxdmclub.com/links.php,DOSBox Deathmatch Club,,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dosboxdmclub.com/index.php,DOSBox Deathmatch Club,,http://dosboxdmclub.com/changelog.php,DOSBox Deathmatch Club,,dosboxdmclub.com,3,200,text/html; charset=UTF-8
+http://dreampipe.net,Dreampipe,Dreamcast@Planetweb,http://dreampipe.net/updates/,Dreampipe   : Updates,Updates,dreampipe.net,1,200,text/html; charset=UTF-8
+http://dreampipe.net/updates/,Dreampipe   : Updates,Updates,http://dreampipe.net/leaderboards,Dreampipe   : Leaderboards,Leaderboards,dreampipe.net,2,200,text/html; charset=UTF-8
+http://www.ericexperiment.com,The Eric Experiment,,http://www.ericexperiment.com/,The Eric Experiment,The Eric Experiment,www.ericexperiment.com,1,200,text/html; charset=UTF-8
+http://legacy.escargot.chat,Escargot,,http://legacy.escargot.chat/,Escargot,Home,legacy.escargot.chat,1,200,text/html; charset=utf-8
+http://legacy.escargot.chat/,Escargot,Home,http://legacy.escargot.chat/connect/,Get Started | Escargot,Get Started,legacy.escargot.chat,2,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/,Get Started | Escargot,Get Started,http://legacy.escargot.chat/download/,Downloads | Escargot,Download,legacy.escargot.chat,3,200,text/html; charset=utf-8
+http://legacy.escargot.chat/download/,Downloads | Escargot,Download,http://legacy.escargot.chat/download/msn/,Escargot,,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://legacy.escargot.chat/download/,Downloads | Escargot,Download,http://legacy.escargot.chat/download/msn/extras/,Extras | Escargot,,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/,Get Started | Escargot,Get Started,http://legacy.escargot.chat/connect/guides/,Connection Guides | Escargot,,legacy.escargot.chat,3,200,text/html; charset=utf-8
+http://legacy.escargot.chat/connect/guides/,Connection Guides | Escargot,,http://legacy.escargot.chat/patcher/,Patcher | Escargot,,legacy.escargot.chat,4,200,text/html; charset=utf-8
+http://www.eternal-september.org,www.eternal-september.org,,http://www.eternal-september.org/,www.eternal-september.org,Home,www.eternal-september.org,1,200,text/html; charset=UTF-8
+http://www.eternal-september.org/,www.eternal-september.org,Home,http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,Peering,www.eternal-september.org,2,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,Peering,http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,NoCeM,www.eternal-september.org,3,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,NoCeM,http://www.eternal-september.org/index.php?showpage=abuse,www.eternal-september.org,Usenet Abuse FAQ,www.eternal-september.org,4,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=nocem,www.eternal-september.org,NoCeM,http://www.eternal-september.org/index.php?showpage=stats,www.eternal-september.org,Statistics,www.eternal-september.org,4,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,Peering,http://www.eternal-september.org/index.php?showpage=abuse,www.eternal-september.org,Usenet Abuse FAQ,www.eternal-september.org,3,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=abuse,www.eternal-september.org,Usenet Abuse FAQ,http://www.eternal-september.org/index.php?showpage=stats,www.eternal-september.org,Statistics,www.eternal-september.org,4,200,text/html; charset=UTF-8
+http://www.eternal-september.org/index.php?showpage=peering,www.eternal-september.org,Peering,http://www.eternal-september.org/index.php?showpage=stats,www.eternal-september.org,Statistics,www.eternal-september.org,3,200,text/html; charset=UTF-8
+http://falconfly.3dfx.pl,"FalconFly Central, Home of the 3dfx File Archive",,http://falconfly.3dfx.pl/3dfx.htm,FalconFly 3dfx Archive,,falconfly.3dfx.pl,1,200,text/html
+http://falconfly.3dfx.pl/3dfx.htm,FalconFly 3dfx Archive,,http://falconfly.3dfx.pl/index.htm,"FalconFly Central, Home of the 3dfx File Archive",,falconfly.3dfx.pl,2,200,text/html
+http://falconfly.3dfx.pl/index.htm,"FalconFly Central, Home of the 3dfx File Archive",,http://falconfly.3dfx.pl/download.htm,FalconFly Software Archive,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/download.htm,FalconFly Software Archive,,http://falconfly.3dfx.pl/downloads/wcpul2.zip,,,falconfly.3dfx.pl,4,200,application/zip
+http://falconfly.3dfx.pl/download.htm,FalconFly Software Archive,,http://falconfly.3dfx.pl/info/readme-wcpul2.txt,,,falconfly.3dfx.pl,4,200,text/plain
+http://falconfly.3dfx.pl/download.htm,FalconFly Software Archive,,http://falconfly.3dfx.pl/downloads/wpcrset12.zip,,,falconfly.3dfx.pl,4,200,application/zip
+http://falconfly.3dfx.pl/index.htm,"FalconFly Central, Home of the 3dfx File Archive",,http://falconfly.3dfx.pl/benchmark.htm,Benchmark Tools,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/benchmark.htm,Benchmark Tools,,http://falconfly.3dfx.pl/downloads/3DMark99-VIAnofps-fix.zip,,,falconfly.3dfx.pl,4,200,application/zip
+http://falconfly.3dfx.pl/index.htm,"FalconFly Central, Home of the 3dfx File Archive",,http://falconfly.3dfx.pl/contact.htm,Contact,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/3dfx.htm,FalconFly 3dfx Archive,,http://falconfly.3dfx.pl/news.htm,FalconFly Current News 2004,,falconfly.3dfx.pl,2,200,text/html
+http://falconfly.3dfx.pl/news.htm,FalconFly Current News 2004,,http://falconfly.3dfx.pl/oldnews2001.htm,FalconFly News Archive 2001,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/news.htm,FalconFly Current News 2004,,http://falconfly.3dfx.pl/oldnews2002.htm,FalconFly News Archive 2002,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/oldnews2002.htm,FalconFly News Archive 2002,,http://falconfly.3dfx.pl/tools.htm,3dfx Tools,,falconfly.3dfx.pl,4,200,text/html
+http://falconfly.3dfx.pl/oldnews2002.htm,FalconFly News Archive 2002,,http://falconfly.3dfx.pl/tools.htm,3dfx Tools,,falconfly.3dfx.pl,4,200,text/html
+http://falconfly.3dfx.pl/oldnews2002.htm,FalconFly News Archive 2002,,http://falconfly.3dfx.pl/desktoptv.htm,DesktopTV Drivers,,falconfly.3dfx.pl,4,200,text/html
+http://falconfly.3dfx.pl/news.htm,FalconFly Current News 2004,,http://falconfly.3dfx.pl/oldnews2003.htm,FalconFly News Archive 2003,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/oldnews2003.htm,FalconFly News Archive 2003,,http://falconfly.3dfx.pl/reference.htm,3dfx Technical Reference,,falconfly.3dfx.pl,4,200,text/html
+http://falconfly.3dfx.pl/3dfx.htm,FalconFly 3dfx Archive,,http://falconfly.3dfx.pl/links.htm,FalconFly Links,,falconfly.3dfx.pl,2,200,text/html
+http://falconfly.3dfx.pl/3dfx.htm,FalconFly 3dfx Archive,,http://falconfly.3dfx.pl/identify-3dfx.htm,Identify your 3dfx Hardware with Part No. and/or special Markings,,falconfly.3dfx.pl,2,200,text/html
+http://falconfly.3dfx.pl/identify-3dfx.htm,Identify your 3dfx Hardware with Part No. and/or special Markings,,http://falconfly.3dfx.pl/identify/3dfx_Voodoo2_1000.jpg,,,falconfly.3dfx.pl,3,200,image/jpeg
+http://falconfly.3dfx.pl/identify-3dfx.htm,Identify your 3dfx Hardware with Part No. and/or special Markings,,http://falconfly.3dfx.pl/voodoo2.htm,Voodoo2 Drivers,,falconfly.3dfx.pl,3,200,text/html
+http://falconfly.3dfx.pl/voodoo2.htm,Voodoo2 Drivers,,http://falconfly.3dfx.pl/downloads/creative-voodoo2-216rc1.zip,,,falconfly.3dfx.pl,4,200,application/zip
+http://falconfly.3dfx.pl/voodoo2.htm,Voodoo2 Drivers,,http://falconfly.3dfx.pl/info/readme-v2-creative-216rc1.txt,,,falconfly.3dfx.pl,4,200,text/plain
+http://falconfly.3dfx.pl/voodoo2.htm,Voodoo2 Drivers,,http://falconfly.3dfx.pl/downloads/voodoo2-RC2.zip,,,falconfly.3dfx.pl,4,200,application/zip
+http://falconfly.3dfx.pl/identify-3dfx.htm,Identify your 3dfx Hardware with Part No. and/or special Markings,,http://falconfly.3dfx.pl/identify/STB_Blackmagic_3D.jpg,,,falconfly.3dfx.pl,3,200,image/jpeg
+http://nofi.mariteaux.somnolescent.net,About | mariteaux,,http://nofi.mariteaux.somnolescent.net/,About | mariteaux,mariteaux,nofi.mariteaux.somnolescent.net,1,200,text/html
+http://nofi.mariteaux.somnolescent.net/,About | mariteaux,mariteaux,http://nofi.mariteaux.somnolescent.net/art/,Art | mariteaux,,nofi.mariteaux.somnolescent.net,2,200,text/html
+http://nofi.mariteaux.somnolescent.net/art/,Art | mariteaux,,http://nofi.mariteaux.somnolescent.net/art/full/quake.gif,,,nofi.mariteaux.somnolescent.net,3,200,image/gif
+http://nofi.mariteaux.somnolescent.net/art/,Art | mariteaux,,http://nofi.mariteaux.somnolescent.net/art/full/cerise.gif,,,nofi.mariteaux.somnolescent.net,3,200,image/gif
+http://nofi.mariteaux.somnolescent.net/art/,Art | mariteaux,,http://nofi.mariteaux.somnolescent.net/art/full/lince.jpg,,,nofi.mariteaux.somnolescent.net,3,200,image/jpeg
+http://nofi.mariteaux.somnolescent.net/art/,Art | mariteaux,,http://nofi.mariteaux.somnolescent.net/art/full/oliver.gif,,,nofi.mariteaux.somnolescent.net,3,200,image/gif
+http://nofi.mariteaux.somnolescent.net/,About | mariteaux,mariteaux,http://nofi.mariteaux.somnolescent.net/music/,Music | mariteaux,,nofi.mariteaux.somnolescent.net,2,200,text/html
+http://nofi.mariteaux.somnolescent.net/music/,Music | mariteaux,,http://nofi.mariteaux.somnolescent.net/music/last-summer/,"Last Summer (mtlx, 2023) | mariteaux",,nofi.mariteaux.somnolescent.net,3,200,text/html
+http://nofi.mariteaux.somnolescent.net/music/,Music | mariteaux,,http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/,"6 Mixes for No Cash (Toxic Doom, 2021) | mariteaux",,nofi.mariteaux.somnolescent.net,3,200,text/html
+http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/,"6 Mixes for No Cash (Toxic Doom, 2021) | mariteaux",,http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/01_toxic_doom_-_thats_gonzo.ra,,,nofi.mariteaux.somnolescent.net,4,200,audio/x-pn-realaudio
+http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/,"6 Mixes for No Cash (Toxic Doom, 2021) | mariteaux",,http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/01_toxic_doom_-_thats_gonzo.mp3,,,nofi.mariteaux.somnolescent.net,4,200,audio/mpeg
+http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/,"6 Mixes for No Cash (Toxic Doom, 2021) | mariteaux",,http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/02_toxic_doom_-_pepper.ra,,,nofi.mariteaux.somnolescent.net,4,200,audio/x-pn-realaudio
+http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/,"6 Mixes for No Cash (Toxic Doom, 2021) | mariteaux",,http://nofi.mariteaux.somnolescent.net/music/6-mixes-for-no-cash/02_toxic_doom_-_pepper.mp3,,,nofi.mariteaux.somnolescent.net,4,200,audio/mpeg
+http://nofi.mariteaux.somnolescent.net/,About | mariteaux,mariteaux,http://nofi.mariteaux.somnolescent.net/writing/stories/,Stories | mariteaux,,nofi.mariteaux.somnolescent.net,2,200,text/html
+http://nofi.mariteaux.somnolescent.net/writing/stories/,Stories | mariteaux,,http://nofi.mariteaux.somnolescent.net/writing/stories/pennyverse/kevin-and-theo/,Kevin and Theo's Multiverse Misadventure |,,nofi.mariteaux.somnolescent.net,3,200,text/html
+http://nofi.mariteaux.somnolescent.net/writing/stories/pennyverse/kevin-and-theo/,Kevin and Theo's Multiverse Misadventure |,,http://nofi.mariteaux.somnolescent.net/writing/stories/pennyverse/kevin-and-theo/01/,Page One | mariteaux,,nofi.mariteaux.somnolescent.net,4,200,text/html
+http://nofi.mariteaux.somnolescent.net/writing/stories/pennyverse/kevin-and-theo/,Kevin and Theo's Multiverse Misadventure |,,http://nofi.mariteaux.somnolescent.net/changelog/,Changelog | mariteaux,,nofi.mariteaux.somnolescent.net,4,200,text/html; charset=UTF-8
+http://nofi.mariteaux.somnolescent.net/,About | mariteaux,mariteaux,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/,Album Recommendations | mariteaux,,nofi.mariteaux.somnolescent.net,2,200,text/html; charset=UTF-8
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/,Album Recommendations | mariteaux,,http://nofi.mariteaux.somnolescent.net/contact/,Contact | mariteaux,,nofi.mariteaux.somnolescent.net,3,200,text/html
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/,Album Recommendations | mariteaux,,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/feed/,Album Recommendations | mariteaux,,nofi.mariteaux.somnolescent.net,3,200,application/rss+xml
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/,Album Recommendations | mariteaux,,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=a,Album Recommendations: Artists Starting With &#34;A&#34; | mariteaux,A,nofi.mariteaux.somnolescent.net,3,200,text/html; charset=UTF-8
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=a,Album Recommendations: Artists Starting With &#34;A&#34; | mariteaux,A,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=b,Album Recommendations: Artists Starting With &#34;B&#34; | mariteaux,B,nofi.mariteaux.somnolescent.net,4,200,text/html; charset=UTF-8
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=a,Album Recommendations: Artists Starting With &#34;A&#34; | mariteaux,A,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=c,Album Recommendations: Artists Starting With &#34;C&#34; | mariteaux,C,nofi.mariteaux.somnolescent.net,4,200,text/html; charset=UTF-8
+http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=a,Album Recommendations: Artists Starting With &#34;A&#34; | mariteaux,A,http://nofi.mariteaux.somnolescent.net/writing/recommendations/music/browse.php?letter=d,Album Recommendations: Artists Starting With &#34;D&#34; | mariteaux,D,nofi.mariteaux.somnolescent.net,4,200,text/html; charset=UTF-8
+http://www.mirsoft.info,Mirsoft.info - World of Game Music,,http://www.mirsoft.info/news.php,Mirsoft.info - World of Game Music,,www.mirsoft.info,1,200,text/html
+http://www.mirsoft.info/news.php,Mirsoft.info - World of Game Music,,http://www.mirsoft.info/gamemods.php,World of Game MODs - game music modules for download!,,www.mirsoft.info,2,200,text/html
+http://www.mirsoft.info/gamemods.php,World of Game MODs - game music modules for download!,,http://www.mirsoft.info/gamemids.php,World of Game MIDs - game midis for download!,,www.mirsoft.info,3,200,text/html
+http://www.mirsoft.info/gamemids.php,World of Game MIDs - game midis for download!,,http://www.mirsoft.info/gmb/index.php,"Game music base - database of Games, Games music and soundtracks",,www.mirsoft.info,4,200,text/html
+http://www.mirsoft.info/gamemids.php,World of Game MIDs - game midis for download!,,http://www.mirsoft.info/gmb/reviews_list.php,"Game music base - database of Games, Games music and soundtracks",,www.mirsoft.info,4,200,text/html
+http://www.mirsoft.info/gamemods.php,World of Game MODs - game music modules for download!,,http://www.mirsoft.info/gmb/index.php,"Game music base - database of Games, Games music and soundtracks",,www.mirsoft.info,3,200,text/html
+http://www.mirsoft.info/gmb/index.php,"Game music base - database of Games, Games music and soundtracks",,http://www.mirsoft.info/gmb/reviews_list.php,"Game music base - database of Games, Games music and soundtracks",,www.mirsoft.info,4,200,text/html
+http://www.mirsoft.info/gamemods.php,World of Game MODs - game music modules for download!,,http://www.mirsoft.info/gmb/reviews_list.php,"Game music base - database of Games, Games music and soundtracks",,www.mirsoft.info,3,200,text/html
+http://nethack.org,NetHack 3.6.7: NetHack Home Page,,http://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,nethack.org,1,200,text/html
+http://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,http://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,nethack.org,2,200,text/html
+http://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,http://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,nethack.org,3,200,text/html
+http://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,https://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,nethack.org,4,200,text/html
+http://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,http://nethack.org/v367/bugs.html,NetHack 3.6.7: Known Bugs,3.6.7 bugs list,nethack.org,4,200,text/html
+http://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,https://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,nethack.org,3,200,text/html
+https://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,nethack.org,4,200,text/html
+https://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,https://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,nethack.org,4,200,text/html
+https://nethack.org/index.html,NetHack 3.6.7: NetHack Home Page,,https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,nethack.org,4,200,text/html
+http://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,nethack.org,2,200,text/html
+https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,https://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,nethack.org,3,200,text/html
+https://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,https://nethack.org/v367/bugs.html,NetHack 3.6.7: Known Bugs,3.6.7 bugs list,nethack.org,4,200,text/html
+https://nethack.org/common/contact.html,NetHack 3.6.7: Contact the NetHack Developers,Contact Us,https://nethack.org/common/nethackis.html,NetHack 3.6.7: What is it?,About,nethack.org,4,200,text/html
+https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,https://nethack.org/v367/release.html,NetHack 3.6.7: Release Notes,,nethack.org,3,200,text/html
+https://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,https://nethack.org/v367/downloads.html,NetHack 3.6.7: Downloads,,nethack.org,3,200,text/html
+https://nethack.org/v367/downloads.html,NetHack 3.6.7: Downloads,,https://nethack.org/common/links.html,NetHack 3.6.7: Links,,nethack.org,4,200,text/html
+https://nethack.org/v367/downloads.html,NetHack 3.6.7: Downloads,,https://nethack.org/common/previous.html,NetHack 3.6.7: Previous NetHack Versions,Old Versions,nethack.org,4,200,text/html
+http://nethack.org/common/index.html,NetHack 3.6.7: Main Page,Version 3.6.7,http://nethack.org/v367/release.html,NetHack 3.6.7: Release Notes,,nethack.org,2,200,text/html
+http://nethack.org,NetHack 3.6.7: NetHack Home Page,,https://nethack.org/,NetHack 3.6.7: NetHack Home Page,,nethack.org,1,200,text/html
+http://legacy.nina.chat,NINA,,http://legacy.nina.chat/,NINA,NINA logo,legacy.nina.chat,1,200,text/html; charset=utf-8
+http://legacy.nina.chat/,NINA,NINA logo,http://legacy.nina.chat/connect/,Connect | NINA,Get Started,legacy.nina.chat,2,200,text/html; charset=utf-8
+http://legacy.nina.chat/connect/,Connect | NINA,Get Started,http://legacy.nina.chat/aimexpress/,AIM Express | NINA,"AIM
+                        Express",legacy.nina.chat,3,200,text/html; charset=utf-8
+http://legacy.nina.chat/aimexpress/,AIM Express | NINA,"AIM
+                        Express",http://legacy.nina.chat/download/,Downloads | NINA,Download,legacy.nina.chat,4,200,text/html; charset=utf-8
+http://legacy.nina.chat/connect/,Connect | NINA,Get Started,http://legacy.nina.chat/download/,Downloads | NINA,Download,legacy.nina.chat,3,200,text/html; charset=utf-8
+http://gato.nukley.com,,,http://gato.nukley.com/page2.html,,,gato.nukley.com,1,200,text/html
+http://gato.nukley.com/page2.html,,,http://gato.nukley.com/page3.html,,,gato.nukley.com,2,200,text/html
+http://oldavista.com,Old'aVista: Home,,http://oldavista.com/,Old'aVista: Home,Old'aVista,oldavista.com,1,200,text/html; charset=UTF-8
+http://oldavista.com/,Old'aVista: Home,Old'aVista,http://oldavista.com/faq,Old'aVista: Support Old&#039;aVista,FAQ,oldavista.com,2,200,text/html; charset=UTF-8
+http://oldavista.com/faq,Old'aVista: Support Old&#039;aVista,FAQ,http://oldavista.com/advanced_search,Old'aVista: Advanced Search,,oldavista.com,3,200,text/html; charset=UTF-8
+http://oldavista.com/faq,Old'aVista: Support Old&#039;aVista,FAQ,http://oldavista.com/faq#whatisoldavista,Old'aVista: Support Old&#039;aVista,What is Old'aVista?,oldavista.com,3,200,text/html; charset=UTF-8
+http://oldavista.com/,Old'aVista: Home,Old'aVista,http://oldavista.com/search?q=youtube&s=0,Old'aVista: Support Old&#039;aVista,,oldavista.com,2,200,text/html; charset=UTF-8
+http://oldavista.com/search?q=youtube&s=0,Old'aVista: Support Old&#039;aVista,,http://oldavista.com/go?id=ac40fd29e04a798345428ded9ea202c2&t=2,Tang Zhu-En John's Papa's Favourite Links,,oldavista.com,3,200,text/html; charset=iso-8859-1
+http://retronetwork.net,Retro Network - Welcome,,http://retronetwork.net/sitemap/,Retro Network - Site Map,,retronetwork.net,1,200,text/html
+http://retronetwork.net/sitemap/,Retro Network - Site Map,,http://retronetwork.net/sitemap/protoweb,Retro Network - Site Map for Protoweb,,retronetwork.net,2,200,text/html
+http://retronetwork.net/sitemap/protoweb,Retro Network - Site Map for Protoweb,,http://retronetwork.net/,Retro Network - Welcome,,retronetwork.net,3,200,text/html
+http://retronetwork.net/sitemap/,Retro Network - Site Map,,http://retronetwork.net/html4/,Retro Network HTML 4 - Home,,retronetwork.net,2,200,text/html; charset=UTF-8
+http://retronetwork.net/html4/,Retro Network HTML 4 - Home,,http://retronetwork.net/html4/whatsnew.html,Retro Network HTML 4 - Whats New?,,retronetwork.net,3,200,text/html
+http://retronetwork.net/html4/whatsnew.html,Retro Network HTML 4 - Whats New?,,http://retronetwork.net/html4/retrositelist.php,Retro Network HTML 4 - Retro Site List,,retronetwork.net,4,200,text/html; charset=UTF-8
+http://retronetwork.net/html4/whatsnew.html,Retro Network HTML 4 - Whats New?,,http://retronetwork.net/html4/downloads.html,Retro Network HTML 4 - Downloads,,retronetwork.net,4,200,text/html
+http://retronetwork.net/html4/whatsnew.html,Retro Network HTML 4 - Whats New?,,http://retronetwork.net/html4/whatsnewlegacy.html,Retro Network HTML 4 - Whats New? (Legacy),,retronetwork.net,4,200,text/html
+http://retronetwork.net/html4/,Retro Network HTML 4 - Home,,http://retronetwork.net/html4/retrositelist.php,Retro Network HTML 4 - Retro Site List,,retronetwork.net,3,200,text/html; charset=UTF-8
+http://retronetwork.net/html4/retrositelist.php,Retro Network HTML 4 - Retro Site List,,http://retronetwork.net/html4/downloads.html,Retro Network HTML 4 - Downloads,,retronetwork.net,4,200,text/html
+http://retronetwork.net/html4/retrositelist.php,Retro Network HTML 4 - Retro Site List,,http://retronetwork.net/html4/githublinks.php,Retro Network HTML 4 - Github Links,,retronetwork.net,4,200,text/html; charset=UTF-8
+http://retronetwork.net/html4/,Retro Network HTML 4 - Home,,http://retronetwork.net/html4/downloads.html,Retro Network HTML 4 - Downloads,,retronetwork.net,3,200,text/html
+http://retronetwork.net/html4/downloads.html,Retro Network HTML 4 - Downloads,,http://retronetwork.net/ftp,Index of /ftp,,retronetwork.net,4,200,text/html; charset=UTF-8
+http://retrosite.org,RetroSite,,http://retrosite.org/JarHeadgamer/index.htm,JarHead's Subsite,,retrosite.org,1,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/index.htm,JarHead's Subsite,,http://retrosite.org/JarHeadgamer/mikey/index.htm,mikey's memorial page,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/index.htm,JarHead's Subsite,,http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,http://retrosite.org/JarHeadgamer/MIDI/roxanne.mid,,,retrosite.org,3,200,audio/midi
+http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,http://retrosite.org/JarHeadgamer/MIDI/64credits.mid,,,retrosite.org,3,200,audio/midi
+http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,http://retrosite.org/JarHeadgamer/MIDI/Daytona_USA_-_The_King_of_Speed.mid,,,retrosite.org,3,200,audio/midi
+http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,http://retrosite.org/JarHeadgamer/MIDI/Lets_Go_Away-Intermediate_Track.mid,,,retrosite.org,3,200,audio/midi
+http://retrosite.org/JarHeadgamer/MIDI/index.htm,JarHead's Music Warehouse,,http://retrosite.org/JarHeadgamer/MIDI/mariobtitle.mid,,,retrosite.org,3,200,audio/midi
+http://retrosite.org/JarHeadgamer/index.htm,JarHead's Subsite,,http://retrosite.org/JarHeadgamer/WebTV/411.htm,WebTV Information Center,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/WebTV/411.htm,WebTV Information Center,,http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/CMD.htm,CMD Keys,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/WebTV/411.htm,WebTV Information Center,,http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/all.html,All Available Topics,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/all.html,All Available Topics,,http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/W200.html,Audio Capture on the INT-W200,,retrosite.org,4,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/all.html,All Available Topics,,http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/audioscope.html,The Audioscope,,retrosite.org,4,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/all.html,All Available Topics,,http://retrosite.org/JarHeadgamer/WebTV/InfoCenter/sniffer.html,Detecting WebTV Boxes,,retrosite.org,4,200,text/html; charset=utf-8
+http://retrosite.org/JarHeadgamer/index.htm,JarHead's Subsite,,http://retrosite.org/JarHeadgamer/chickenshoot/index.htm,The Tool That Converts A Select Number Of Currencies To Chicken Shoots,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org,RetroSite,,http://retrosite.org/downloads.htm,Fun Stuff,,retrosite.org,1,200,text/html; charset=utf-8
+http://retrosite.org/downloads.htm,Fun Stuff,,http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,http://retrosite.org/Fun_Stuff/Cursors/win95anicur.zip,,,retrosite.org,3,200,application/zip
+http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,http://retrosite.org/Fun_Stuff/Cursors/sonic-the-hedgehog.zip,,,retrosite.org,3,200,application/zip
+http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,http://retrosite.org/Fun_Stuff/Cursors/rockon.zip,,,retrosite.org,3,200,application/zip
+http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,http://retrosite.org/Fun_Stuff/Cursors/black-cursor.zip,,,retrosite.org,3,200,application/zip
+http://retrosite.org/Fun_Stuff/Cursors/index.htm,Cursor Downloads,,http://retrosite.org/Fun_Stuff/Cursors/tetris-piece-mscur.zip,,,retrosite.org,3,200,application/zip
+http://retrosite.org/downloads.htm,Fun Stuff,,http://retrosite.org/Fun_Stuff/Programs/index.htm,Program Downloads,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/downloads.htm,Fun Stuff,,http://retrosite.org/Fun_Stuff/Sites/index.htm,Sites,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org,RetroSite,,http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,retrosite.org,1,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,http://retrosite.org/Previous_Sites/v0/index.htm,This is a temporary site,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,http://retrosite.org/Previous_Sites/v1/index.htm,RetroSite,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,http://retrosite.org/Previous_Sites/v1.1/index.htm,RetroSite,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.1/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.1/JarHeadgamer/index.htm,JarHead's Website,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.1/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.1/tlwxpuser/index.htm,Who needs a title?,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,http://retrosite.org/Previous_Sites/v1.2/index.htm,RetroSite,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.2/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.2/JarHeadgamer/index.htm,JarHead's Website,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.2/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.2/tlwxpuser/index.htm,TLWXPUser's Subsite!!!1!1!1!,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/index.htm,RetroSite History,,http://retrosite.org/Previous_Sites/v1.3/index.htm,RetroSite,,retrosite.org,2,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.3/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.3/JarHeadgamer/index.htm,JarHead's Website,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.3/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.3/tlwxpuser/index.htm,TLWXPUser's Subsite!!!1!1!1!,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.3/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.3/downloads.htm,RetroSite Downloads,,retrosite.org,3,200,text/html; charset=utf-8
+http://retrosite.org/Previous_Sites/v1.3/index.htm,RetroSite,,http://retrosite.org/Previous_Sites/v1.3/contributing.htm,How to Contribute,,retrosite.org,3,200,text/html; charset=utf-8
+http://simpsonsarchive.com,The Simpsons Archive,,http://simpsonsarchive.com/about.html,The Simpsons Archive: About the Archive,,simpsonsarchive.com,1,200,text/html
+http://simpsonsarchive.com/about.html,The Simpsons Archive: About the Archive,,http://simpsonsarchive.com/about.html#contacts,The Simpsons Archive: About the Archive,contacts,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/about.html#contacts,The Simpsons Archive: About the Archive,contacts,http://simpsonsarchive.com/about.html#faq,The Simpsons Archive: About the Archive,About the Archive,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/about.html#faq,The Simpsons Archive: About the Archive,About the Archive,http://simpsonsarchive.com/about.html#submissions,The Simpsons Archive: About the Archive,Submission Guidelines,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/about.html#faq,The Simpsons Archive: About the Archive,About the Archive,http://simpsonsarchive.com/about.html#whatsnew,The Simpsons Archive: About the Archive,What's New,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/about.html#contacts,The Simpsons Archive: About the Archive,contacts,http://simpsonsarchive.com/about.html#submissions,The Simpsons Archive: About the Archive,Submission Guidelines,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/about.html#submissions,The Simpsons Archive: About the Archive,Submission Guidelines,http://simpsonsarchive.com/about.html#whatsnew,The Simpsons Archive: About the Archive,What's New,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/about.html#contacts,The Simpsons Archive: About the Archive,contacts,http://simpsonsarchive.com/about.html#whatsnew,The Simpsons Archive: About the Archive,What's New,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com,The Simpsons Archive,,http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,simpsonsarchive.com,1,200,text/html
+http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,http://simpsonsarchive.com/guides/lisa.html,alt.tv.simpsons - List of Inquiries and Substantive Answers,/guides/lisa.html,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/guides/lisa.html,alt.tv.simpsons - List of Inquiries and Substantive Answers,/guides/lisa.html,http://simpsonsarchive.com/staff/kwyjibo/,Index of /staff/kwyjibo/,,simpsonsarchive.com,3,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/kwyjibo/,Index of /staff/kwyjibo/,,http://simpsonsarchive.com/staff/kwyjibo/?ND,Index of /staff/kwyjibo/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/kwyjibo/,Index of /staff/kwyjibo/,,http://simpsonsarchive.com/staff/kwyjibo/?MA,Index of /staff/kwyjibo/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/kwyjibo/,Index of /staff/kwyjibo/,,http://simpsonsarchive.com/staff/kwyjibo/?SA,Index of /staff/kwyjibo/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/kwyjibo/,Index of /staff/kwyjibo/,,http://simpsonsarchive.com/staff/,,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/lisa.html,alt.tv.simpsons - List of Inquiries and Substantive Answers,/guides/lisa.html,http://simpsonsarchive.com/staff/mrose/,Index of /staff/mrose/,,simpsonsarchive.com,3,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/mrose/,Index of /staff/mrose/,,http://simpsonsarchive.com/staff/mrose/?ND,Index of /staff/mrose/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/mrose/,Index of /staff/mrose/,,http://simpsonsarchive.com/staff/mrose/?MA,Index of /staff/mrose/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/mrose/,Index of /staff/mrose/,,http://simpsonsarchive.com/staff/mrose/?SA,Index of /staff/mrose/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/mrose/,Index of /staff/mrose/,,http://simpsonsarchive.com/staff/,,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/lisa.html,alt.tv.simpsons - List of Inquiries and Substantive Answers,/guides/lisa.html,http://simpsonsarchive.com/guides/finfaq.html,The Simpsons Archive: Simpsonit FAQ,,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/finfaq.html,The Simpsons Archive: Simpsonit FAQ,,http://simpsonsarchive.com/staff/jouni/,Index of /staff/jouni/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/guides/finfaq.html,The Simpsons Archive: Simpsonit FAQ,,http://simpsonsarchive.com/guides/finfaq4.html,The Simpsons Archive: Simpsonit FAQ (osa 4/5),,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/finfaq.html,The Simpsons Archive: Simpsonit FAQ,,http://simpsonsarchive.com/staff/jouni/,Index of /staff/jouni/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,http://simpsonsarchive.com/guides/capfaq.html#sec1,The Simpsons Archive: Episode Capsule FAQ,An episode capsule?  What's that?,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec1,The Simpsons Archive: Episode Capsule FAQ,An episode capsule?  What's that?,http://simpsonsarchive.com/guides/capfaq.html#sec2,The Simpsons Archive: Episode Capsule FAQ,"Sounds pretty good.  Where are the capsules
+         available?",simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec1,The Simpsons Archive: Episode Capsule FAQ,An episode capsule?  What's that?,http://simpsonsarchive.com/guides/capfaq.html#sec3,The Simpsons Archive: Episode Capsule FAQ,When will episode _____ be available?(or to put it another way)Why are you guys so far behind?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec1,The Simpsons Archive: Episode Capsule FAQ,An episode capsule?  What's that?,http://simpsonsarchive.com/guides/capfaq.html#sec4,The Simpsons Archive: Episode Capsule FAQ,How are the capsules made?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec1,The Simpsons Archive: Episode Capsule FAQ,An episode capsule?  What's that?,http://simpsonsarchive.com/guides/capfaq.html#sec5,The Simpsons Archive: Episode Capsule FAQ,Is there anything I can do to help?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,http://simpsonsarchive.com/guides/capfaq.html#sec2,The Simpsons Archive: Episode Capsule FAQ,"Sounds pretty good.  Where are the capsules
+         available?",simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec2,The Simpsons Archive: Episode Capsule FAQ,"Sounds pretty good.  Where are the capsules
+         available?",http://simpsonsarchive.com/guides/capfaq.html#sec3,The Simpsons Archive: Episode Capsule FAQ,When will episode _____ be available?(or to put it another way)Why are you guys so far behind?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec2,The Simpsons Archive: Episode Capsule FAQ,"Sounds pretty good.  Where are the capsules
+         available?",http://simpsonsarchive.com/guides/capfaq.html#sec4,The Simpsons Archive: Episode Capsule FAQ,How are the capsules made?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec2,The Simpsons Archive: Episode Capsule FAQ,"Sounds pretty good.  Where are the capsules
+         available?",http://simpsonsarchive.com/guides/capfaq.html#sec5,The Simpsons Archive: Episode Capsule FAQ,Is there anything I can do to help?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,http://simpsonsarchive.com/guides/capfaq.html#sec3,The Simpsons Archive: Episode Capsule FAQ,When will episode _____ be available?(or to put it another way)Why are you guys so far behind?,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec3,The Simpsons Archive: Episode Capsule FAQ,When will episode _____ be available?(or to put it another way)Why are you guys so far behind?,http://simpsonsarchive.com/guides/capfaq.html#sec4,The Simpsons Archive: Episode Capsule FAQ,How are the capsules made?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec3,The Simpsons Archive: Episode Capsule FAQ,When will episode _____ be available?(or to put it another way)Why are you guys so far behind?,http://simpsonsarchive.com/guides/capfaq.html#sec5,The Simpsons Archive: Episode Capsule FAQ,Is there anything I can do to help?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,http://simpsonsarchive.com/guides/capfaq.html#sec4,The Simpsons Archive: Episode Capsule FAQ,How are the capsules made?,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html#sec4,The Simpsons Archive: Episode Capsule FAQ,How are the capsules made?,http://simpsonsarchive.com/guides/capfaq.html#sec5,The Simpsons Archive: Episode Capsule FAQ,Is there anything I can do to help?,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/capfaq.html,The Simpsons Archive: Episode Capsule FAQ,,http://simpsonsarchive.com/guides/capfaq.html#sec5,The Simpsons Archive: Episode Capsule FAQ,Is there anything I can do to help?,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,http://simpsonsarchive.com/guides/av.html,The Simpsons Archive: Audio & Video Releases,,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/guides/av.html,The Simpsons Archive: Audio & Video Releases,,http://simpsonsarchive.com/guides/av.html#10,The Simpsons Archive: Audio & Video Releases,Audio Releases,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/av.html#10,The Simpsons Archive: Audio & Video Releases,Audio Releases,http://simpsonsarchive.com/guides/av.html#20,The Simpsons Archive: Audio & Video Releases,Video Releases - VHS,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#10,The Simpsons Archive: Audio & Video Releases,Audio Releases,http://simpsonsarchive.com/guides/av.html#30,The Simpsons Archive: Audio & Video Releases,Video Releases - DVD,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#10,The Simpsons Archive: Audio & Video Releases,Audio Releases,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#10,The Simpsons Archive: Audio & Video Releases,Audio Releases,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html,The Simpsons Archive: Audio & Video Releases,,http://simpsonsarchive.com/guides/av.html#20,The Simpsons Archive: Audio & Video Releases,Video Releases - VHS,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/av.html#20,The Simpsons Archive: Audio & Video Releases,Video Releases - VHS,http://simpsonsarchive.com/guides/av.html#30,The Simpsons Archive: Audio & Video Releases,Video Releases - DVD,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#20,The Simpsons Archive: Audio & Video Releases,Video Releases - VHS,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#20,The Simpsons Archive: Audio & Video Releases,Video Releases - VHS,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html,The Simpsons Archive: Audio & Video Releases,,http://simpsonsarchive.com/guides/av.html#30,The Simpsons Archive: Audio & Video Releases,Video Releases - DVD,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/av.html#30,The Simpsons Archive: Audio & Video Releases,Video Releases - DVD,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html#30,The Simpsons Archive: Audio & Video Releases,Video Releases - DVD,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/av.html,The Simpsons Archive: Audio & Video Releases,,http://simpsonsarchive.com/guides/av.html#NEW05,The Simpsons Archive: Audio & Video Releases,The Simpsons - The Complete Fifteenth Season,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,http://simpsonsarchive.com/guides/dvdguide.html,The Simpsons Archive: DVD Companion,,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/guides/dvdguide.html,The Simpsons Archive: DVD Companion,,http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,http://simpsonsarchive.com/guides/latin_ambig.html,The Simpsons Archive: Latinamerican Ambiguities,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,http://simpsonsarchive.com/episodes/7F06.html,Bart the Daredevil,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,http://simpsonsarchive.com/episodes/7F14.html,Bart's Dog Gets an F,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/ambig.html,The Simpsons Archive: Broadcast Ambiguities,,http://simpsonsarchive.com/episodes/7F20.html,War of the Simpsons,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/dvdguide.html,The Simpsons Archive: DVD Companion,,http://simpsonsarchive.com/guides/episode_list.html,The Simpsons Archive: Episode and Air Dates List,,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/episode_list.html,The Simpsons Archive: Episode and Air Dates List,,http://simpsonsarchive.com/episodes/7G08.html,Simpsons Roasting on an Open Fire,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/episode_list.html,The Simpsons Archive: Episode and Air Dates List,,http://simpsonsarchive.com/episodes/7G02.html,Bart the Genius,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/dvdguide.html,The Simpsons Archive: DVD Companion,,http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,http://simpsonsarchive.com/episodes/scg-faq.html,The Simpsons Archive: Simpsons Syndication FAQ,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,http://simpsonsarchive.com/episodes/scg-20.txt,,,simpsonsarchive.com,4,200,text/plain
+http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,http://simpsonsarchive.com/episodes/scg-1.txt,,,simpsonsarchive.com,4,200,text/plain
+http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,http://simpsonsarchive.com/episodes/scg-2.txt,,,simpsonsarchive.com,4,200,text/plain
+http://simpsonsarchive.com/episodes/scg.html,The Simpsons Archive: Episode Capsules - Syndication Cuts Guide,,http://simpsonsarchive.com/episodes/scg-3.txt,,,simpsonsarchive.com,4,200,text/plain
+http://simpsonsarchive.com/guides/dvdguide.html,The Simpsons Archive: DVD Companion,,http://simpsonsarchive.com/news/dvd.html,The Simpsons Archive: Simpsons DVD News (The Springfield Times),,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/news/dvd.html,The Simpsons Archive: Simpsons DVD News (The Springfield Times),,http://simpsonsarchive.com/news/dvd_s1.html,The Simpsons Archive: The Springfield Times - Simpsons DVD News Archive - Season 1,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/news/dvd.html,The Simpsons Archive: Simpsons DVD News (The Springfield Times),,http://simpsonsarchive.com/news/dvd_s2.html,The Simpsons Archive: The Springfield Times: Simpsons DVD News Archive - Season 2,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/news/dvd.html,The Simpsons Archive: Simpsons DVD News (The Springfield Times),,http://simpsonsarchive.com/news/dvd_s3.html,The Simpsons Archive: Simpsons DVD News Archive - Season 3 (The Springfield Times),,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/lists.html,"The Simpsons Archive: FAQs, Guides &amp; Lists",,http://simpsonsarchive.com/guides/bbfc.html,The Simpsons Archive: BBFC Ratings In The UK,,simpsonsarchive.com,2,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html,The Simpsons Archive: BBFC Ratings In The UK,,http://simpsonsarchive.com/staff/wesley,Index of /staff/wesley/,,simpsonsarchive.com,3,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/wesley,Index of /staff/wesley/,,http://simpsonsarchive.com/staff/wesley?ND,Index of /staff/wesley/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/wesley,Index of /staff/wesley/,,http://simpsonsarchive.com/staff/wesley?MA,Index of /staff/wesley/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/wesley,Index of /staff/wesley/,,http://simpsonsarchive.com/staff/wesley?SA,Index of /staff/wesley/,,simpsonsarchive.com,4,200,text/html; charset=UTF-8
+http://simpsonsarchive.com/staff/wesley,Index of /staff/wesley/,,http://simpsonsarchive.com/staff/,,,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html,The Simpsons Archive: BBFC Ratings In The UK,,http://simpsonsarchive.com/guides/bbfc.html#guide,The Simpsons Archive: BBFC Ratings In The UK,Guide To BBFC Ratings,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html#guide,The Simpsons Archive: BBFC Ratings In The UK,Guide To BBFC Ratings,http://simpsonsarchive.com/guides/bbfc.html#releases,The Simpsons Archive: BBFC Ratings In The UK,Releases,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html#guide,The Simpsons Archive: BBFC Ratings In The UK,Guide To BBFC Ratings,http://simpsonsarchive.com/guides/bbfc.html#s1,The Simpsons Archive: BBFC Ratings In The UK,Season One,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html,The Simpsons Archive: BBFC Ratings In The UK,,http://simpsonsarchive.com/guides/bbfc.html#releases,The Simpsons Archive: BBFC Ratings In The UK,Releases,simpsonsarchive.com,3,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html#releases,The Simpsons Archive: BBFC Ratings In The UK,Releases,http://simpsonsarchive.com/guides/bbfc.html#s1,The Simpsons Archive: BBFC Ratings In The UK,Season One,simpsonsarchive.com,4,200,text/html
+http://simpsonsarchive.com/guides/bbfc.html,The Simpsons Archive: BBFC Ratings In The UK,,http://simpsonsarchive.com/guides/bbfc.html#s1,The Simpsons Archive: BBFC Ratings In The UK,Season One,simpsonsarchive.com,3,200,text/html
+http://steunebrink.info,Jan's PC Upgrade problems Page,,http://steunebrink.info/whatsnew.htm,What's New here?,,steunebrink.info,1,200,text/html
+http://steunebrink.info/whatsnew.htm,What's New here?,,http://steunebrink.info/k6plus.htm,The Unofficial AMD K6-2+ / K6-III+ page,,steunebrink.info,2,200,text/html
+http://steunebrink.info/k6plus.htm,The Unofficial AMD K6-2+ / K6-III+ page,,http://steunebrink.info/k6plus.htm#bios,The Unofficial AMD K6-2+ / K6-III+ page,K6-2+/III+ BIOS support,steunebrink.info,3,200,text/html
+http://steunebrink.info/k6plus.htm#bios,The Unofficial AMD K6-2+ / K6-III+ page,K6-2+/III+ BIOS support,http://steunebrink.info/k6plus.htm#32GB_bugfix,The Unofficial AMD K6-2+ / K6-III+ page,32GB HDD limit bug,steunebrink.info,4,200,text/html
+http://steunebrink.info/k6plus.htm#bios,The Unofficial AMD K6-2+ / K6-III+ page,K6-2+/III+ BIOS support,http://steunebrink.info/k6plus.htm#patched,The Unofficial AMD K6-2+ / K6-III+ page,Patched BIOS,steunebrink.info,4,200,text/html
+http://steunebrink.info/k6plus.htm,The Unofficial AMD K6-2+ / K6-III+ page,,http://steunebrink.info/k6plus.htm#32GB_bugfix,The Unofficial AMD K6-2+ / K6-III+ page,32GB HDD limit bug,steunebrink.info,3,200,text/html
+http://steunebrink.info/k6plus.htm#32GB_bugfix,The Unofficial AMD K6-2+ / K6-III+ page,32GB HDD limit bug,http://steunebrink.info/k6plus.htm#patched,The Unofficial AMD K6-2+ / K6-III+ page,Patched BIOS,steunebrink.info,4,200,text/html
+http://steunebrink.info/k6plus.htm,The Unofficial AMD K6-2+ / K6-III+ page,,http://steunebrink.info/k6plus.htm#patched,The Unofficial AMD K6-2+ / K6-III+ page,Patched BIOS,steunebrink.info,3,200,text/html
+http://steunebrink.info/whatsnew.htm,What's New here?,,http://steunebrink.info/chkcpu.htm,CPU Identification utility,,steunebrink.info,2,200,text/html
+http://steunebrink.info/chkcpu.htm,CPU Identification utility,,http://steunebrink.info/ckcpu1271.zip,,,steunebrink.info,3,200,application/zip
+http://steunebrink.info/chkcpu.htm,CPU Identification utility,,http://steunebrink.info/ckcpu215.zip,,,steunebrink.info,3,200,application/zip
+http://steunebrink.info,Jan's PC Upgrade problems Page,,http://steunebrink.info/virwarn.htm,Problems with BIOS Boot sector Virus Protection,,steunebrink.info,1,200,text/html
+http://steunebrink.info/virwarn.htm,Problems with BIOS Boot sector Virus Protection,,http://steunebrink.info/virwrn12.zip,,,steunebrink.info,2,200,application/zip
+http://steunebrink.info/virwarn.htm,Problems with BIOS Boot sector Virus Protection,,http://steunebrink.info/index.htm,Jan's PC Upgrade problems Page,,steunebrink.info,2,200,text/html
+http://steunebrink.info/index.htm,Jan's PC Upgrade problems Page,,http://steunebrink.info/extbios.htm,The Windows 95 Partition Bug,,steunebrink.info,3,200,text/html
+http://steunebrink.info/extbios.htm,The Windows 95 Partition Bug,,http://steunebrink.info/extbio13.zip,,,steunebrink.info,4,200,application/zip
+http://steunebrink.info/extbios.htm,The Windows 95 Partition Bug,,http://steunebrink.info/partinfo.exe,,,steunebrink.info,4,200,application/x-msdos-program
+http://steunebrink.info/index.htm,Jan's PC Upgrade problems Page,,http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,steunebrink.info,3,200,text/html
+http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,http://steunebrink.info/bioslim.htm#Begin,The BIOS IDE Harddisk Limitations,HTML version below,steunebrink.info,4,200,text/html
+http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,http://steunebrink.info/bioslim2.zip,,,steunebrink.info,4,200,application/zip
+http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,http://steunebrink.info/chkbios.exe,,,steunebrink.info,4,200,application/x-msdos-program
+http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,http://steunebrink.info/extbio13.zip,,,steunebrink.info,4,200,application/zip
+http://steunebrink.info/bioslim.htm,The BIOS IDE Harddisk Limitations,,http://steunebrink.info/bioslim.htm#Intro,The BIOS IDE Harddisk Limitations,Introduction,steunebrink.info,4,200,text/html
+http://steunebrink.info/index.htm,Jan's PC Upgrade problems Page,,http://steunebrink.info/move95.htm,Move Windows 95/98 to a new Harddisk,,steunebrink.info,3,200,text/html
+http://system7today.com,Home / News - System 7 Today,,http://system7today.com/instant-messaging,How to use IRC for Facebook chat & more? - System 7 Today,,system7today.com,1,200,text/html; charset=utf-8
+http://system7today.com/instant-messaging,How to use IRC for Facebook chat & more? - System 7 Today,,http://system7today.com/internet,Software Guide Internet - System 7 Today,,system7today.com,2,200,text/html; charset=utf-8
+http://system7today.com/internet,Software Guide Internet - System 7 Today,,http://system7today.com/updates,Ultimate Update list - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/updates,Ultimate Update list - System 7 Today,,http://system7today.com/optional-updates,Optional Update list - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/updates,Ultimate Update list - System 7 Today,,http://system7today.com/sys71-on-68k/,System 7.1.x on a 68k Macintosh - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/updates,Ultimate Update list - System 7 Today,,http://system7today.com/sys75-on-68k,System 7.5.x on a 68k Macintosh - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/updates,Ultimate Update list - System 7 Today,,http://system7today.com/sys76-on-68k,System 7.6.x on a 68k Macintosh - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/updates,Ultimate Update list - System 7 Today,,http://system7today.com/sys75-on-powerpc,System 7.5.x on a PowerPC Macintosh - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/internet,Software Guide Internet - System 7 Today,,http://system7today.com/optional-updates,Optional Update list - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/optional-updates,Optional Update list - System 7 Today,,http://system7today.com/data/uploads/downloads/calculatorii.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/optional-updates,Optional Update list - System 7 Today,,http://system7today.com/data/uploads/images/update-list/calculator.jpg,,,system7today.com,4,200,image/jpeg
+http://system7today.com/optional-updates,Optional Update list - System 7 Today,,http://system7today.com/data/uploads/downloads/scrapz1.3.2.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/optional-updates,Optional Update list - System 7 Today,,http://system7today.com/data/uploads/downloads/super-notepad-1.21.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/internet,Software Guide Internet - System 7 Today,,http://system7today.com/productivity,Software Guide Productivity - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/productivity,Software Guide Productivity - System 7 Today,,http://system7today.com/multimedia,Software Guide Multimedia - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/productivity,Software Guide Productivity - System 7 Today,,http://system7today.com/utilities,Software Guide Utilities - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/internet,Software Guide Internet - System 7 Today,,http://system7today.com/multimedia,Software Guide Multimedia - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/multimedia,Software Guide Multimedia - System 7 Today,,http://system7today.com/utilities,Software Guide Utilities - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/internet,Software Guide Internet - System 7 Today,,http://system7today.com/utilities,Software Guide Utilities - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com,Home / News - System 7 Today,,http://system7today.com/latest-news,Latest News - System 7 Today,,system7today.com,1,200,text/html; charset=utf-8
+http://system7today.com/latest-news,Latest News - System 7 Today,,http://system7today.com/data/uploads/images/s7t-on-gopher.jpg,,,system7today.com,2,200,image/jpeg
+http://system7today.com,Home / News - System 7 Today,,http://system7today.com/videocards,High Power 3D Video Cards - System 7 Today,,system7today.com,1,200,text/html; charset=utf-8
+http://system7today.com/videocards,High Power 3D Video Cards - System 7 Today,,http://system7today.com/helpcenter,Help Center - System 7 Today,,system7today.com,2,200,text/html; charset=utf-8
+http://system7today.com/helpcenter,Help Center - System 7 Today,,http://system7today.com/tutorials,Tutorials - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/tutorials,Tutorials - System 7 Today,,http://system7today.com/drivers,Drivers - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/tutorials,Tutorials - System 7 Today,,http://system7today.com/installingos7,Mac OS 7.6 Install Packages - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/tutorials,Tutorials - System 7 Today,,http://system7today.com/disktools,Create Disk Tools (Boot Disk) Floppies - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/tutorials,Tutorials - System 7 Today,,http://system7today.com/osxos7cdburning,Burn a CD in Mac OS X that can be read by Mac OS 7 - System 7 Today,,system7today.com,4,200,text/html; charset=utf-8
+http://system7today.com/helpcenter,Help Center - System 7 Today,,http://system7today.com/drivers,Drivers - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/drivers,Drivers - System 7 Today,,http://system7today.com/data/uploads/downloads/drivers/3comenetdrv.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/drivers,Drivers - System 7 Today,,http://system7today.com/data/uploads/downloads/drivers/3DfxTweaker 1.0b0 _.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/drivers,Drivers - System 7 Today,,http://system7today.com/data/uploads/downloads/drivers/apple-iie-card.sit,,,system7today.com,4,200,application/x-stuffit
+http://system7today.com/helpcenter,Help Center - System 7 Today,,http://system7today.com/keyboard-commands,Important keyboard commands for System 7 - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/keyboard-commands,Important keyboard commands for System 7 - System 7 Today,,http://system7today.com/forums,System 7 Today - Forum - Index,,system7today.com,4,200,text/html; charset=UTF-8
+http://system7today.com/helpcenter,Help Center - System 7 Today,,http://system7today.com/sd8menus,Speed Doubler 8 causing underlined menus - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://system7today.com/helpcenter,Help Center - System 7 Today,,http://system7today.com/qt5jpeg,QuickTime 5 and JPEG images - System 7 Today,,system7today.com,3,200,text/html; charset=utf-8
+http://cd.textfiles.com,CD.TEXTFILES.COM: The Past on Plastic,MAIN SITE,http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,cd.textfiles.com,1,200,text/html
+http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,http://cd.textfiles.com/newest.html,CD.TEXTFILES.COM: Newest Additions,,cd.textfiles.com,2,200,text/html
+http://cd.textfiles.com/newest.html,CD.TEXTFILES.COM: Newest Additions,,http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,cd.textfiles.com,3,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,http://cd.textfiles.com/,CD.TEXTFILES.COM: The Past on Plastic,,cd.textfiles.com,4,200,text/html
+http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,http://cd.textfiles.com/wocusd25/.files,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,http://cd.textfiles.com/wocusd25/.name,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,http://cd.textfiles.com/wocusd25/.size,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/wocusd25/,Index of /wocusd25,,http://cd.textfiles.com/wocusd25/.subname,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/newest.html,CD.TEXTFILES.COM: Newest Additions,,http://cd.textfiles.com/swsii/,Index of /swsii,,cd.textfiles.com,3,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/swsii/,Index of /swsii,,http://cd.textfiles.com/,CD.TEXTFILES.COM: The Past on Plastic,,cd.textfiles.com,4,200,text/html
+http://cd.textfiles.com/swsii/,Index of /swsii,,http://cd.textfiles.com/swsii/.files,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/swsii/,Index of /swsii,,http://cd.textfiles.com/swsii/.name,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/swsii/,Index of /swsii,,http://cd.textfiles.com/swsii/.size,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/swsii/,Index of /swsii,,http://cd.textfiles.com/swsii/.subname,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/newest.html,CD.TEXTFILES.COM: Newest Additions,,http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,cd.textfiles.com,3,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,http://cd.textfiles.com/,CD.TEXTFILES.COM: The Past on Plastic,,cd.textfiles.com,4,200,text/html
+http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,http://cd.textfiles.com/sw12themaxx/.files,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,http://cd.textfiles.com/sw12themaxx/.name,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,http://cd.textfiles.com/sw12themaxx/.size,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/sw12themaxx/,Index of /sw12themaxx,,http://cd.textfiles.com/sw12themaxx/.subname,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/newest.html,CD.TEXTFILES.COM: Newest Additions,,http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,cd.textfiles.com,3,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,http://cd.textfiles.com/,CD.TEXTFILES.COM: The Past on Plastic,,cd.textfiles.com,4,200,text/html
+http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,http://cd.textfiles.com/pcwi1195/.files,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,http://cd.textfiles.com/pcwi1195/.name,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,http://cd.textfiles.com/pcwi1195/.size,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/pcwi1195/,Index of /pcwi1195,,http://cd.textfiles.com/pcwi1195/.subname,,,cd.textfiles.com,4,200,
+http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,http://cd.textfiles.com/10000gp2,Index of /10000gp2,,cd.textfiles.com,2,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/10000gp2,Index of /10000gp2,,http://cd.textfiles.com/,CD.TEXTFILES.COM: The Past on Plastic,,cd.textfiles.com,3,200,text/html
+http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,http://cd.textfiles.com/10000soundssongs,Index of /10000soundssongs,,cd.textfiles.com,2,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,http://cd.textfiles.com/1000games,Index of /1000games,,cd.textfiles.com,2,200,text/html;charset=ISO-8859-1
+http://cd.textfiles.com/directory.html,CD.TEXTFILES.COM: The Collection,,http://cd.textfiles.com/100gamesmore,Index of /100gamesmore,,cd.textfiles.com,2,200,text/html;charset=ISO-8859-1
+http://discmaster.textfiles.com,DiscMaster,,http://discmaster.textfiles.com/,DiscMaster,home,discmaster.textfiles.com,1,200,text/html
+http://discmaster.textfiles.com/,DiscMaster,home,http://discmaster.textfiles.com/cd-rom,CD-ROM,CD-ROM,discmaster.textfiles.com,2,200,text/html
+http://discmaster.textfiles.com/cd-rom,CD-ROM,CD-ROM,http://discmaster.textfiles.com/disk,disk,disk,discmaster.textfiles.com,3,200,text/html
+http://discmaster.textfiles.com/disk,disk,disk,http://discmaster.textfiles.com/ftp,FTP,FTP,discmaster.textfiles.com,4,200,text/html
+http://discmaster.textfiles.com/disk,disk,disk,http://discmaster.textfiles.com/other,other,other,discmaster.textfiles.com,4,200,text/html
+http://discmaster.textfiles.com/cd-rom,CD-ROM,CD-ROM,http://discmaster.textfiles.com/ftp,FTP,FTP,discmaster.textfiles.com,3,200,text/html
+http://discmaster.textfiles.com/ftp,FTP,FTP,http://discmaster.textfiles.com/other,other,other,discmaster.textfiles.com,4,200,text/html
+http://discmaster.textfiles.com/cd-rom,CD-ROM,CD-ROM,http://discmaster.textfiles.com/other,other,other,discmaster.textfiles.com,3,200,text/html
+http://thebaratusii.com,House of THEBaratusII,,http://thebaratusii.com/about.html,House of THEBaratusII - About,,thebaratusii.com,1,200,text/html
+http://thebaratusii.com/about.html,House of THEBaratusII - About,,http://thebaratusii.com/index.html,House of THEBaratusII,,thebaratusii.com,2,200,text/html
+http://thebaratusii.com/index.html,House of THEBaratusII,,http://thebaratusii.com/news.html,House of THEBaratusII - News,,thebaratusii.com,3,200,text/html
+http://thebaratusii.com/news.html,House of THEBaratusII - News,,http://thebaratusii.com/n_2024.html,House of THEBaratusII - News,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/news.html,House of THEBaratusII - News,,http://thebaratusii.com/n_2023.html,House of THEBaratusII - News,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/news.html,House of THEBaratusII - News,,http://thebaratusii.com/n_2022.html,House of THEBaratusII - News,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/news.html,House of THEBaratusII - News,,http://thebaratusii.com/n_older.html,House of THEBaratusII - News,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/index.html,House of THEBaratusII,,http://thebaratusii.com/files.html,House of THEBaratusII - Files,,thebaratusii.com,3,200,text/html
+http://thebaratusii.com/files.html,House of THEBaratusII - Files,,http://thebaratusii.com/files/f_doomwads.html,House of THEBaratusII - Files - Doom WADs,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/files.html,House of THEBaratusII - Files,,http://thebaratusii.com/files/f_packages.html,House of THEBaratusII - Files - Packages,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/index.html,House of THEBaratusII,,http://thebaratusii.com/media.html,House of THEBaratusII - Media,,thebaratusii.com,3,200,text/html
+http://thebaratusii.com/media.html,House of THEBaratusII - Media,,http://thebaratusii.com/media/screen.html,House of THEBaratusII - Gallery - Screenshots,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/media.html,House of THEBaratusII - Media,,http://thebaratusii.com/media/photos.html,House of THEBaratusII - Gallery - Photos,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/index.html,House of THEBaratusII,,http://thebaratusii.com/misc.html,House of THEBaratusII - Misc,,thebaratusii.com,3,200,text/html
+http://thebaratusii.com/misc.html,House of THEBaratusII - Misc,,http://thebaratusii.com/m_computer.html,House of THEBaratusII - Misc,,thebaratusii.com,4,200,text/html
+http://thebaratusii.com/misc.html,House of THEBaratusII - Misc,,http://thebaratusii.com/m_consoles.html,House of THEBaratusII - Misc,,thebaratusii.com,4,200,text/html
+http://theoldnet.com,The Old Net,,http://theoldnet.com/lite,The Old Net,,theoldnet.com,1,200,text/html; charset=iso-8859-1
+http://theoldnet.com/lite,The Old Net,,http://theoldnet.com/,The Old Net,,theoldnet.com,2,200,text/html; charset=iso-8859-1
+http://theoldnet.com/,The Old Net,,http://theoldnet.com/cgi-bin/guestbook,Welcome To The Old Guestbook Again!,,theoldnet.com,3,200,text/html; charset=iso-8859-1
+http://theoldnet.com/cgi-bin/guestbook,Welcome To The Old Guestbook Again!,,http://theoldnet.com/guestbook?page=0,Welcome To The Old Guestbook Again!,,theoldnet.com,4,200,text/html; charset=iso-8859-1
+http://theoldnet.com/cgi-bin/guestbook,Welcome To The Old Guestbook Again!,,http://theoldnet.com/guestbook?page=1,Welcome To The Old Guestbook Again!,,theoldnet.com,4,200,text/html; charset=iso-8859-1
+http://theoldnet.com/cgi-bin/guestbook,Welcome To The Old Guestbook Again!,,http://theoldnet.com/guestbook?page=0,Welcome To The Old Guestbook Again!,,theoldnet.com,4,200,text/html; charset=iso-8859-1
+http://theoldnet.com/cgi-bin/guestbook,Welcome To The Old Guestbook Again!,,http://theoldnet.com/guestbook?page=1,Welcome To The Old Guestbook Again!,,theoldnet.com,4,200,text/html; charset=iso-8859-1
+http://theoldnet.com/,The Old Net,,http://theoldnet.com/irc.html,IRC #theoldnet,,theoldnet.com,3,200,text/html
+http://theoldnet.com/irc.html,IRC #theoldnet,,http://theoldnet.com/get?decode=false&scripts=false&year=1997&url=http://tucows.iwebstudio.com/room.html,Chat - IRC/Rooms for Windows 3.x,,theoldnet.com,4,200,text/html; charset=iso-8859-1
+http://theoldnet.com/,The Old Net,,http://theoldnet.com/sponsors,The Old Net,,theoldnet.com,3,200,text/html; charset=iso-8859-1
+http://toastytech.com,Nathan's Toasty Technology Page,,http://toastytech.com/index.html,Nathan's Toasty Technology Page,Home,toastytech.com,1,200,text/html
+http://toastytech.com/index.html,Nathan's Toasty Technology Page,Home,http://toastytech.com/evil/index.html,Internet Explorer is EVIL!,IE is EVIL!,toastytech.com,2,200,text/html
+http://toastytech.com/evil/index.html,Internet Explorer is EVIL!,IE is EVIL!,http://toastytech.com/guis/index.html,Graphical User Interface Gallery,GUIs,toastytech.com,3,200,text/html
+http://toastytech.com/guis/index.html,Graphical User Interface Gallery,GUIs,http://toastytech.com/files/index.html,Files,Files,toastytech.com,4,200,text/html
+http://toastytech.com/guis/index.html,Graphical User Interface Gallery,GUIs,http://toastytech.com/about/index.html,About Me,About,toastytech.com,4,200,text/html
+http://toastytech.com/evil/index.html,Internet Explorer is EVIL!,IE is EVIL!,http://toastytech.com/files/index.html,Files,Files,toastytech.com,3,200,text/html
+http://toastytech.com/files/index.html,Files,Files,http://toastytech.com/about/index.html,About Me,About,toastytech.com,4,200,text/html
+http://toastytech.com/evil/index.html,Internet Explorer is EVIL!,IE is EVIL!,http://toastytech.com/about/index.html,About Me,About,toastytech.com,3,200,text/html
+http://ucanet.net,ucanet - U Create A Net,,http://ucanet.net/,ucanet - U Create A Net,Index,ucanet.net,1,200,text/html; charset=UTF-8
+http://ucanet.net/,ucanet - U Create A Net,Index,http://ucanet.net/about,ucanet - About,About,ucanet.net,2,200,text/html; charset=UTF-8
+http://ucanet.net/about,ucanet - About,About,http://ucanet.net/updates,ucanet - Updates,Updates,ucanet.net,3,200,text/html; charset=UTF-8
+http://ucanet.net/updates,ucanet - Updates,Updates,http://ucanet.net/rules,ucanet - Rules,Rules,ucanet.net,4,200,text/html; charset=UTF-8
+http://ucanet.net/updates,ucanet - Updates,Updates,http://ucanet.net/register-a-domain,ucanet - Register a Domain,Register-a-Domain,ucanet.net,4,200,text/html; charset=UTF-8
+http://ucanet.net/about,ucanet - About,About,http://ucanet.net/rules,ucanet - Rules,Rules,ucanet.net,3,200,text/html; charset=UTF-8
+http://ucanet.net/rules,ucanet - Rules,Rules,http://ucanet.net/register-a-domain,ucanet - Register a Domain,Register-a-Domain,ucanet.net,4,200,text/html; charset=UTF-8
+http://ucanet.net/about,ucanet - About,About,http://ucanet.net/register-a-domain,ucanet - Register a Domain,Register-a-Domain,ucanet.net,3,200,text/html; charset=UTF-8
+http://webtv.zone,WebTV Redialed,,http://webtv.zone/index.html,WebTV Redialed,Home,webtv.zone,1,200,text/html; charset=utf-8
+http://webtv.zone/index.html,WebTV Redialed,Home,http://webtv.zone/guide/index.html,WebTV Redialed: Guide,Guide,webtv.zone,2,200,text/html; charset=utf-8
+http://webtv.zone/guide/index.html,WebTV Redialed: Guide,Guide,http://webtv.zone/info/index.html,WebTV Redialed: Info,Info,webtv.zone,3,200,text/html; charset=utf-8
+http://win32subsystem.live,win32 - Main Index,,http://win32subsystem.live/supermium/,Supermium Web Browser,Supermium,win32subsystem.live,1,200,text/html; charset=UTF-8
+http://win32subsystem.live/supermium/,Supermium Web Browser,Supermium,http://win32subsystem.live/supermium/rss/releases,Supermium Web Browser,,win32subsystem.live,2,200,text/xml;charset=UTF-8
+http://win32subsystem.live/supermium/,Supermium Web Browser,Supermium,http://win32subsystem.live/supermium/releases/,Supermium Web Browser - Releases,Releases,win32subsystem.live,2,200,text/html; charset=UTF-8
+http://win32subsystem.live/supermium/releases/,Supermium Web Browser - Releases,Releases,http://win32subsystem.live/supermium/faq/,Supermium Web Browser - FAQ,FAQ,win32subsystem.live,3,200,text/html; charset=UTF-8
+http://win32subsystem.live/supermium/releases/,Supermium Web Browser - Releases,Releases,http://win32subsystem.live/supermium/support/,Supermium Web Browser - Support,Support,win32subsystem.live,3,200,text/html; charset=UTF-8
+http://win32subsystem.live,win32 - Main Index,,http://win32subsystem.live/extended-kernel/,Windows Vista Extended Kernel Homepage,Home,win32subsystem.live,1,200,text/html; charset=UTF-8
+http://win32subsystem.live/extended-kernel/,Windows Vista Extended Kernel Homepage,Home,http://win32subsystem.live/,win32 - Main Index,,win32subsystem.live,2,200,text/html
+http://win32subsystem.live/extended-kernel/,Windows Vista Extended Kernel Homepage,Home,http://win32subsystem.live/extended-kernel/faq/,Windows Vista Extended Kernel FAQ,,win32subsystem.live,2,200,text/html; charset=UTF-8
+http://win32subsystem.live/extended-kernel/faq/,Windows Vista Extended Kernel FAQ,,http://win32subsystem.live/extended-kernel/screenshots/,Windows Vista Extended Kernel Screenshots,,win32subsystem.live,3,200,text/html; charset=UTF-8
+http://win32subsystem.live/extended-kernel/screenshots/,Windows Vista Extended Kernel Screenshots,,http://win32subsystem.live/extended-kernel/download/,Windows Vista Extended Kernel Downloads,,win32subsystem.live,4,200,text/html; charset=UTF-8
+http://win32subsystem.live/extended-kernel/faq/,Windows Vista Extended Kernel FAQ,,http://win32subsystem.live/extended-kernel/download/,Windows Vista Extended Kernel Downloads,,win32subsystem.live,3,200,text/html; charset=UTF-8
+http://www.neopets.com,Welcome to Neopets!,Welcome to NeoPets,http://www.neopets.com/index.phtml,Welcome to Neopets!,,www.neopets.com,1,200,text/html; charset=UTF-8
+http://www.neopets.com/index.phtml,Welcome to Neopets!,,http://www.neopets.com/petcentral.phtml,Neopets - Pet Central,Fun things to do with your Neopet,www.neopets.com,2,200,text/html; charset=UTF-8
+http://www.neopets.com/petcentral.phtml,Neopets - Pet Central,Fun things to do with your Neopet,http://www.neopets.com/addpet.phtml,Step 1 - Choose Your Neopet's Species,Create a Pet!,www.neopets.com,3,200,text/html; charset=UTF-8
+http://www.neopets.com/addpet.phtml,Step 1 - Choose Your Neopet's Species,Create a Pet!,http://www.neopets.com/neomessages.phtml,Neopets - Send and Receive NeoMessages,Check your Neomail!,www.neopets.com,4,200,text/html; charset=UTF-8
+http://www.neopets.com/addpet.phtml,Step 1 - Choose Your Neopet's Species,Create a Pet!,http://www.neopets.com/world.phtml,Neopets!  Welcome to Neopia,Learn about Neopia,www.neopets.com,4,200,
+http://www.neopets.com/petcentral.phtml,Neopets - Pet Central,Fun things to do with your Neopet,http://www.neopets.com/neomessages.phtml,Neopets - Send and Receive NeoMessages,Check your Neomail!,www.neopets.com,3,200,text/html; charset=UTF-8
+http://www.neopets.com/neomessages.phtml,Neopets - Send and Receive NeoMessages,Check your Neomail!,http://www.neopets.com/world.phtml,Neopets!  Welcome to Neopia,Learn about Neopia,www.neopets.com,4,200,
+http://www.neopets.com/petcentral.phtml,Neopets - Pet Central,Fun things to do with your Neopet,http://www.neopets.com/world.phtml,Neopets!  Welcome to Neopia,Learn about Neopia,www.neopets.com,3,200,
+http://www.reuters.com,Reuters: The Business of Information,,http://www.reuters.com/rtrnews/images/home.htm,Reuters: Top News,,www.reuters.com,1,200,text/html; charset=UTF-8
+http://www.reuters.com,Reuters: The Business of Information,,http://www.reuters.com/maps/flagbar2.map,Imagemap Error,,www.reuters.com,1,200,application/x-httpd-imap
+http://www.wikipedia.org,Main Page - Wikipedia,,http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,Main Page,www.wikipedia.org,1,200,text/html; charset=UTF-8
+http://www.wikipedia.org/wiki/Main_Page,Main Page - Wikipedia,Main Page,http://www.wikipedia.org/wiki/Special:Recentchanges,Special:Recentchanges - Wikipedia,Recent changes,www.wikipedia.org,2,200,text/html; charset=UTF-8

@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>DOSBox Deathmatch Club</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFF00" vlink="#238E23" alink="#FF0000">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" width="750" height="550">
+	<tr>
+		<td valign="top" colspan="2" height="51">
+		<p align="center">
+		<img border="0" src="images/logo.gif" align="center"></td>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" rowspan="2" width="206">
+		<p align="left">
+		<img border="0" src="images/arrow.gif" align="center"><a href="guides.php">Go Back!</a><br>
+		<br>
+		</p>
+		</td>
+		<td valign="top" height="34">
+		<p align="center">
+		<img src="images/simads/ad_soy.gif" alt />		</p>
+	</tr>
+	<tr>
+		<td valign="top" height="288" width="993">
+		<br>
+		<h3>Setting up Unreal Tournament on Modern Hardware</h3>
+
+		<p><b>This guide will help newcomers setup Unreal Tournament to work more proper on modern hardware.</b></p>
+		
+		<p>At the time of writing this guide, Unreal, Unreal Tournament and the other follow-ups were delisted as of December 23, 2022. It is now considered abandonware but if you join the Discord server, we could help you obtain a copy of the game.</p>
+
+		<p>1. Install Unreal Tournament (via CD, Steam or GoG, or anywhere else)</p>
+		<p>2. Install the <a href="https://github.com/OldUnreal/UnrealTournamentPatches/releases">OldUnreal Patch</a>.</br>
+		<p>At the time of writing this, the latest is v469d. They come out on either a .ZIP file or an .EXE installer, I recommend the .EXE installer because it's easier. <b>"OldUnreal-UTPatch469d-Windows.exe"</b></p>
+		
+		<img border="0" src="images/guides/ut99469.gif">
+
+
+		<p>3. For widescreen users, you'll need <a href="https://github.com/alexstrout/foxWSFix-UT99/releases">foxWSFix-UT99</a>. Download the zip file from the latest version and extract it to your install of Unreal Tournament. This should fix the weapon view models looking odd as seen on this comparison below (without the fix on top and with the fix on bottom)</p>
+
+		<img border="0" src="images/guides/ut99ws.gif">
+		
+		<p>3b. Inside the System folder of Unreal Tournament, open up UnrealTournament.ini with a text editor of choice and find the following line:<br>
+		<i>Console=UTMenu.UTConsole</i>
+		
+		<p>Replace it with the following :
+		<i><br>
+		;Console=UTMenu.UTConsole<br>
+		Console=foxWSFix99.foxUTConsole
+		</p></i>
+		</p>
+
+		<h3>Other useful steps</h3>
+		
+		<p>You can change the game resolution without starting the game by editing the UnrealTournament.ini file using a text editor.</p>
+		
+		<p>Find the following lines:<br>
+		<i>FullscreenViewportX=<br>FullscreenViewportY=
+</i>
+		</p>
+
+		<p>Example for 1920x1080:<br>
+		<i>FullscreenViewportX=1920<br>FullscreenViewportY=1080
+</i>
+		</p>
+
+		</td>
+	</tr>
+</table>
+
+
+</body>
+
+</html>

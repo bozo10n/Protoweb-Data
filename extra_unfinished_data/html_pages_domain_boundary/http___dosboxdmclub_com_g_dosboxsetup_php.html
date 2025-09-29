@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>DOSBox Deathmatch Club</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFF00" vlink="#238E23" alink="#FF0000">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" width="750" height="550">
+	<tr>
+		<td valign="top" colspan="2" height="51">
+		<p align="center">
+		<img border="0" src="images/logo.gif" align="center"></td>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" rowspan="2" width="206">
+		<p align="left">
+		<img border="0" src="images/arrow.gif" align="center"><a href="guides.php">Go Back!</a><br>
+		<br>
+		</p>
+		</td>
+		<td valign="top" height="34">
+		<p align="center">
+		<img src="images/simads/ad_facingworlds.gif" alt />		</p>
+	</tr>
+	<tr>
+		<td valign="top" height="288" width="993">
+		<br>
+		<h3>Setting up a personalised DOSBox install</h3>
+
+		<p><b>While it was nice to have for multiplayer games, it also works well in general. This guide will teach you how to put together your own personised DOSBox setup. The end result will see you being able to run your games in one DOSBox install. It even makes updating to newer builds of DOSBox less of a hassle.</b></p>
+		
+		<p>Not only this makes connecting to a server more faster, it doesn't lead you to alt-tab just to look at the IP typing it down.</p>
+
+		<p>1. Download DOSBox in a ZIP file if possible. (I recommend <a href="https://www.dosbox-staging.org">DOSBox Staging</a>)</p>
+		<p>2. Extract the .ZIP file. It can be anywhere you want.</br>
+		<p>3. Save the changes and close the file.</p>
+		<p>4a. Once extracted, you need to generate a config file to edit. Proceed to run DOSBox and once in the DOS Prompt type in the following : <br>
+		<b>config -wcp</b></b></p>
+		<p>4b. Before opening up your text editor, create a folder that can be used as a mounted drive. In my case I call the folder <b>"drivec"</b> without quotes.</p>
+		<p>5. Open up dosbox.conf through a text editor and scroll all the way to the bottom. There you'll see a section called, <b>[autoexec]</b></p>
+		<p>6. Inside the section type the following : <br>
+		<b>mount c DRIVEC</b>
+		c:
+		</p>
+		<p>To explain, <b>mount</b> is a command to mount folders to be used as a virtual drive. <b>c</b> is the drive letter. The first mounted drive should always be the C drive. <b>DRIVEC</b> refers to the folder you specified and C: tells DOS to go inside the mounted drive.</p>
+
+		<p>There you could toss in your installed MS-DOS games inside that folder and run it.</p>
+		
+		<p>Basic example of how to run Doom II:<br>
+		<i>cd DOOM2<br>
+		SETUP.EXE<br>	
+		DOOM2.EXE<br></i>
+		</p>
+
+		</td>
+	</tr>
+</table>
+
+
+</body>
+
+</html>

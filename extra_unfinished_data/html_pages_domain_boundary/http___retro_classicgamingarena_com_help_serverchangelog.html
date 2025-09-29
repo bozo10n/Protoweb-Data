@@ -1,0 +1,595 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Classic Gaming Arena :: Help :: Server Change Log</title>
+<meta name="title" content="Classic Gaming Arena :: Help :: Server Change Log">
+<meta name="description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<meta name="keywords" content="CGA, Classic, Gaming, Arena, DOOM, Warcraft, Descent, IPX, DOSBox, DOS, games, network, CGA Client, multiplayer, dedicated, server">
+<meta name="author" content="Creative Design Interactive">
+<meta property="og:title" content="Classic Gaming Arena :: Help :: Server Change Log">
+<meta property="og:description" content="Classic Gaming Arena, home for all your DOS multiplayer gaming needs.">
+<link href="/css/default.css" rel="stylesheet" type="text/css">
+<link href="/cgafeed" rel="alternate" type="application/rss+xml" title="Classic Gaming Arena">
+<script type="text/javascript" src="/js/checkboxes.js"></script>
+<script type="text/javascript" src="/wde/ajax.js"></script>
+<script type="text/javascript" src="/wde/utils.js"></script>
+<script type="text/javascript" src="/wde/captcha.js"></script>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+        <td align="right" valign="top" class="bg1"> </td>
+        <td width="47" valign="top" style="background-image: url('/images/index32.gif');"><img src="/images/index03.jpg" alt="" width="47" height="350"></td>
+        <td width="670" rowspan="2" valign="top" style="background-color: #0A2732;">
+
+		    <table width="670"  border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="326" rowspan="3" style="background-image: url('/images/index05.jpg');" height="91" ><a href="/" class="logo">Classic Gaming Arena</a><br><span class="logo1">Home for all your DOS multiplayer gaming needs.</span></td>
+                <td colspan="4"  align="left" height="32"  width="344" style="background-image: url('/images/index06.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Client:</strong>&nbsp;<a href="/help/clientchangelog">4.1.32.0</a>&nbsp;&nbsp;<strong class="text2">Server:</strong>&nbsp; <a href="/help/serverchangelog">4.1.1.0</a></div></td>
+            </tr>
+            <tr>                
+                <td colspan="4" valign="top" align="left" height="29"  width="344" style="background-image: url('/images/top_right_middle.jpg');"><div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Players:</strong>&nbsp; <a href="/players">15</a>&nbsp;/&nbsp;1,344</div><br>
+<div class="text1" style="display: inline; margin-left: 5px;"><strong class="text2">Games:</strong>&nbsp;<a href="/games">184</a>&nbsp;&nbsp;<strong class="text2">Servers:</strong>&nbsp;19&nbsp;/&nbsp;<a href="/servers">92</a>&nbsp;&nbsp;<strong class="text2">Rooms:</strong>&nbsp;<a href="/gamerooms">3</a></div></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right" height="30" valign="top" style="background-image: url('/images/index11.jpg')">
+					<div style="margin-top: 5px;"><!--<a href="/search" class="topMenu">Search</a>&nbsp;&nbsp;-->
+						 <a href="/contact" class="topMenu">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;						 
+						 <a href="/cgafeed" target="_blank"><img src="/wde/images/feeds.png" border="0" style="vertical-align: middle;" title="Subscribe to our RSS feed"></a>
+					</div>
+				</td>
+            </tr>
+            </table>
+				
+            <table width="670"  border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                    <td width="334"> <script type="text/javascript" src="/wde/strings.js"></script>
+<script type="text/javascript" src="/wde/swapfade.js"></script>
+<script type="text/javascript">
+    var img=new Array();
+    var urls=new Array();
+	
+    img[0]="/images/rotators/1/heretic_000.png";
+urls[0]="";img[1]="/images/rotators/1/orion2_000.png";
+urls[1]="";img[2]="/images/rotators/1/ultimate_doom.png";
+urls[2]="";img[3]="/images/rotators/1/doom2_000.png";
+urls[3]="";img[4]="/images/rotators/1/descentr_000.png";
+urls[4]="";img[5]="/images/rotators/1/duke3d_000.png";
+urls[5]="";img[6]="/images/rotators/1/war2_000.png";
+urls[6]="";img[7]="/images/rotators/1/war_000.png";
+urls[7]="";img[8]="/images/rotators/1/rott_000.png";
+urls[8]="";img[9]="/images/rotators/1/hexen_000.png";
+urls[9]="";
+
+    var ns6=document.getElementById&&!document.all
+    var current = 1 - 1;
+    var realCurrent = 1;
+    var doRotate = true;
+    var isPaused = false;
+    var rotateDelay = 10000;
+
+    var maxImages = 10;
+    var timer = null;
+    var justLoaded = true;
+
+    function changeItem(doSwap) {
+       if (isPaused) return;
+
+       if (!justLoaded)
+          swapfade(document.getElementById("featureimage"), img[current], '2', '');
+       justLoaded = false;
+
+       if (current==(maxImages-1)) { 
+          realCurrent = current+1;
+          current=0;      
+       }
+       else {
+          current++
+          realCurrent = current;
+       }
+       
+	//   AJAXGetNoResponse("/?setLastImageShown&irid=1&idx=" + realCurrent);
+	   
+	//   changeImgURL(realCurrent);
+	   
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+    }
+
+	function stopRotation() {
+	   clearTimeout(timer);
+	}
+	
+    window.onload=changeItem;
+    window.onunload=stopRotation;
+	
+    function setRotation(r) {
+       doRotate = r;
+       isPaused = !doRotate;
+       if (doRotate)
+          timer = setTimeout("changeItem(true)", rotateDelay);
+       else
+          clearTimeout(timer);
+    }
+
+    function changeImgURL(imgNum) {
+      if (ns6) {
+         document.getElementById("featureURL").href = urls[realCurrent-1];
+      }
+      else {
+         if (document.all) {
+            featureURL.href = urls[realCurrent-1];
+         }
+      }
+   }
+</script>
+
+<style>
+.imgRotate {
+   filter: alpha(opacity=100);   
+}
+
+.imgRotate.idupe {
+   position: absolute;
+   z-index: 30000;
+   visibility: hidden;
+}
+</style>
+
+<div style="border:0px solid #000000;">
+	<DIV id="featurebox" STYLE="text-align:center; height:181px;"><div style="position:relative;top:0px; left:0px; background-image: url('/images/ss_frame.png');width:334px;height:181px;z-index:100;"></div><div style="position:relative;top:-181px; left:0px;width:334px;height:181px;z-index:0;"><a id="featureURL" href="" target="_blank"><img class="imgRotate" id="featureimage" src="/images/rotators/1/heretic_000.png" BORDER="0" width="334" height="181"></a></div></div>
+</div>  </td> 
+                    <td width="140"><table width="140" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="140" height="26"><img src="/images/index13.jpg" alt="" width="140" height="26"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index14.jpg');" width="140" height="22"><a href="/news" class="menu">Latest News</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index15.jpg');" width="140" height="22"><a href="/forums" class="menu">Forums</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index16.jpg');" width="140" height="22"><a href="/downloads" class="menu">Downloads</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index17.jpg');" width="140" height="22"><a href="/games" class="menu">Games</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index18.jpg');" width="140" height="22"><a href="/help" class="menu">Help</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url('/images/index19.jpg');" width="140" height="22"><a href="/servers" class="menu">Servers</a></td>
+                        </tr>
+                        <tr>
+                            <td width="140" height="23"><img src="/images/index20.jpg" alt="" width="140" height="23"></td>
+                        </tr>
+                    </table></td>
+                    <td width="196">
+   					   <table width="196"  border="0" cellpadding="0" cellspacing="0" background="/images/login_background.jpg">
+                       <tr>
+                          <td style="height: 181px; padding-left: 10px;" valign="top">
+                             <div style="width: 144px; padding-top: 20px;">
+      <form name="formLogin" method="post" action="/index.p?action=core@Login" onsubmit="return checkForGuest(this);">
+	  <div style="display: table;">	    
+		 <div id="unLabel" style="display: table-row;">
+            <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Username</strong></div>
+		 </div>		 
+		 <div id="unField" style="display: table-row;"> 
+		    <div style="display: table-cell; height: 18px;"><input name="un" type="text" class="input1"></div>
+		 </div>
+	     <div id="pwLabel" style="display: table-row;">		 		 
+  		    <div style="display: table-cell; height: 18px; vertical-align: bottom;"><strong class="text1">Password</strong></div>
+		 </div>
+         <div id="pwField" style="display: table-row;">		 
+		    <div style="display: table-cell; height: 18px; padding 0; margin: 0;"><input name="pw" type="password" class="input1" value=""></div>
+		 </div>
+   	     <div style="display: table-row;">
+		    <div style="display: table-cell; vertical-align: middle; height: 26px;">
+			   <input name="imageField" type="image" src="/images/but_login.jpg">
+            </div>
+		 </div>
+         <div id="kmli" style="display: table-row;">
+		    <div style="display: table-cell;">   
+               <div style="height: 2px;"></div>									   
+   	           <div class="checkbox" onClick="cbChange(this, document.formLogin.ali)"></div> <input name="ali" type="checkbox" class="styled"> Remember Me
+			</div>	  
+	     </div>		 
+	  </div>
+      </form>
+	  
+   </div>	
+   
+   <div style="height: 2px;"></div>
+   <div class="text4"><a href="/?action=core@LoginHelp">Login Help</a>  |  <a href="/register">Create an Account</a></div>
+						  </td>
+                       </tr>
+                       </table>	
+				    </td>
+                </tr>
+                <tr>
+                    <td width="670" colspan="3"><img src="/images/index37.jpg" alt="" width="670" height="18"></td>
+                </tr>
+            </table>			
+			
+            <table width="670" border="0" cellspacing="0" cellpadding="0">
+   			    <tr>
+                    <td align="left">
+                        <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+        <td><img src="/images/inside01.jpg" alt="" width="20" height="33"></td>
+        <td background="/images/inside02.jpg" width="432" height="33"><span class="header1">Help :: Server Change Log</span></td>
+
+        <td><img src="/images/inside03.jpg" alt="" width="41" height="33"></td>
+        <td background="/images/inside04.jpg" width="155" height="33"><span class="header1">Topics</span></td>
+        <td><img src="/images/inside05.jpg" alt="" width="22" height="33"></td>
+    </tr>
+    <tr valign="top">
+        <td background="/images/inside09.jpg"><img src="/images/inside06.jpg" alt="" width="20" height="100"></td>
+        <td background="/images/index47.gif">  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+
+                <td><img src="/images/spacer.gif" alt="" width="1" height="13"></td>
+            </tr>
+            <tr>
+                <td class="align-justify"><p class="plaintext">
+<strong class="plaintext2">4.1.1.0</strong> - 2024/09/22<ul class="plaintext">
+<li>Fixed issues with the local server manager when a local address is set.  It was unable to authenticate and was not trying to connect to the local address due to it always trying to connect to 127.0.0.1.</li>
+<li>Updated the admin server started on port log entry to state it as a TCP port and not a UDP port.</li>
+<li>Added a caption with "Secured with" and a Let's Encrypt logo to the about screen.  For legacy servers (Windows XP and below) there is an additional caption after the LE logo which reads "and OpenSSL".</li>
+<li>Timed-out client connections will now be dropped.</li>
+<li>After a client authenticates a check will be done for any existing client connections within a game room and drop them.  This will handle scenarios where a client crashes or disconnects ungracefully for any reason and the server isn't informed of the diconnection.</li>
+<li>The game room connection count (ie: playing count) will now be sent when the server connection count is sent when clients connect and disconnect.</li>
+<li>Beta builds will now use a beta update site when checking for updates instead of the production update site.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.1.0.0</strong> - 2024/08/21<ul class="plaintext">
+<li>New logo, icon and about screen in the Windows server manager!  Big thanks to OpenRift, THEBaratusII and ZNukem for collaborating on this effort.</li>
+<li>A Windows XP/Server 2003 specifc edition is now available!  Supports all features and corrects all issues with running the server under this version of Windows.</li>
+<li>A Windows 2000 specifc edition is now available!  Supports all features except audio chat.</li>
+<li>Windows NT 4 is now supported!  Supports all features except audio chat.</li>
+<li>The server log file and update path will now reside in the common application data folder under their respective Windows versions.</li>
+<li>Updated IPX relay server to handle Win9x/ME native IPX clients so cross play between them and DOSBox clients will work.</li>
+<li>Windows Server Manager: Change history will now open in a window instead of externally opening the changes.txt file.</li>
+<li>Windows Server Manager: EULA will now open in a window instead of externally opening the license.txt file.</li>
+<li>Windows Server Manager: Adedd a What's New screen to the server manager than will display upon opening the main window after an update.  There is also a menu item for it under the main Help menu.</li>
+<li>You can now set a logging level where, 0 = None, 1 = Minimal, 2 = Error and 3 = Debug.  The conf file can be edited manually (server must be restarted) or the Windows Server Manager and built-in console manager can be used which will update the log level without restarting.</li>
+<li>Windows Server Manager: If the log path is changed the server manager will now switch to the new log file.</li>
+<li>Fixed bug wherein changing an instance's relay type would break the server.</li>
+<li>Added Windows service controls to the Windows Server Manager under a new "Service" main menu item.  From this menu item you can install, start, stop and delete the service.  NOTE:  On Windows Vista+ these functions require elevated privileges and will prompt to restart the server manager with elevated privileges.</li>
+<li>Windows Server Manager: Moved the "Windows Service Manager" menu item from the Tools main menu item to the Service main menu item and removed the Tools main menu item.</li>
+<li>Windows Server Manager: You can now start the server as a console service from the Service main menu item.</li>
+<li>Windows Server Manager: Fixed a bug in the log processing logic wherein sometimes log content would missed the last log entry could potentially not be read properly and it would not detect that the server was shutdown and not update the online status or the server contols in the UI.</li>
+<li>The Windows Server Manager will now start by displaying its main screen if run manually (ie: instead of minimized).</li>
+<li>Updated server ping process used by the server managers to ping until it receives a response at a short interval (100ms) up to the timeout amount (2s).</li>
+<li>Server will now obtain an authentication access token after successfully validating your CGA login credentials on startup and use it for authentication instead of your login credentials.  This will prevent any issues if you change your password after setting up your server.  If you have multiple physical servers your existing access token will be retrieved if login is successful. Your login credentials will be cleared from the config once an access token is obtained.</li>
+<li>The server and windows server manager will not warn you about missing login credentials if an access token is present.</li>
+<li>Added some exception handling to the internal HTTP interface logic to help guard against potential crashes.</li>
+<li>Updated the HTTP interface to return the status error text message, such as "Service is unavailable" instead of the HTML content.</li>
+<li>The Windows GUI Server Manager is now built into the main server EXE and the installer will remove cgaservermgr.exe and update all the links to use cgaserver.exe --manage --gui.  The GUI server manager can be invoked on the commandline by adding -g/--gui to the parameter list along with -m/--manage.</li>
+<li>Implemented IPX packet compression.</li>
+<li>The IPX relay server no longer has to wait for a client to synchronize its IPX connection before allowing other clients to connect.</li>
+<li>Updated installers to only allow installing on their respective Windows versions.</li>
+<li>All versions of the server now have a beta build.</li>
+<li>The admin server now uses TCP instead of UDP.</li>
+<li>The admin server is no longer used to handle ping requests and there is now just one admin server instead of a local and remote admin server.  The current admin port will be updated to the "PingPort" in the configuration and the local admin port will become the "AdminPort".  This makes the default "Ping" port 9666 (UDP) and the default admin port 9660 (TCP).</li>
+<li>Locally administering the server now requires a password and a new local admin password is now confirurable.  This password will be set automatically upon first startup of either the server or the server manager to a random password.</li>
+<li>All references to "Remote Admin Settings" within the server managers is now just "Admin Settings", however the admin password field is now referred to as the "Remote Password" field.</li>
+<li>A local IP address can now be configured if it's necessary via the config file using the LocalAddress option.  This generally would only be necessary if the machine the server is running on has multiple NICs.  The opened ports for all servers will bind to this address as well as report it to the website.</li>
+<li>Moved the logic to drop non-CGA Client connections from a separate thread to the main client socket read thread as to reduce resource usage, improve efficiency and reduce complexity.</li>
+<li>Fixed an issue where a connection could end up not being removed due to a random access violation being thrown when an internal game room network no longer had any connections and was being removed incorrectly.</li>
+<li>Complete overhaul of backend framework (Prometheus WDE) which has increased API performance by reducing request handling time and reducing response time.</li>
+<li>Enabled dynamic content compression on backend webserver to reduce the size of API responses.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.2.0</strong> - 2023/09/11<ul class="plaintext">
+<li>Removed IP banning.  This should really be done in another layer of your OS or network, but was also causing issues in some rare scenarios for legit connections.</li>
+<li>Cleaned up logging.  A client's user display name will now be logged with each log entry when it's available.</li>
+<li>Unicode combability updates.</li>
+<li>Server will now only update its connection counts with the backend when a CGA client completely connents and disconnects.  This will prevent random connections from not-CGA clients from affecting server connection counts.</li>
+<li>Fixed bug wherein the serial relay server was not dropping TCP connections on its serial link when a connection failed to synchronize with a CGA client connection.</li>
+<li>Fixed bug in which the server was not properly waiting for the pending relay client connection and potentially causing the server to lock up and eventually crash.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.1.0</strong> - 2022/05/25<ul class="plaintext">
+<li>Corrected some instances where the server could not disconnect the client connection when an error occurred resulting in stale TCP connections and server instability.</li>
+<li>Added a watch dog thread per server that will disconnect idle non-CGA connections and idle stale connections in order to prevent stale connections and causing instability.</li>
+<li>Added an IP ban controller which will ban any non-CGA client IP that attempts malicious communication.  The banned IPs are stored in the server config folder called ipbans.json.</li>
+<li>Server Manager application icon has been updated to the CGA logo on all platforms.</li>
+<li>Corrected issue which would cause the daemon version of the Linux server to crash attempting to stop servers from the console server manager.</li>
+<li>Linux daemon will now properly shutdown every time it's stopped.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">4.0.0.0</strong> - 2022/02/28<ul class="plaintext">
+<li>32-bit and 64-bit versions (Windows).</li>
+<li>Linux version is now 64-bit only.</li>
+<li>Windows installer will now prompt for CGA login credentials and update the 
+  cgaserver.conf accordingly.  These credentials will be used to register the
+  server on the CGA website.</li>
+<li>The Windows version of the server will now store its configuration files in 
+  the %ProgramData% folder under "Creative Design Interactive\CGA\Server".  An
+  existing configuration file will be moved there during the install and the 
+  "conf" folder will be removed from the application folder.</li>
+<li>Many bug, performance and stability fixes.</li>
+<li>The serial relay server performance has been greatly improved.</li>
+<li>Now requires a CGA Username/password to be configured.</li>
+<li>Server will now connect to the CGA website and register servers and update
+  each server's online status, connection counts, etc, etc.</li>
+<li>Existing servers will be detected and their IDs written to the configuration
+  automatically.</li>
+<li>A console version of the server can be run by passing the parameter -c or 
+  --console to the executable in Windows and Linux.  This will allow it to be
+  run directly from the command line.</li>  
+<li>A command line paramter has been added to allow checking the version:
+  -v / --version.</li>
+<li>Server will now check for updates when it starts up.  The Windows service and
+  Linux Daemon will log a warning if there is an update available.  The console
+  version will prompt the user if they want to download the new version and 
+  install it.</li>
+<li>A command line parameter has been added to allow checking for updates:
+  -u / --update</li>
+<li>The TeamSpeak license allowing 512 connections has been removed as that was
+  CDI's and should not have been included.  It has also been revoked.</li>
+<li>Audio chat connections will default to 32 connections unless a valid SDK 
+  license is supplied which allows more.</li>
+<li>If a TeamSpeak SDK license is used the number of connections will be detected
+  from the license.</li>
+<li>Audio chat server configuration has been changed to only 1 virtual server 
+  which uses all the slots.</li>
+<li>The server will now send its local IP when registering servers so players
+  connecting from the same remote address as the server will connect using
+  the server's local IP address.</li>
+<li>The admin server port can now be configured.</li>
+<li>Each configured server that is set to use a dynamic IP will auto update after
+  24 hours of inactivity.</li>
+<li>A remote admin password can now be configured.  This is used for managing 
+  the server from the CGA Client.</li>
+<li>Improved server configuration/start up for ports and max connection checking.</li>
+<li>Improved logging.</li>
+<li>Improved client/server communication security.</li>
+<li>Servers can now be pinged.</li>
+<li>A welcome message can now be configured per server which will be displayed to
+  players upon successfully connecting to the server.</li>
+<li>When a server owner is creating a new game room on their own server and the
+  server is private and the server has the new "Friend Private Access" option 
+  disabled they will now have the option to allow friends to access that 
+  specific room without knowing the server password.</li>
+<li>Friends of a server owner can now create rooms on a private server with no
+  player rooms enabled if the server owner enabled the new "Friend Rooms" 
+  option.</li>
+<li>Friends of a server owner can now access game rooms on a private server 
+  without knowing the password if the server owner has enabled the new option
+  "Friend Private Access".</li>
+<li>Added a server manager utility.  The server manager will allow you to:<ul>
+   <li>Add, edit and delete servers.</li>
+   Start, stop and restart servers.</li>
+   <li>Configure your CGA username/password.</li>
+   <li>Check for updates.</li>
+   <li>File bug reports and feature requests.</li>
+   <li>It will allow you to see the log in real-time.</li> 
+   <li>Modify log settings.</li>
+   <li>Modidy remote admin settings.</li>
+   <li>Modify global audio chat settings.</li>
+   <li>The server has a command line version which can be accessed using the 
+     parameter -m or --manage.</li>
+   <li>A standalone GUI version is also available for Windows and will start
+     when logging into Windows and has a system tray icon.</li>
+	</ul>
+</li>
+<li>Attempting to run cgaserver.exe directly in Windows service mode will now 
+  result in a dialog message stating that it must be run from the Windows
+  Service Manager.</li>
+<li>The default server configuration file will now create 2 servers with 16 max
+  connections each instead of 2 servers with 64 max connections each.  This is 
+  because the default audio chat server is only 32 connections max.</li>
+</ul></p>  
+
+<p class="plaintext">
+<strong class="plaintext2">3.2.0.0</strong> - 2014/01/10<ul class="plaintext">
+<li>Removed the authentication check that matches the client's hostname from a DNS lookup to the hostname passed in from the website which could cause an access denied error if they did not match due to a cached DNS record that was different.</li>
+</ul></p>  
+
+<p class="plaintext">
+<strong class="plaintext2">3.1.0.0</strong> - 2013/04/23<ul class="plaintext">
+<li>Improved security.</li>
+<li>Handles client keep-alive message.</li>
+<li>No longer hangs on startup if the TeamSpeak license server cannot be reached.</li>
+<li>TeamSpeak now logs to server log.</li>
+</ul></p>  
+
+<p class="plaintext">
+<strong class="plaintext2">3.0.0.0</strong> - 2013/03/18<ul class="plaintext">
+<li>Added integrated audio chat using TeamSpeak 3 SDK!</li>
+<li>Corrected logic in TCP listener threads so they shutdown properly.  This issue was only noticeable under Linux, however it also improves shutdown time.</li>
+<li>Log path is configurable from the cgaserver.conf file for Linux users.</li>
+<li>Now reports its OS to the website when it is polled by the master server.</li>
+<li>Linux users can now utilize the "service" control scripts to start, stop and query the status of the server.</li>  
+</ul></p>  
+  
+<p class="plaintext">
+<strong class="plaintext2">2.4.1.0</strong> - 2012/09/27<ul class="plaintext">
+<li>Fixed a boneheaded error in the serial relay server code.  If the second player disconnected and reconnected a new relay thread was created every time.  This eventually made the server become very unstable and under Windows it would go into 100% CPU.  Under Linux it would just seg fault and shutdown.  This was because I forgot to check and make sure a thread had not already been created.</li>  
+<li>Added some more error handling and logging.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.4.0.0</strong> - 2012/09/22<ul class="plaintext">
+<li>Corrected some stability issues in the threading model.</li>
+<li>Made some minor optimizations to the serial relay link thread logic.</li>
+<li>Added some exception handling and some more logging.</li>
+<li>Corrected the code that prevents the server from starting servers when their ports are in us by another process.  Version 2.3 broke it.</li>
+</ul></p>
+  
+<p class="plaintext">
+<strong class="plaintext2">2.3.0.0</strong> - 2012/09/20<ul class="plaintext">
+<li>Changed how the serial relay handles each virtual link.  After the second connection is made a thread is started which handles the link communication between the 2 computers.  This has increased performance and will ensure good performace when more than once serial link is active on one serial relay server.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.2.0.0</strong> - 2012/09/20<ul class="plaintext">
+<li>Rewrote all the TCP server code so that it is more efficient and scalable to a high number of connections.</li>
+<li>Rewrote the serial relay server code (TCP as well) for the same reasons.  The performance has increased dramatically for serial relay games.</li>
+<li>Refined and optimized the entire codebase in preparation for integrating the TeamSpeak 3 API for audio chat capabilities.</li>
+<li>Cleaned up the logging so it makes more sense.</li>
+<li>Servers will not start if the ports they are attempting to use are in use by another running process.  If no servers start then the service will not start.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.1.0.0</strong> - 2012/07/16<ul class="plaintext">
+<li>Private servers now supported.</li>
+<li>Now has a combined total connection limit of 512.</li> 
+<li>Now checks server ports to make sure servers do not use ports used by already loaded servers.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">2.0.1.0</strong> - 2012/07/08<ul class="plaintext">
+<li>Added an End-User License Agreement to the installer. (license.txt)</li>
+<li>Added a EULA link on the start menu group.</li>
+<li>Added a change history file named "changes.txt".</li>
+<li>Added a link to this file on the start menu group named "Change History".</li>
+<li>Added an INNO Setup license file. (innosetup_license.txt)</li>
+<li>Added a link to the start menu group named "Server Configuration" which opens the conf file, cgaserver.conf, in notepad.exe so it can be edited.<br>NOTE:  Server service must be restarted for changes to take affect.</li>
+<li>Added a "Register New Account" start menu group link.</li>
+<li>Updated the "CGA Server on the Web" start menu group link to point to:<br>
+http://www.classicgamingarena.com/help/cgaserver</li>
+<li>Once again changed the secondary port key in the conf file to be called "RelayPort".  There is no need to add this manually.  The server will now self correct the changes made to the conf file including the RelayType key.</li>
+</ul></p>
+  
+<p class="plaintext">
+<strong class="plaintext2">2.0.0.0</strong> - 2012/02/26<ul class="plaintext">
+<li>Servers can now be configured as IPX relay severs or Serial relay servers.  Serial relay servers use TCP as the secondary port.</li>
+<li>The conf file for the server now has a key for each sever called "RelayType".  This must be set to eithe "ipx" or "serial". The UDPPort key has been renamed to "GamePort". If you had a server installed you will need tp make these changes manually since the installer will not overwrite your configuration file.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.2.0</strong> - 2012/01/19<ul class="plaintext">
+<li>Minor TCP code changes.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.1.0</strong> - 2011/11/01<ul class="plaintext">
+<li>Updated how the server sends its information when the master server queries it.</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.2.0.0</strong> - 2011/10/26<ul class="plaintext">
+<li>Corrected a bug in the UDP server code that was prevented it from working reliably.</li>
+<li>Corrected the scenario in which a TCP connection being made without a follow up UDP connection would prevent the server from accepting any other connections.</li>
+<li>Added an admin UDP server on port 9666. This port is used to PING and QUERY the server from the CGA website. It will have other uses in the future.</li>
+<li>Each server's online and connection status (ie: current connections/max connections), and name are now pulled from the website via this new port.</li>
+<li>There is now only one log file. It is named "cgaserver.log" and is now located under the "log" folder under the installation folder.</li>
+<li>The configuration folder is now located under a sub folder named "conf".</li>
+<li>The configuration no longer requires your CGA user ID, server ID or communicatin key.</li>
+<li>Registering your servers on the CGA website is now easier than ever!</li>
+</ul></p>
+
+<p class="plaintext">
+<strong class="plaintext2">1.1.0.0</strong> - 2011/10/01<ul class="plaintext">
+<li>cgaw3.dll is no longer required.</li>
+<li>ipxnet.dll is no longer required.</li>
+<li>SDL and SDL_Net are no longer a dependancy (sdl.dll and sdl_net.dll respectively)</li>
+</ul></p>  
+
+<p class="text1">
+<br>
+Continue to <a href="/help/clienterrorcodes"><strong>Client Error Codes</strong></a>...
+</p></td>
+            </tr>
+            <tr>
+                <td class="align-justify"> </td>
+            </tr>
+        </table> </td>
+        <td background="/images/inside10.jpg"><img src="/images/inside07.jpg" alt="" width="41" height="100"></td>
+        <td background="/images/index47.gif"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+
+            <tr>
+                <td><img src="/images/spacer.gif" alt="" width="1" height="13"></td>
+            </tr>
+            <tr>
+                <td><p><ul>
+				<li><a href="/help"><strong class="text1">Overview</strong></a></li>
+				<li><a href="/help/gettingstarted"><strong class="text1">Getting Started</strong></a></li>
+                <li><a href="/help/configcgaclient"><strong class="text1">Configuring the CGA Client</strong></a></li>
+                <li><a href="/help/configgames"><strong class="text1">Configuring Your Games</strong></a></li>
+                <li><a href="/help/gamerooms"><strong class="text1">Game Rooms</strong></a></li>
+                <li><a href="/help/servers"><strong class="text1">Servers</strong></a></li>					
+                <li><a href="/help/configservers"><strong class="text1">Configuring Your Servers</strong></a></li>
+                <li><a href="/help/managingprofiles"><strong class="text1">Managing Profiles</strong></a></li>
+                <li><a href="/help/cgaclient"><strong class="text1">CGA Client</strong></a></li>
+                <li><a href="/help/cgaserver"><strong class="text1">CGA Dedicated Server</strong></a></li>
+                <li><a href="/help/multiplayernocga"><strong class="text1">Multiplayer Without Using CGA</strong></a></li>
+				<li><a href="/help/resources"><strong class="text1">Resources</strong></a></li>
+				<li><a href="/help/clientchangelog"><strong class="text1">Client Change Log</strong></a></li>
+				<li><a href="/help/serverchangelog"><strong class="text1">Server Change Log</strong></a></li>
+                </ul>							
+				</p> 
+                </td>
+            </tr>
+            <tr>
+
+                <td class="align-justify"> </td>
+            </tr>
+        </table> </td>
+        <td background="/images/inside11.jpg"><img src="/images/inside08.jpg" alt="" width="22" height="100"></td>
+    </tr>
+    <tr>
+        <td width="670" colspan="5"><img src="/images/inside12.jpg" alt="" width="670" height="10"></td>
+    </tr>
+</table>
+   		            </td>
+				</tr>		
+                <tr>
+                    <td align="left">
+					    <table width="630"  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" valign="bottom" class="style1" height="20"><a href="/">Home</a>  |  <a href="/about">About</a>  |  <a href="/forums">Forums</a>  |  <a href="/downloads">Downloads</a>  |  <a href="/games">Games</a>  |  <a href="/help">Help</a>  |  <a href="/news">News</a>  |  <a href="/contact">Contact Us</a>  |  <a href="/legal">Legal</a></td>
+                        </tr>
+						<tr>
+                            <td align="left"><img src="/images/spacer.gif" alt="" width="1" height="16"></td>
+                        </tr>
+						<tr>
+                            <td><a href="/dosbox" target="_blank">
+								<img src="/images/dosbox.jpg" alt="dosbox.jpg" title="DOSBox - Official emulator for Sierra Compilations" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/teamspeak" target="_blank"><img src="/images/ts3_bg_logo_small.png" border="0" title="Audio Chat Powered by TeamSpeak" > </a>
+							</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="middle" class="text3" height="90"><br>Powered by <a href="http://www.prometheuswde.com" target="_blank">Prometheus</a>. Copyright &copy; 2024 <a href="http://www.cdiware.com" target="_blank">Creative Design Interactive</a>. All Rights Reserved.<br>This site hosts no abandonware. There is no material that is knowingly illegal here.  CDI will not be held responsible for users' posts. This disclaimer is brought to you thanks to the BSA.  Please read our <a href="/legal">legal</a> statement.
+						  <br><br>Website template designed by <a href="http://www.arixmedia.com" target="_blank">ArixMedia</a>. Copyright &copy; 2005 ArixMedia, LLC.<br>
+						  <br>
+						  </td> 
+                        </tr>
+                        </table>
+					</td>
+                </tr>
+				
+            </table>
+			
+		</td>
+        <td width="47" style="background-image: url('/images/index33.gif');"><img src="/images/index04.jpg" alt="" width="47" height="350"></td>
+        <td align="left" valign="top" class="bg1"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom">  </td>
+        <td width="47" valign="bottom" style="background-image: url('/images/index32.gif');"><img src="/images/index34.jpg" alt="" width="47" height="100"> </td>
+		<td width="47" valign="bottom" style="background-image: url('/images/index33.gif')"><img src="/images/index35.jpg" alt="" width="47" height="100"> </td>
+        <td align="left" valign="bottom"> </td>
+    </tr>
+	
+    <tr valign="top">
+        <td align="right" valign="bottom"> &nbsp; </td>
+        <td width="764" colspan="3" align="right" valign="bottom"><img src="/images/index36.jpg" alt="" width="764" height="78"></td>
+        <td align="left" valign="bottom"> &nbsp; </td>
+    </tr>
+    	
+</table>
+
+</body>
+</html>
